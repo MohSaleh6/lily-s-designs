@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 700" width="500" height="700" role="img">
+<defs>
+  <linearGradient id="foil-eid-mubarak-sand" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#9C7A2E"/><stop offset="20%" stop-color="#D8B45F"/><stop offset="38%" stop-color="#F5E7BC"/><stop offset="55%" stop-color="#C9A34C"/><stop offset="74%" stop-color="#E8D08A"/><stop offset="100%" stop-color="#A8842F"/>
+  </linearGradient>
+  <linearGradient id="bg-eid-mubarak-sand" x1="0" y1="0" x2="0.3" y2="1">
+    <stop offset="0%" stop-color="#F4EBE0"/><stop offset="100%" stop-color="#E6D7C3"/>
+  </linearGradient>
+  <radialGradient id="glow-eid-mubarak-sand" cx="50%" cy="42%" r="58%">
+    <stop offset="0%" stop-color="#ffffff" stop-opacity="0.34"/>
+    <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+  </radialGradient>
+</defs>
+<defs>
+  <pattern id="girih-eid-mubarak-sand" width="88" height="88" patternUnits="userSpaceOnUse">
+    <g fill="none" stroke="#7A5C22" stroke-width="1.1">
+      <path d="M44.00 10.00L51.27 26.45L68.04 19.96L61.55 36.73L78.00 44.00L61.55 51.27L68.04 68.04L51.27 61.55L44.00 78.00L36.73 61.55L19.96 68.04L26.45 51.27L10.00 44.00L26.45 36.73L19.96 19.96L36.73 26.45Z"/>
+      <path d="M57.86 49.74L49.74 57.86L38.26 57.86L30.14 49.74L30.14 38.26L38.26 30.14L49.74 30.14L57.86 38.26Z"/>
+      <path d="M0 0 8 8M88 0 80 8M0 88 8 80M88 88 80 80"/>
+    </g>
+  </pattern>
+  <clipPath id="clip-eid-mubarak-sand"><rect width="500" height="700"/></clipPath>
+</defs>
+<rect width="500" height="700" fill="url(#bg-eid-mubarak-sand)"/>
+<g opacity="0.07" clip-path="url(#clip-eid-mubarak-sand)">
+    <rect width="500" height="700" fill="url(#girih-eid-mubarak-sand)"/>
+  </g>
+<rect width="500" height="700" fill="url(#glow-eid-mubarak-sand)"/>
+<path d="M278.41 220.74L280.76 226.68L286.70 229.03L280.76 231.37L278.41 237.31L276.07 231.37L270.13 229.03L276.07 226.68Z" fill="url(#foil-eid-mubarak-sand)" opacity="0.71"/><path d="M240.25 497.23L242.06 501.81L246.64 503.62L242.06 505.43L240.25 510.01L238.45 505.43L233.86 503.62L238.45 501.81Z" fill="url(#foil-eid-mubarak-sand)" opacity="0.56"/><path d="M282.77 316.74L284.61 321.40L289.27 323.24L284.61 325.08L282.77 329.74L280.93 325.08L276.26 323.24L280.93 321.40Z" fill="url(#foil-eid-mubarak-sand)" opacity="0.63"/><path d="M110.55 107.89L112.80 113.60L118.51 115.85L112.80 118.10L110.55 123.81L108.30 118.10L102.59 115.85L108.30 113.60Z" fill="url(#foil-eid-mubarak-sand)" opacity="0.87"/><path d="M162.40 299.69L164.12 304.07L168.50 305.79L164.12 307.52L162.40 311.90L160.67 307.52L156.29 305.79L160.67 304.07Z" fill="url(#foil-eid-mubarak-sand)" opacity="0.71"/><path d="M371.44 307.24L372.59 310.14L375.49 311.28L372.59 312.43L371.44 315.33L370.30 312.43L367.39 311.28L370.30 310.14Z" fill="url(#foil-eid-mubarak-sand)" opacity="0.46"/><path d="M279.86 403.00L281.79 407.89L286.68 409.82L281.79 411.75L279.86 416.65L277.93 411.75L273.03 409.82L277.93 407.89Z" fill="url(#foil-eid-mubarak-sand)" opacity="0.48"/><path d="M252.88 99.21L254.99 104.56L260.33 106.66L254.99 108.77L252.88 114.12L250.77 108.77L245.43 106.66L250.77 104.56Z" fill="url(#foil-eid-mubarak-sand)" opacity="0.80"/><path d="M327.57 349.13L329.48 353.96L334.31 355.87L329.48 357.77L327.57 362.61L325.66 357.77L320.83 355.87L325.66 353.96Z" fill="url(#foil-eid-mubarak-sand)" opacity="0.66"/>
+      <g fill="none" stroke="url(#foil-eid-mubarak-sand)" stroke-width="3.4">
+        <path d="M304 218 A78 78 0 1 0 304 342 A60 60 0 1 1 304 218Z" fill="url(#foil-eid-mubarak-sand)" stroke="none"/>
+      </g>
+      <g transform="translate(100 290) scale(0.85)" fill="none" stroke="url(#foil-eid-mubarak-sand)" stroke-width="2">
+        <path d="M0 -70 V-44"/>
+        <path d="M-16 -44 H16"/>
+        <path d="M-20 -36 Q0 -46 20 -36 L24 16 Q0 32 -24 16Z"/>
+        <path d="M-13 -22 H13M-15 2 H15"/>
+        <path d="M-9 -34 V14M9 -34 V14" opacity="0.55"/>
+        <path d="M-12 22 H12M-7 30 H7"/>
+      </g>
+      <g transform="translate(400 262) scale(0.72)" fill="none" stroke="url(#foil-eid-mubarak-sand)" stroke-width="2">
+        <path d="M0 -70 V-44"/>
+        <path d="M-16 -44 H16"/>
+        <path d="M-20 -36 Q0 -46 20 -36 L24 16 Q0 32 -24 16Z"/>
+        <path d="M-13 -22 H13M-15 2 H15"/>
+        <path d="M-9 -34 V14M9 -34 V14" opacity="0.55"/>
+        <path d="M-12 22 H12M-7 30 H7"/>
+      </g>
+      <g fill="none" stroke="url(#foil-eid-mubarak-sand)" stroke-linecap="round" opacity="1">
+    <path d="M150 546 C190 486, 238 588, 250 546
+             S310 486, 350 546" stroke-width="3"/>
+    <path d="M182 571.2 C230 594, 270 594, 318 571.2" stroke-width="1.6" opacity="0.7"/>
+    <circle cx="141" cy="546" r="2.6" fill="url(#foil-eid-mubarak-sand)" stroke="none"/>
+    <circle cx="359" cy="546" r="2.6" fill="url(#foil-eid-mubarak-sand)" stroke="none"/>
+  </g>
+<g>
+    <rect x="26" y="26" width="448" height="648" rx="6"
+          fill="none" stroke="url(#foil-eid-mubarak-sand)" stroke-width="1.6"/>
+    <rect x="33" y="33" width="434" height="634" rx="3"
+          fill="none" stroke="url(#foil-eid-mubarak-sand)" stroke-width="0.7" opacity="0.65"/>
+    <g transform="translate(22 22) scale(1 1)" fill="none" stroke="url(#foil-eid-mubarak-sand)" stroke-width="1.8">
+      <path d="M0 26 L0 8 Q0 0 8 0 L26 0"/>
+      <path d="M8 30 L8 14 Q8 8 14 8 L30 8" opacity="0.6"/>
+      <path d="M26.47 22.68L22.68 26.47L17.32 26.47L13.53 22.68L13.53 17.32L17.32 13.53L22.68 13.53L26.47 17.32Z" opacity="0.85"/>
+    </g>
+    <g transform="translate(478 22) scale(-1 1)" fill="none" stroke="url(#foil-eid-mubarak-sand)" stroke-width="1.8">
+      <path d="M0 26 L0 8 Q0 0 8 0 L26 0"/>
+      <path d="M8 30 L8 14 Q8 8 14 8 L30 8" opacity="0.6"/>
+      <path d="M26.47 22.68L22.68 26.47L17.32 26.47L13.53 22.68L13.53 17.32L17.32 13.53L22.68 13.53L26.47 17.32Z" opacity="0.85"/>
+    </g>
+    <g transform="translate(22 678) scale(1 -1)" fill="none" stroke="url(#foil-eid-mubarak-sand)" stroke-width="1.8">
+      <path d="M0 26 L0 8 Q0 0 8 0 L26 0"/>
+      <path d="M8 30 L8 14 Q8 8 14 8 L30 8" opacity="0.6"/>
+      <path d="M26.47 22.68L22.68 26.47L17.32 26.47L13.53 22.68L13.53 17.32L17.32 13.53L22.68 13.53L26.47 17.32Z" opacity="0.85"/>
+    </g>
+    <g transform="translate(478 678) scale(-1 -1)" fill="none" stroke="url(#foil-eid-mubarak-sand)" stroke-width="1.8">
+      <path d="M0 26 L0 8 Q0 0 8 0 L26 0"/>
+      <path d="M8 30 L8 14 Q8 8 14 8 L30 8" opacity="0.6"/>
+      <path d="M26.47 22.68L22.68 26.47L17.32 26.47L13.53 22.68L13.53 17.32L17.32 13.53L22.68 13.53L26.47 17.32Z" opacity="0.85"/>
+    </g>
+  </g>
+</svg>

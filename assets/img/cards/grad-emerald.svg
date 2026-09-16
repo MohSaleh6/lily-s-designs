@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 700" width="500" height="700" role="img">
+<defs>
+  <linearGradient id="foil-grad-emerald" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#9C7A2E"/><stop offset="20%" stop-color="#D8B45F"/><stop offset="38%" stop-color="#F5E7BC"/><stop offset="55%" stop-color="#C9A34C"/><stop offset="74%" stop-color="#E8D08A"/><stop offset="100%" stop-color="#A8842F"/>
+  </linearGradient>
+  <linearGradient id="bg-grad-emerald" x1="0" y1="0" x2="0.3" y2="1">
+    <stop offset="0%" stop-color="#EAF2EE"/><stop offset="100%" stop-color="#D8E7E0"/>
+  </linearGradient>
+  <radialGradient id="glow-grad-emerald" cx="50%" cy="42%" r="58%">
+    <stop offset="0%" stop-color="#ffffff" stop-opacity="0.34"/>
+    <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+  </radialGradient>
+</defs>
+<defs>
+  <pattern id="girih-grad-emerald" width="88" height="88" patternUnits="userSpaceOnUse">
+    <g fill="none" stroke="#14544A" stroke-width="1.1">
+      <path d="M44.00 10.00L51.27 26.45L68.04 19.96L61.55 36.73L78.00 44.00L61.55 51.27L68.04 68.04L51.27 61.55L44.00 78.00L36.73 61.55L19.96 68.04L26.45 51.27L10.00 44.00L26.45 36.73L19.96 19.96L36.73 26.45Z"/>
+      <path d="M57.86 49.74L49.74 57.86L38.26 57.86L30.14 49.74L30.14 38.26L38.26 30.14L49.74 30.14L57.86 38.26Z"/>
+      <path d="M0 0 8 8M88 0 80 8M0 88 8 80M88 88 80 80"/>
+    </g>
+  </pattern>
+  <clipPath id="clip-grad-emerald"><rect width="500" height="700"/></clipPath>
+</defs>
+<rect width="500" height="700" fill="url(#bg-grad-emerald)"/>
+<g opacity="0.07" clip-path="url(#clip-grad-emerald)">
+    <rect width="500" height="700" fill="url(#girih-grad-emerald)"/>
+  </g>
+<rect width="500" height="700" fill="url(#glow-grad-emerald)"/>
+<ellipse cx="301.3" cy="201.7" rx="15" ry="6.5" fill="url(#foil-grad-emerald)" opacity="0.9"
+                 transform="rotate(44 301.3 201.7)"/><ellipse cx="326.2" cy="214.4" rx="15" ry="6.5" fill="url(#foil-grad-emerald)" opacity="0.9"
+                 transform="rotate(57 326.2 214.4)"/><ellipse cx="347.7" cy="233.1" rx="15" ry="6.5" fill="url(#foil-grad-emerald)" opacity="0.9"
+                 transform="rotate(71 347.7 233.1)"/><ellipse cx="364.0" cy="257.0" rx="15" ry="6.5" fill="url(#foil-grad-emerald)" opacity="0.9"
+                 transform="rotate(84 364.0 257.0)"/><ellipse cx="373.7" cy="284.5" rx="15" ry="6.5" fill="url(#foil-grad-emerald)" opacity="0.9"
+                 transform="rotate(97 373.7 284.5)"/><ellipse cx="375.7" cy="313.8" rx="15" ry="6.5" fill="url(#foil-grad-emerald)" opacity="0.9"
+                 transform="rotate(111 375.7 313.8)"/><ellipse cx="370.1" cy="342.4" rx="15" ry="6.5" fill="url(#foil-grad-emerald)" opacity="0.9"
+                 transform="rotate(124 370.1 342.4)"/><ellipse cx="357.3" cy="368.4" rx="15" ry="6.5" fill="url(#foil-grad-emerald)" opacity="0.9"
+                 transform="rotate(137 357.3 368.4)"/><ellipse cx="338.7" cy="389.9" rx="15" ry="6.5" fill="url(#foil-grad-emerald)" opacity="0.9"
+                 transform="rotate(151 338.7 389.9)"/><ellipse cx="198.7" cy="201.7" rx="15" ry="6.5" fill="url(#foil-grad-emerald)" opacity="0.9"
+                 transform="rotate(-44 198.7 201.7)"/><ellipse cx="173.8" cy="214.4" rx="15" ry="6.5" fill="url(#foil-grad-emerald)" opacity="0.9"
+                 transform="rotate(-57 173.8 214.4)"/><ellipse cx="152.3" cy="233.1" rx="15" ry="6.5" fill="url(#foil-grad-emerald)" opacity="0.9"
+                 transform="rotate(-71 152.3 233.1)"/><ellipse cx="136.0" cy="257.0" rx="15" ry="6.5" fill="url(#foil-grad-emerald)" opacity="0.9"
+                 transform="rotate(-84 136.0 257.0)"/><ellipse cx="126.3" cy="284.5" rx="15" ry="6.5" fill="url(#foil-grad-emerald)" opacity="0.9"
+                 transform="rotate(-97 126.3 284.5)"/><ellipse cx="124.3" cy="313.8" rx="15" ry="6.5" fill="url(#foil-grad-emerald)" opacity="0.9"
+                 transform="rotate(-111 124.3 313.8)"/><ellipse cx="129.9" cy="342.4" rx="15" ry="6.5" fill="url(#foil-grad-emerald)" opacity="0.9"
+                 transform="rotate(-124 129.9 342.4)"/><ellipse cx="142.7" cy="368.4" rx="15" ry="6.5" fill="url(#foil-grad-emerald)" opacity="0.9"
+                 transform="rotate(-137 142.7 368.4)"/><ellipse cx="161.3" cy="389.9" rx="15" ry="6.5" fill="url(#foil-grad-emerald)" opacity="0.9"
+                 transform="rotate(-151 161.3 389.9)"/>
+      <g fill="none" stroke="#14544A" stroke-width="1" opacity="0.4"><circle cx="250" cy="308" r="138"/></g>
+      <g transform="translate(250 308)">
+        <path d="M-72 -14 L0 -48 L72 -14 L0 20Z" fill="url(#foil-grad-emerald)"/>
+        <path d="M-44 0 L-44 44 Q0 68 44 44 L44 0" fill="none" stroke="url(#foil-grad-emerald)" stroke-width="3.4"/>
+        <path d="M72 -14 L72 46" stroke="url(#foil-grad-emerald)" stroke-width="2.4" fill="none"/>
+        <circle cx="72" cy="52" r="7" fill="url(#foil-grad-emerald)"/>
+      </g>
+      <g fill="none" stroke="url(#foil-grad-emerald)" stroke-linecap="round" opacity="1">
+    <path d="M165 532 C199 481, 239.8 567.7, 250 532
+             S301 481, 335 532" stroke-width="3"/>
+    <path d="M192.2 553.42 C233 572.8, 267 572.8, 307.8 553.42" stroke-width="1.6" opacity="0.7"/>
+    <circle cx="156" cy="532" r="2.6" fill="url(#foil-grad-emerald)" stroke="none"/>
+    <circle cx="344" cy="532" r="2.6" fill="url(#foil-grad-emerald)" stroke="none"/>
+  </g>
+<g>
+    <rect x="26" y="26" width="448" height="648" rx="6"
+          fill="none" stroke="url(#foil-grad-emerald)" stroke-width="1.6"/>
+    <rect x="33" y="33" width="434" height="634" rx="3"
+          fill="none" stroke="url(#foil-grad-emerald)" stroke-width="0.7" opacity="0.65"/>
+    <g transform="translate(22 22) scale(1 1)" fill="none" stroke="url(#foil-grad-emerald)" stroke-width="1.8">
+      <path d="M0 26 L0 8 Q0 0 8 0 L26 0"/>
+      <path d="M8 30 L8 14 Q8 8 14 8 L30 8" opacity="0.6"/>
+      <path d="M26.47 22.68L22.68 26.47L17.32 26.47L13.53 22.68L13.53 17.32L17.32 13.53L22.68 13.53L26.47 17.32Z" opacity="0.85"/>
+    </g>
+    <g transform="translate(478 22) scale(-1 1)" fill="none" stroke="url(#foil-grad-emerald)" stroke-width="1.8">
+      <path d="M0 26 L0 8 Q0 0 8 0 L26 0"/>
+      <path d="M8 30 L8 14 Q8 8 14 8 L30 8" opacity="0.6"/>
+      <path d="M26.47 22.68L22.68 26.47L17.32 26.47L13.53 22.68L13.53 17.32L17.32 13.53L22.68 13.53L26.47 17.32Z" opacity="0.85"/>
+    </g>
+    <g transform="translate(22 678) scale(1 -1)" fill="none" stroke="url(#foil-grad-emerald)" stroke-width="1.8">
+      <path d="M0 26 L0 8 Q0 0 8 0 L26 0"/>
+      <path d="M8 30 L8 14 Q8 8 14 8 L30 8" opacity="0.6"/>
+      <path d="M26.47 22.68L22.68 26.47L17.32 26.47L13.53 22.68L13.53 17.32L17.32 13.53L22.68 13.53L26.47 17.32Z" opacity="0.85"/>
+    </g>
+    <g transform="translate(478 678) scale(-1 -1)" fill="none" stroke="url(#foil-grad-emerald)" stroke-width="1.8">
+      <path d="M0 26 L0 8 Q0 0 8 0 L26 0"/>
+      <path d="M8 30 L8 14 Q8 8 14 8 L30 8" opacity="0.6"/>
+      <path d="M26.47 22.68L22.68 26.47L17.32 26.47L13.53 22.68L13.53 17.32L17.32 13.53L22.68 13.53L26.47 17.32Z" opacity="0.85"/>
+    </g>
+  </g>
+</svg>

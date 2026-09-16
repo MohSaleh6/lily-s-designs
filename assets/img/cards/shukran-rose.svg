@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 700" width="500" height="700" role="img">
+<defs>
+  <linearGradient id="foil-shukran-rose" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#9C7A2E"/><stop offset="20%" stop-color="#D8B45F"/><stop offset="38%" stop-color="#F5E7BC"/><stop offset="55%" stop-color="#C9A34C"/><stop offset="74%" stop-color="#E8D08A"/><stop offset="100%" stop-color="#A8842F"/>
+  </linearGradient>
+  <linearGradient id="bg-shukran-rose" x1="0" y1="0" x2="0.3" y2="1">
+    <stop offset="0%" stop-color="#8C4B55"/><stop offset="100%" stop-color="#6B3540"/>
+  </linearGradient>
+  <radialGradient id="glow-shukran-rose" cx="50%" cy="42%" r="58%">
+    <stop offset="0%" stop-color="#ffffff" stop-opacity="0.34"/>
+    <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+  </radialGradient>
+</defs>
+<defs>
+  <pattern id="girih-shukran-rose" width="88" height="88" patternUnits="userSpaceOnUse">
+    <g fill="none" stroke="#F7E7E4" stroke-width="1.1">
+      <path d="M44.00 10.00L51.27 26.45L68.04 19.96L61.55 36.73L78.00 44.00L61.55 51.27L68.04 68.04L51.27 61.55L44.00 78.00L36.73 61.55L19.96 68.04L26.45 51.27L10.00 44.00L26.45 36.73L19.96 19.96L36.73 26.45Z"/>
+      <path d="M57.86 49.74L49.74 57.86L38.26 57.86L30.14 49.74L30.14 38.26L38.26 30.14L49.74 30.14L57.86 38.26Z"/>
+      <path d="M0 0 8 8M88 0 80 8M0 88 8 80M88 88 80 80"/>
+    </g>
+  </pattern>
+  <clipPath id="clip-shukran-rose"><rect width="500" height="700"/></clipPath>
+</defs>
+<rect width="500" height="700" fill="url(#bg-shukran-rose)"/>
+<g opacity="0.07" clip-path="url(#clip-shukran-rose)">
+    <rect width="500" height="700" fill="url(#girih-shukran-rose)"/>
+  </g>
+<rect width="500" height="700" fill="url(#glow-shukran-rose)"/>
+<path d="M250 398 Q182.80687947026723 323.45670255693364, 115.6 284.9"
+                  fill="none" stroke="url(#foil-shukran-rose)" stroke-width="1.6"/><ellipse cx="223.1" cy="370.6" rx="13" ry="5.5" fill="#EFC9C2" opacity="0.55"
+                    transform="rotate(-60 223.1 370.6)"/><ellipse cx="196.2" cy="349.2" rx="13" ry="5.5" fill="#EFC9C2" opacity="0.55"
+                    transform="rotate(-60 196.2 349.2)"/><ellipse cx="169.4" cy="327.7" rx="13" ry="5.5" fill="#EFC9C2" opacity="0.55"
+                    transform="rotate(-60 169.4 327.7)"/><ellipse cx="142.5" cy="306.3" rx="13" ry="5.5" fill="#EFC9C2" opacity="0.55"
+                    transform="rotate(-60 142.5 306.3)"/><path d="M250 398 Q207.50866441648458 303.7220172910919, 165.0 245.4"
+                  fill="none" stroke="url(#foil-shukran-rose)" stroke-width="1.6"/><ellipse cx="233.0" cy="362.7" rx="13" ry="5.5" fill="#EFC9C2" opacity="0.55"
+                    transform="rotate(-36 233.0 362.7)"/><ellipse cx="216.0" cy="333.4" rx="13" ry="5.5" fill="#EFC9C2" opacity="0.55"
+                    transform="rotate(-36 216.0 333.4)"/><ellipse cx="199.0" cy="304.1" rx="13" ry="5.5" fill="#EFC9C2" opacity="0.55"
+                    transform="rotate(-36 199.0 304.1)"/><ellipse cx="182.0" cy="274.8" rx="13" ry="5.5" fill="#EFC9C2" opacity="0.55"
+                    transform="rotate(-36 182.0 274.8)"/><path d="M250 398 Q233.12062615528254 282.80707390962147, 216.2 203.6"
+                  fill="none" stroke="url(#foil-shukran-rose)" stroke-width="1.6"/><ellipse cx="243.2" cy="354.3" rx="13" ry="5.5" fill="#EFC9C2" opacity="0.55"
+                    transform="rotate(-12 243.2 354.3)"/><ellipse cx="236.5" cy="316.6" rx="13" ry="5.5" fill="#EFC9C2" opacity="0.55"
+                    transform="rotate(-12 236.5 316.6)"/><ellipse cx="229.7" cy="279.0" rx="13" ry="5.5" fill="#EFC9C2" opacity="0.55"
+                    transform="rotate(-12 229.7 279.0)"/><ellipse cx="223.0" cy="241.3" rx="13" ry="5.5" fill="#EFC9C2" opacity="0.55"
+                    transform="rotate(-12 223.0 241.3)"/><path d="M250 398 Q266.82918965218397 283.0425229900654, 283.7 204.1"
+                  fill="none" stroke="url(#foil-shukran-rose)" stroke-width="1.6"/><ellipse cx="256.7" cy="354.4" rx="13" ry="5.5" fill="#EFC9C2" opacity="0.55"
+                    transform="rotate(12 256.7 354.4)"/><ellipse cx="263.5" cy="316.8" rx="13" ry="5.5" fill="#EFC9C2" opacity="0.55"
+                    transform="rotate(12 263.5 316.8)"/><ellipse cx="270.2" cy="279.3" rx="13" ry="5.5" fill="#EFC9C2" opacity="0.55"
+                    transform="rotate(12 270.2 279.3)"/><ellipse cx="276.9" cy="241.7" rx="13" ry="5.5" fill="#EFC9C2" opacity="0.55"
+                    transform="rotate(12 276.9 241.7)"/><path d="M250 398 Q296.3561008528808 298.4213902232658, 342.7 234.8"
+                  fill="none" stroke="url(#foil-shukran-rose)" stroke-width="1.6"/><ellipse cx="268.5" cy="360.6" rx="13" ry="5.5" fill="#EFC9C2" opacity="0.55"
+                    transform="rotate(36 268.5 360.6)"/><ellipse cx="287.1" cy="329.1" rx="13" ry="5.5" fill="#EFC9C2" opacity="0.55"
+                    transform="rotate(36 287.1 329.1)"/><ellipse cx="305.6" cy="297.7" rx="13" ry="5.5" fill="#EFC9C2" opacity="0.55"
+                    transform="rotate(36 305.6 297.7)"/><ellipse cx="324.2" cy="266.3" rx="13" ry="5.5" fill="#EFC9C2" opacity="0.55"
+                    transform="rotate(36 324.2 266.3)"/><path d="M250 398 Q316.50743709694643 323.8500240799305, 383.0 285.7"
+                  fill="none" stroke="url(#foil-shukran-rose)" stroke-width="1.6"/><ellipse cx="276.6" cy="370.7" rx="13" ry="5.5" fill="#EFC9C2" opacity="0.55"
+                    transform="rotate(60 276.6 370.7)"/><ellipse cx="303.2" cy="349.5" rx="13" ry="5.5" fill="#EFC9C2" opacity="0.55"
+                    transform="rotate(60 303.2 349.5)"/><ellipse cx="329.8" cy="328.2" rx="13" ry="5.5" fill="#EFC9C2" opacity="0.55"
+                    transform="rotate(60 329.8 328.2)"/><ellipse cx="356.4" cy="307.0" rx="13" ry="5.5" fill="#EFC9C2" opacity="0.55"
+                    transform="rotate(60 356.4 307.0)"/>
+      <g stroke="url(#foil-shukran-rose)" stroke-width="1.6" fill="none" stroke-linejoin="round">
+    <path d="M250.00 196.00L268.43 237.51L310.81 221.19L294.49 263.57L336.00 282.00L294.49 300.43L310.81 342.81L268.43 326.49L250.00 368.00L231.57 326.49L189.19 342.81L205.51 300.43L164.00 282.00L205.51 263.57L189.19 221.19L231.57 237.51Z"/>
+    <path d="M274.35 223.20L275.54 256.46L308.80 257.65L286.12 282.00L308.80 306.35L275.54 307.54L274.35 340.80L250.00 318.12L225.65 340.80L224.46 307.54L191.20 306.35L213.88 282.00L191.20 257.65L224.46 256.46L225.65 223.20L250.00 245.88Z"/>
+    <path d="M283.37 295.82L263.82 315.37L236.18 315.37L216.63 295.82L216.63 268.18L236.18 248.63L263.82 248.63L283.37 268.18Z"/>
+    <circle cx="250" cy="282" r="17.20"/>
+  </g>
+      <path d="M250.00 256.00L254.21 271.84L268.38 263.62L260.16 277.79L276.00 282.00L260.16 286.21L268.38 300.38L254.21 292.16L250.00 308.00L245.79 292.16L231.62 300.38L239.84 286.21L224.00 282.00L239.84 277.79L231.62 263.62L245.79 271.84Z" fill="url(#foil-shukran-rose)"/>
+      <g fill="none" stroke="url(#foil-shukran-rose)" stroke-linecap="round" opacity="1">
+    <path d="M170 560 C202 512, 240.4 593.6, 250 560
+             S298 512, 330 560" stroke-width="3"/>
+    <path d="M195.6 580.16 C234 598.4, 266 598.4, 304.4 580.16" stroke-width="1.6" opacity="0.7"/>
+    <circle cx="161" cy="560" r="2.6" fill="url(#foil-shukran-rose)" stroke="none"/>
+    <circle cx="339" cy="560" r="2.6" fill="url(#foil-shukran-rose)" stroke="none"/>
+  </g>
+<g>
+    <rect x="26" y="26" width="448" height="648" rx="6"
+          fill="none" stroke="url(#foil-shukran-rose)" stroke-width="1.6"/>
+    <rect x="33" y="33" width="434" height="634" rx="3"
+          fill="none" stroke="url(#foil-shukran-rose)" stroke-width="0.7" opacity="0.65"/>
+    <g transform="translate(22 22) scale(1 1)" fill="none" stroke="url(#foil-shukran-rose)" stroke-width="1.8">
+      <path d="M0 26 L0 8 Q0 0 8 0 L26 0"/>
+      <path d="M8 30 L8 14 Q8 8 14 8 L30 8" opacity="0.6"/>
+      <path d="M26.47 22.68L22.68 26.47L17.32 26.47L13.53 22.68L13.53 17.32L17.32 13.53L22.68 13.53L26.47 17.32Z" opacity="0.85"/>
+    </g>
+    <g transform="translate(478 22) scale(-1 1)" fill="none" stroke="url(#foil-shukran-rose)" stroke-width="1.8">
+      <path d="M0 26 L0 8 Q0 0 8 0 L26 0"/>
+      <path d="M8 30 L8 14 Q8 8 14 8 L30 8" opacity="0.6"/>
+      <path d="M26.47 22.68L22.68 26.47L17.32 26.47L13.53 22.68L13.53 17.32L17.32 13.53L22.68 13.53L26.47 17.32Z" opacity="0.85"/>
+    </g>
+    <g transform="translate(22 678) scale(1 -1)" fill="none" stroke="url(#foil-shukran-rose)" stroke-width="1.8">
+      <path d="M0 26 L0 8 Q0 0 8 0 L26 0"/>
+      <path d="M8 30 L8 14 Q8 8 14 8 L30 8" opacity="0.6"/>
+      <path d="M26.47 22.68L22.68 26.47L17.32 26.47L13.53 22.68L13.53 17.32L17.32 13.53L22.68 13.53L26.47 17.32Z" opacity="0.85"/>
+    </g>
+    <g transform="translate(478 678) scale(-1 -1)" fill="none" stroke="url(#foil-shukran-rose)" stroke-width="1.8">
+      <path d="M0 26 L0 8 Q0 0 8 0 L26 0"/>
+      <path d="M8 30 L8 14 Q8 8 14 8 L30 8" opacity="0.6"/>
+      <path d="M26.47 22.68L22.68 26.47L17.32 26.47L13.53 22.68L13.53 17.32L17.32 13.53L22.68 13.53L26.47 17.32Z" opacity="0.85"/>
+    </g>
+  </g>
+</svg>

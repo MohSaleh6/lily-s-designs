@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 700" width="500" height="700" role="img">
+<defs>
+  <linearGradient id="foil-fanoos" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#9C7A2E"/><stop offset="20%" stop-color="#D8B45F"/><stop offset="38%" stop-color="#F5E7BC"/><stop offset="55%" stop-color="#C9A34C"/><stop offset="74%" stop-color="#E8D08A"/><stop offset="100%" stop-color="#A8842F"/>
+  </linearGradient>
+  <linearGradient id="bg-fanoos" x1="0" y1="0" x2="0.3" y2="1">
+    <stop offset="0%" stop-color="#17304F"/><stop offset="100%" stop-color="#0E2038"/>
+  </linearGradient>
+  <radialGradient id="glow-fanoos" cx="50%" cy="42%" r="58%">
+    <stop offset="0%" stop-color="#ffffff" stop-opacity="0.34"/>
+    <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+  </radialGradient>
+</defs>
+<defs>
+  <pattern id="girih-fanoos" width="88" height="88" patternUnits="userSpaceOnUse">
+    <g fill="none" stroke="#EFDFB8" stroke-width="1.1">
+      <path d="M44.00 10.00L51.27 26.45L68.04 19.96L61.55 36.73L78.00 44.00L61.55 51.27L68.04 68.04L51.27 61.55L44.00 78.00L36.73 61.55L19.96 68.04L26.45 51.27L10.00 44.00L26.45 36.73L19.96 19.96L36.73 26.45Z"/>
+      <path d="M57.86 49.74L49.74 57.86L38.26 57.86L30.14 49.74L30.14 38.26L38.26 30.14L49.74 30.14L57.86 38.26Z"/>
+      <path d="M0 0 8 8M88 0 80 8M0 88 8 80M88 88 80 80"/>
+    </g>
+  </pattern>
+  <clipPath id="clip-fanoos"><rect width="500" height="700"/></clipPath>
+</defs>
+<rect width="500" height="700" fill="url(#bg-fanoos)"/>
+<g opacity="0.07" clip-path="url(#clip-fanoos)">
+    <rect width="500" height="700" fill="url(#girih-fanoos)"/>
+  </g>
+<rect width="500" height="700" fill="url(#glow-fanoos)"/>
+<path d="M142 462 L142 214
+                  Q142 140, 250 114
+                  Q358 140, 358 214
+                  L358 462Z" fill="#22436B" opacity="0.5"/>
+      <path d="M142 462 L142 214
+                  Q142 140, 250 114
+                  Q358 140, 358 214
+                  L358 462Z" fill="none" stroke="url(#foil-fanoos)" stroke-width="2.6"/>
+      <path d="M142 462 L142 214
+                  Q142 140, 250 114
+                  Q358 140, 358 214
+                  L358 462Z" fill="none" stroke="url(#foil-fanoos)" stroke-width="0.8" opacity="0.6" transform="translate(0 0) scale(1)" style="transform-box:fill-box;transform-origin:center"/>
+      <g stroke="url(#foil-fanoos)" stroke-width="1.6" fill="none" stroke-linejoin="round">
+    <path d="M250.00 229.00L263.29 258.92L293.84 247.16L282.08 277.71L312.00 291.00L282.08 304.29L293.84 334.84L263.29 323.08L250.00 353.00L236.71 323.08L206.16 334.84L217.92 304.29L188.00 291.00L217.92 277.71L206.16 247.16L236.71 258.92Z"/>
+    <path d="M267.56 248.61L268.41 272.59L292.39 273.44L276.04 291.00L292.39 308.56L268.41 309.41L267.56 333.39L250.00 317.04L232.44 333.39L231.59 309.41L207.61 308.56L223.96 291.00L207.61 273.44L231.59 272.59L232.44 248.61L250.00 264.96Z"/>
+    <path d="M274.06 300.97L259.97 315.06L240.03 315.06L225.94 300.97L225.94 281.03L240.03 266.94L259.97 266.94L274.06 281.03Z"/>
+    <circle cx="250" cy="291" r="12.40"/>
+  </g>
+      <g fill="none" stroke="url(#foil-fanoos)" stroke-width="1.8" opacity="0.85">
+        <path d="M82 98.00000000000001 V210"/>
+        <path d="M66 210 Q82 182 98 210 L102 294 Q82 350 62 294Z"/>
+        <path d="M72 315 H92"/>
+      </g><g fill="none" stroke="url(#foil-fanoos)" stroke-width="1.8" opacity="0.85">
+        <path d="M418 98.00000000000001 V210"/>
+        <path d="M402 210 Q418 182 434 210 L438 294 Q418 350 398 294Z"/>
+        <path d="M408 315 H428"/>
+      </g>
+      <g fill="none" stroke="url(#foil-fanoos)" stroke-linecap="round" opacity="1">
+    <path d="M160 560 C196 506, 239.2 597.8, 250 560
+             S304 506, 340 560" stroke-width="3"/>
+    <path d="M188.8 582.68 C232 603.2, 268 603.2, 311.2 582.68" stroke-width="1.6" opacity="0.7"/>
+    <circle cx="151" cy="560" r="2.6" fill="url(#foil-fanoos)" stroke="none"/>
+    <circle cx="349" cy="560" r="2.6" fill="url(#foil-fanoos)" stroke="none"/>
+  </g>
+<g>
+    <rect x="26" y="26" width="448" height="648" rx="6"
+          fill="none" stroke="url(#foil-fanoos)" stroke-width="1.6"/>
+    <rect x="33" y="33" width="434" height="634" rx="3"
+          fill="none" stroke="url(#foil-fanoos)" stroke-width="0.7" opacity="0.65"/>
+    <g transform="translate(22 22) scale(1 1)" fill="none" stroke="url(#foil-fanoos)" stroke-width="1.8">
+      <path d="M0 26 L0 8 Q0 0 8 0 L26 0"/>
+      <path d="M8 30 L8 14 Q8 8 14 8 L30 8" opacity="0.6"/>
+      <path d="M26.47 22.68L22.68 26.47L17.32 26.47L13.53 22.68L13.53 17.32L17.32 13.53L22.68 13.53L26.47 17.32Z" opacity="0.85"/>
+    </g>
+    <g transform="translate(478 22) scale(-1 1)" fill="none" stroke="url(#foil-fanoos)" stroke-width="1.8">
+      <path d="M0 26 L0 8 Q0 0 8 0 L26 0"/>
+      <path d="M8 30 L8 14 Q8 8 14 8 L30 8" opacity="0.6"/>
+      <path d="M26.47 22.68L22.68 26.47L17.32 26.47L13.53 22.68L13.53 17.32L17.32 13.53L22.68 13.53L26.47 17.32Z" opacity="0.85"/>
+    </g>
+    <g transform="translate(22 678) scale(1 -1)" fill="none" stroke="url(#foil-fanoos)" stroke-width="1.8">
+      <path d="M0 26 L0 8 Q0 0 8 0 L26 0"/>
+      <path d="M8 30 L8 14 Q8 8 14 8 L30 8" opacity="0.6"/>
+      <path d="M26.47 22.68L22.68 26.47L17.32 26.47L13.53 22.68L13.53 17.32L17.32 13.53L22.68 13.53L26.47 17.32Z" opacity="0.85"/>
+    </g>
+    <g transform="translate(478 678) scale(-1 -1)" fill="none" stroke="url(#foil-fanoos)" stroke-width="1.8">
+      <path d="M0 26 L0 8 Q0 0 8 0 L26 0"/>
+      <path d="M8 30 L8 14 Q8 8 14 8 L30 8" opacity="0.6"/>
+      <path d="M26.47 22.68L22.68 26.47L17.32 26.47L13.53 22.68L13.53 17.32L17.32 13.53L22.68 13.53L26.47 17.32Z" opacity="0.85"/>
+    </g>
+  </g>
+</svg>

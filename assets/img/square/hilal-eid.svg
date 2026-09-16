@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 560" width="560" height="560" role="img">
+<defs>
+  <linearGradient id="foil-sq-hilal-eid" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#9C7A2E"/><stop offset="20%" stop-color="#D8B45F"/><stop offset="38%" stop-color="#F5E7BC"/><stop offset="55%" stop-color="#C9A34C"/><stop offset="74%" stop-color="#E8D08A"/><stop offset="100%" stop-color="#A8842F"/>
+  </linearGradient>
+  <linearGradient id="bg-sq-hilal-eid" x1="0" y1="0" x2="0.3" y2="1">
+    <stop offset="0%" stop-color="#0E4C41"/><stop offset="100%" stop-color="#093329"/>
+  </linearGradient>
+  <radialGradient id="glow-sq-hilal-eid" cx="50%" cy="42%" r="58%">
+    <stop offset="0%" stop-color="#ffffff" stop-opacity="0.34"/>
+    <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+  </radialGradient>
+</defs>
+<defs>
+  <pattern id="girih-sq-hilal-eid" width="88" height="88" patternUnits="userSpaceOnUse">
+    <g fill="none" stroke="#EFDFB8" stroke-width="1.1">
+      <path d="M44.00 10.00L51.27 26.45L68.04 19.96L61.55 36.73L78.00 44.00L61.55 51.27L68.04 68.04L51.27 61.55L44.00 78.00L36.73 61.55L19.96 68.04L26.45 51.27L10.00 44.00L26.45 36.73L19.96 19.96L36.73 26.45Z"/>
+      <path d="M57.86 49.74L49.74 57.86L38.26 57.86L30.14 49.74L30.14 38.26L38.26 30.14L49.74 30.14L57.86 38.26Z"/>
+      <path d="M0 0 8 8M88 0 80 8M0 88 8 80M88 88 80 80"/>
+    </g>
+  </pattern>
+  <clipPath id="clip-sq-hilal-eid"><rect width="560" height="560"/></clipPath>
+</defs>
+<rect width="560" height="560" fill="url(#bg-sq-hilal-eid)"/>
+<g opacity="0.07" clip-path="url(#clip-sq-hilal-eid)">
+    <rect width="560" height="560" fill="url(#girih-sq-hilal-eid)"/>
+  </g>
+<rect width="560" height="560" fill="url(#glow-sq-hilal-eid)"/>
+<path d="M292.04 314.03L294.47 320.21L300.65 322.64L294.47 325.08L292.04 331.26L289.60 325.08L283.43 322.64L289.60 320.21Z" fill="url(#foil-sq-hilal-eid)" opacity="0.83"/><path d="M182.66 325.87L184.86 331.46L190.46 333.67L184.86 335.87L182.66 341.47L180.45 335.87L174.86 333.67L180.45 331.46Z" fill="url(#foil-sq-hilal-eid)" opacity="0.88"/><path d="M111.74 246.92L113.73 251.97L118.78 253.96L113.73 255.95L111.74 261.00L109.75 255.95L104.71 253.96L109.75 251.97Z" fill="url(#foil-sq-hilal-eid)" opacity="0.86"/><path d="M194.31 216.80L195.49 219.80L198.49 220.98L195.49 222.16L194.31 225.15L193.13 222.16L190.14 220.98L193.13 219.80Z" fill="url(#foil-sq-hilal-eid)" opacity="0.53"/><path d="M371.39 107.80L373.47 113.06L378.74 115.14L373.47 117.22L371.39 122.48L369.32 117.22L364.05 115.14L369.32 113.06Z" fill="url(#foil-sq-hilal-eid)" opacity="0.49"/><path d="M463.63 242.00L465.41 246.51L469.92 248.29L465.41 250.07L463.63 254.58L461.85 250.07L457.34 248.29L461.85 246.51Z" fill="url(#foil-sq-hilal-eid)" opacity="0.76"/><path d="M176.62 133.96L177.99 137.44L181.48 138.82L177.99 140.19L176.62 143.68L175.24 140.19L171.76 138.82L175.24 137.44Z" fill="url(#foil-sq-hilal-eid)" opacity="0.74"/><path d="M81.92 362.52L83.82 367.33L88.63 369.22L83.82 371.12L81.92 375.93L80.03 371.12L75.22 369.22L80.03 367.33Z" fill="url(#foil-sq-hilal-eid)" opacity="0.69"/><path d="M414.19 160.74L416.02 165.36L420.64 167.19L416.02 169.01L414.19 173.64L412.37 169.01L407.74 167.19L412.37 165.36Z" fill="url(#foil-sq-hilal-eid)" opacity="0.71"/>
+      <g fill="none" stroke="url(#foil-sq-hilal-eid)" stroke-width="3.4">
+        <path d="M334 162 A78 78 0 1 0 334 286 A60 60 0 1 1 334 162Z" fill="url(#foil-sq-hilal-eid)" stroke="none"/>
+      </g>
+      <g transform="translate(130 234) scale(0.85)" fill="none" stroke="url(#foil-sq-hilal-eid)" stroke-width="2">
+        <path d="M0 -70 V-44"/>
+        <path d="M-16 -44 H16"/>
+        <path d="M-20 -36 Q0 -46 20 -36 L24 16 Q0 32 -24 16Z"/>
+        <path d="M-13 -22 H13M-15 2 H15"/>
+        <path d="M-9 -34 V14M9 -34 V14" opacity="0.55"/>
+        <path d="M-12 22 H12M-7 30 H7"/>
+      </g>
+      <g transform="translate(430 206) scale(0.72)" fill="none" stroke="url(#foil-sq-hilal-eid)" stroke-width="2">
+        <path d="M0 -70 V-44"/>
+        <path d="M-16 -44 H16"/>
+        <path d="M-20 -36 Q0 -46 20 -36 L24 16 Q0 32 -24 16Z"/>
+        <path d="M-13 -22 H13M-15 2 H15"/>
+        <path d="M-9 -34 V14M9 -34 V14" opacity="0.55"/>
+        <path d="M-12 22 H12M-7 30 H7"/>
+      </g>
+      <g fill="none" stroke="url(#foil-sq-hilal-eid)" stroke-linecap="round" opacity="1">
+    <path d="M180 436.8 C220 376.8, 268 478.8, 280 436.8
+             S340 376.8, 380 436.8" stroke-width="3"/>
+    <path d="M212 462 C260 484.8, 300 484.8, 348 462" stroke-width="1.6" opacity="0.7"/>
+    <circle cx="171" cy="436.8" r="2.6" fill="url(#foil-sq-hilal-eid)" stroke="none"/>
+    <circle cx="389" cy="436.8" r="2.6" fill="url(#foil-sq-hilal-eid)" stroke="none"/>
+  </g>
+<g>
+    <rect x="26" y="26" width="508" height="508" rx="6"
+          fill="none" stroke="url(#foil-sq-hilal-eid)" stroke-width="1.6"/>
+    <rect x="33" y="33" width="494" height="494" rx="3"
+          fill="none" stroke="url(#foil-sq-hilal-eid)" stroke-width="0.7" opacity="0.65"/>
+    <g transform="translate(22 22) scale(1 1)" fill="none" stroke="url(#foil-sq-hilal-eid)" stroke-width="1.8">
+      <path d="M0 26 L0 8 Q0 0 8 0 L26 0"/>
+      <path d="M8 30 L8 14 Q8 8 14 8 L30 8" opacity="0.6"/>
+      <path d="M26.47 22.68L22.68 26.47L17.32 26.47L13.53 22.68L13.53 17.32L17.32 13.53L22.68 13.53L26.47 17.32Z" opacity="0.85"/>
+    </g>
+    <g transform="translate(538 22) scale(-1 1)" fill="none" stroke="url(#foil-sq-hilal-eid)" stroke-width="1.8">
+      <path d="M0 26 L0 8 Q0 0 8 0 L26 0"/>
+      <path d="M8 30 L8 14 Q8 8 14 8 L30 8" opacity="0.6"/>
+      <path d="M26.47 22.68L22.68 26.47L17.32 26.47L13.53 22.68L13.53 17.32L17.32 13.53L22.68 13.53L26.47 17.32Z" opacity="0.85"/>
+    </g>
+    <g transform="translate(22 538) scale(1 -1)" fill="none" stroke="url(#foil-sq-hilal-eid)" stroke-width="1.8">
+      <path d="M0 26 L0 8 Q0 0 8 0 L26 0"/>
+      <path d="M8 30 L8 14 Q8 8 14 8 L30 8" opacity="0.6"/>
+      <path d="M26.47 22.68L22.68 26.47L17.32 26.47L13.53 22.68L13.53 17.32L17.32 13.53L22.68 13.53L26.47 17.32Z" opacity="0.85"/>
+    </g>
+    <g transform="translate(538 538) scale(-1 -1)" fill="none" stroke="url(#foil-sq-hilal-eid)" stroke-width="1.8">
+      <path d="M0 26 L0 8 Q0 0 8 0 L26 0"/>
+      <path d="M8 30 L8 14 Q8 8 14 8 L30 8" opacity="0.6"/>
+      <path d="M26.47 22.68L22.68 26.47L17.32 26.47L13.53 22.68L13.53 17.32L17.32 13.53L22.68 13.53L26.47 17.32Z" opacity="0.85"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 700" width="500" height="700" role="img">
+<defs>
+  <linearGradient id="foil-taqdeer" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#9C7A2E"/><stop offset="20%" stop-color="#D8B45F"/><stop offset="38%" stop-color="#F5E7BC"/><stop offset="55%" stop-color="#C9A34C"/><stop offset="74%" stop-color="#E8D08A"/><stop offset="100%" stop-color="#A8842F"/>
+  </linearGradient>
+  <linearGradient id="bg-taqdeer" x1="0" y1="0" x2="0.3" y2="1">
+    <stop offset="0%" stop-color="#F4EBE0"/><stop offset="100%" stop-color="#E6D7C3"/>
+  </linearGradient>
+  <radialGradient id="glow-taqdeer" cx="50%" cy="42%" r="58%">
+    <stop offset="0%" stop-color="#ffffff" stop-opacity="0.34"/>
+    <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+  </radialGradient>
+</defs>
+<defs>
+  <pattern id="girih-taqdeer" width="88" height="88" patternUnits="userSpaceOnUse">
+    <g fill="none" stroke="#7A5C22" stroke-width="1.1">
+      <path d="M44.00 10.00L51.27 26.45L68.04 19.96L61.55 36.73L78.00 44.00L61.55 51.27L68.04 68.04L51.27 61.55L44.00 78.00L36.73 61.55L19.96 68.04L26.45 51.27L10.00 44.00L26.45 36.73L19.96 19.96L36.73 26.45Z"/>
+      <path d="M57.86 49.74L49.74 57.86L38.26 57.86L30.14 49.74L30.14 38.26L38.26 30.14L49.74 30.14L57.86 38.26Z"/>
+      <path d="M0 0 8 8M88 0 80 8M0 88 8 80M88 88 80 80"/>
+    </g>
+  </pattern>
+  <clipPath id="clip-taqdeer"><rect width="500" height="700"/></clipPath>
+</defs>
+<rect width="500" height="700" fill="url(#bg-taqdeer)"/>
+<g opacity="0.07" clip-path="url(#clip-taqdeer)">
+    <rect width="500" height="700" fill="url(#girih-taqdeer)"/>
+  </g>
+<rect width="500" height="700" fill="url(#glow-taqdeer)"/>
+<g fill="none" stroke="url(#foil-taqdeer)" stroke-width="1.4" opacity="0.75">
+        <path d="M122 168 H378"/>
+        <path d="M116.47 170.68L112.68 174.47L107.32 174.47L103.53 170.68L103.53 165.32L107.32 161.53L112.68 161.53L116.47 165.32Z"/>
+        <path d="M396.47 170.68L392.68 174.47L387.32 174.47L383.53 170.68L383.53 165.32L387.32 161.53L392.68 161.53L396.47 165.32Z"/>
+      </g><g fill="none" stroke="url(#foil-taqdeer)" stroke-width="2.4" opacity="1">
+        <path d="M140 308 H360"/>
+        <path d="M134.47 310.68L130.68 314.47L125.32 314.47L121.53 310.68L121.53 305.32L125.32 301.53L130.68 301.53L134.47 305.32Z"/>
+        <path d="M378.47 310.68L374.68 314.47L369.32 314.47L365.53 310.68L365.53 305.32L369.32 301.53L374.68 301.53L378.47 305.32Z"/>
+      </g><g fill="none" stroke="url(#foil-taqdeer)" stroke-width="1.4" opacity="0.75">
+        <path d="M158 448 H342"/>
+        <path d="M152.47 450.68L148.68 454.47L143.32 454.47L139.53 450.68L139.53 445.32L143.32 441.53L148.68 441.53L152.47 445.32Z"/>
+        <path d="M360.47 450.68L356.68 454.47L351.32 454.47L347.53 450.68L347.53 445.32L351.32 441.53L356.68 441.53L360.47 445.32Z"/>
+      </g>
+      <g stroke="url(#foil-taqdeer)" stroke-width="1.8" fill="none" stroke-linejoin="round">
+    <path d="M250.00 204.00L272.29 254.19L323.54 234.46L303.81 285.71L354.00 308.00L303.81 330.29L323.54 381.54L272.29 361.81L250.00 412.00L227.71 361.81L176.46 381.54L196.19 330.29L146.00 308.00L196.19 285.71L176.46 234.46L227.71 254.19Z"/>
+    <path d="M279.45 236.90L280.89 277.11L321.10 278.55L293.68 308.00L321.10 337.45L280.89 338.89L279.45 379.10L250.00 351.68L220.55 379.10L219.11 338.89L178.90 337.45L206.32 308.00L178.90 278.55L219.11 277.11L220.55 236.90L250.00 264.32Z"/>
+    <path d="M290.36 324.72L266.72 348.36L233.28 348.36L209.64 324.72L209.64 291.28L233.28 267.64L266.72 267.64L290.36 291.28Z"/>
+    <circle cx="250" cy="308" r="20.80"/>
+  </g>
+      <path d="M250.00 274.00L255.36 295.07L274.04 283.96L262.93 302.64L284.00 308.00L262.93 313.36L274.04 332.04L255.36 320.93L250.00 342.00L244.64 320.93L225.96 332.04L237.07 313.36L216.00 308.00L237.07 302.64L225.96 283.96L244.64 295.07Z" fill="url(#foil-taqdeer)"/>
+      <g fill="none" stroke="url(#foil-taqdeer)" stroke-linecap="round" opacity="1">
+    <path d="M165 560 C199 509, 239.8 595.7, 250 560
+             S301 509, 335 560" stroke-width="3"/>
+    <path d="M192.2 581.42 C233 600.8, 267 600.8, 307.8 581.42" stroke-width="1.6" opacity="0.7"/>
+    <circle cx="156" cy="560" r="2.6" fill="url(#foil-taqdeer)" stroke="none"/>
+    <circle cx="344" cy="560" r="2.6" fill="url(#foil-taqdeer)" stroke="none"/>
+  </g>
+<g>
+    <rect x="26" y="26" width="448" height="648" rx="6"
+          fill="none" stroke="url(#foil-taqdeer)" stroke-width="1.6"/>
+    <rect x="33" y="33" width="434" height="634" rx="3"
+          fill="none" stroke="url(#foil-taqdeer)" stroke-width="0.7" opacity="0.65"/>
+    <g transform="translate(22 22) scale(1 1)" fill="none" stroke="url(#foil-taqdeer)" stroke-width="1.8">
+      <path d="M0 26 L0 8 Q0 0 8 0 L26 0"/>
+      <path d="M8 30 L8 14 Q8 8 14 8 L30 8" opacity="0.6"/>
+      <path d="M26.47 22.68L22.68 26.47L17.32 26.47L13.53 22.68L13.53 17.32L17.32 13.53L22.68 13.53L26.47 17.32Z" opacity="0.85"/>
+    </g>
+    <g transform="translate(478 22) scale(-1 1)" fill="none" stroke="url(#foil-taqdeer)" stroke-width="1.8">
+      <path d="M0 26 L0 8 Q0 0 8 0 L26 0"/>
+      <path d="M8 30 L8 14 Q8 8 14 8 L30 8" opacity="0.6"/>
+      <path d="M26.47 22.68L22.68 26.47L17.32 26.47L13.53 22.68L13.53 17.32L17.32 13.53L22.68 13.53L26.47 17.32Z" opacity="0.85"/>
+    </g>
+    <g transform="translate(22 678) scale(1 -1)" fill="none" stroke="url(#foil-taqdeer)" stroke-width="1.8">
+      <path d="M0 26 L0 8 Q0 0 8 0 L26 0"/>
+      <path d="M8 30 L8 14 Q8 8 14 8 L30 8" opacity="0.6"/>
+      <path d="M26.47 22.68L22.68 26.47L17.32 26.47L13.53 22.68L13.53 17.32L17.32 13.53L22.68 13.53L26.47 17.32Z" opacity="0.85"/>
+    </g>
+    <g transform="translate(478 678) scale(-1 -1)" fill="none" stroke="url(#foil-taqdeer)" stroke-width="1.8">
+      <path d="M0 26 L0 8 Q0 0 8 0 L26 0"/>
+      <path d="M8 30 L8 14 Q8 8 14 8 L30 8" opacity="0.6"/>
+      <path d="M26.47 22.68L22.68 26.47L17.32 26.47L13.53 22.68L13.53 17.32L17.32 13.53L22.68 13.53L26.47 17.32Z" opacity="0.85"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 800" width="640" height="800" role="img">
+<defs>
+  <linearGradient id="foil-studio" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#9C7A2E"/><stop offset="20%" stop-color="#D8B45F"/><stop offset="38%" stop-color="#F5E7BC"/><stop offset="55%" stop-color="#C9A34C"/><stop offset="74%" stop-color="#E8D08A"/><stop offset="100%" stop-color="#A8842F"/>
+  </linearGradient>
+  <linearGradient id="bg-studio" x1="0" y1="0" x2="0.3" y2="1">
+    <stop offset="0%" stop-color="#FBF3F1"/><stop offset="100%" stop-color="#F4E2E0"/>
+  </linearGradient>
+  <radialGradient id="glow-studio" cx="50%" cy="42%" r="58%">
+    <stop offset="0%" stop-color="#ffffff" stop-opacity="0.34"/>
+    <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+  </radialGradient>
+</defs>
+<defs><pattern id="girih-studio" width="88" height="88" patternUnits="userSpaceOnUse">
+    <g fill="none" stroke="#9E5C67" stroke-width="1.1">
+      <path d="M44.00 10.00L51.27 26.45L68.04 19.96L61.55 36.73L78.00 44.00L61.55 51.27L68.04 68.04L51.27 61.55L44.00 78.00L36.73 61.55L19.96 68.04L26.45 51.27L10.00 44.00L26.45 36.73L19.96 19.96L36.73 26.45Z"/>
+      <path d="M57.86 49.74L49.74 57.86L38.26 57.86L30.14 49.74L30.14 38.26L38.26 30.14L49.74 30.14L57.86 38.26Z"/>
+      <path d="M0 0 8 8M88 0 80 8M0 88 8 80M88 88 80 80"/>
+    </g>
+  </pattern><clipPath id="clip-studio"><rect width="640" height="800"/></clipPath></defs>
+<rect width="640" height="800" fill="url(#bg-studio)"/>
+<g opacity="0.06" clip-path="url(#clip-studio)">
+    <rect width="640" height="800" fill="url(#girih-studio)"/>
+  </g>
+<circle cx="383" cy="260" r="1.3" fill="#9E5C67" opacity="0.20"/><circle cx="520" cy="498" r="1.6" fill="#9E5C67" opacity="0.24"/><circle cx="361" cy="486" r="1.7" fill="#9E5C67" opacity="0.15"/><circle cx="15" cy="89" r="2.3" fill="#9E5C67" opacity="0.12"/><circle cx="155" cy="496" r="2.6" fill="#9E5C67" opacity="0.21"/><circle cx="488" cy="511" r="2.3" fill="#9E5C67" opacity="0.16"/><circle cx="44" cy="424" r="3.1" fill="#9E5C67" opacity="0.15"/><circle cx="131" cy="40" r="1.1" fill="#9E5C67" opacity="0.09"/><circle cx="521" cy="409" r="3.2" fill="#9E5C67" opacity="0.09"/><circle cx="555" cy="495" r="2.5" fill="#9E5C67" opacity="0.13"/><circle cx="269" cy="415" r="1.2" fill="#9E5C67" opacity="0.17"/><circle cx="117" cy="557" r="2.1" fill="#9E5C67" opacity="0.21"/><circle cx="519" cy="299" r="1.5" fill="#9E5C67" opacity="0.12"/><circle cx="347" cy="81" r="1.5" fill="#9E5C67" opacity="0.21"/><circle cx="39" cy="369" r="3.2" fill="#9E5C67" opacity="0.14"/><circle cx="158" cy="544" r="1.7" fill="#9E5C67" opacity="0.23"/><circle cx="519" cy="401" r="2.7" fill="#9E5C67" opacity="0.17"/><circle cx="214" cy="345" r="2.1" fill="#9E5C67" opacity="0.12"/><circle cx="594" cy="302" r="2.0" fill="#9E5C67" opacity="0.19"/><circle cx="87" cy="30" r="2.0" fill="#9E5C67" opacity="0.12"/><circle cx="225" cy="24" r="3.3" fill="#9E5C67" opacity="0.15"/><circle cx="547" cy="387" r="2.0" fill="#9E5C67" opacity="0.10"/>
+<g transform="translate(320 320)">
+  <rect x="-168" y="-214" width="336" height="440" rx="14" fill="#241F1B" opacity="0.12" transform="translate(8 14)"/>
+  <rect x="-168" y="-214" width="336" height="440" rx="14" fill="#FBF8F4"/>
+  <rect x="-152" y="-198" width="304" height="408" rx="6" fill="none" stroke="url(#foil-studio)" stroke-width="1.4"/>
+  <g stroke="url(#foil-studio)" stroke-width="2" fill="none" stroke-linejoin="round">
+    <path d="M0.00 -146.00L22.72 -94.84L74.95 -114.95L54.84 -62.72L106.00 -40.00L54.84 -17.28L74.95 34.95L22.72 14.84L0.00 66.00L-22.72 14.84L-74.95 34.95L-54.84 -17.28L-106.00 -40.00L-54.84 -62.72L-74.95 -114.95L-22.72 -94.84Z"/>
+    <path d="M30.02 -112.47L31.48 -71.48L72.47 -70.02L44.52 -40.00L72.47 -9.98L31.48 -8.52L30.02 32.47L0.00 4.52L-30.02 32.47L-31.48 -8.52L-72.47 -9.98L-44.52 -40.00L-72.47 -70.02L-31.48 -71.48L-30.02 -112.47L-0.00 -84.52Z"/>
+    <path d="M41.13 -22.96L17.04 1.13L-17.04 1.13L-41.13 -22.96L-41.13 -57.04L-17.04 -81.13L17.04 -81.13L41.13 -57.04Z"/>
+    <circle cx="0" cy="-40" r="21.20"/>
+  </g>
+  <path d="M0.00 -76.00L5.74 -53.86L25.46 -65.46L13.86 -45.74L36.00 -40.00L13.86 -34.26L25.46 -14.54L5.74 -26.14L0.00 -4.00L-5.74 -26.14L-25.46 -14.54L-13.86 -34.26L-36.00 -40.00L-13.86 -45.74L-25.46 -65.46L-5.74 -53.86Z" fill="url(#foil-studio)"/>
+  <g fill="none" stroke="url(#foil-studio)" stroke-linecap="round" opacity="1">
+    <path d="M-105 118 C-63 55, -12.6 162.1, 0 118
+             S63 55, 105 118" stroke-width="3"/>
+    <path d="M-71.4 144.46 C-21 168.4, 21 168.4, 71.4 144.46" stroke-width="1.6" opacity="0.7"/>
+    <circle cx="-114" cy="118" r="2.6" fill="url(#foil-studio)" stroke="none"/>
+    <circle cx="114" cy="118" r="2.6" fill="url(#foil-studio)" stroke="none"/>
+  </g>
+</g>
+<g transform="translate(140.8 624) rotate(-18)">
+      <rect x="-9" y="-92" width="18" height="150" rx="9" fill="#0E4C41"/>
+      <path d="M-9 -92 L0 -124 L9 -92Z" fill="url(#foil-studio)"/>
+      <rect x="-9" y="-24" width="18" height="10" fill="url(#foil-studio)" opacity="0.9"/>
+    </g><g transform="translate(499.20000000000005 640)">
+      <path d="M-42 0 Q-42 -52 0 -52 Q42 -52 42 0Z" fill="#17304F"/>
+      <rect x="-48" y="0" width="96" height="16" rx="6" fill="url(#foil-studio)"/>
+      <path d="M0.00 -41.00L2.30 -31.54L10.61 -36.61L5.54 -28.30L15.00 -26.00L5.54 -23.70L10.61 -15.39L2.30 -20.46L0.00 -11.00L-2.30 -20.46L-10.61 -15.39L-5.54 -23.70L-15.00 -26.00L-5.54 -28.30L-10.61 -36.61L-2.30 -31.54Z" fill="url(#foil-studio)" opacity="0.9"/>
+    </g>
+<rect width="640" height="800" fill="url(#glow-studio)"/>
+</svg>
