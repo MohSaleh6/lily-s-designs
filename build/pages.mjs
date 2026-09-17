@@ -1,4 +1,4 @@
-import { site, nav, cards, occasions, plans, addons, process, testimonials, faqs, ui, instagramPosts } from './content.mjs';
+import { site, nav, cards, occasions, plans, addons, process, testimonials, faqs, ui, instagramPosts, works } from './content.mjs';
 import { icons, occasionIcon } from './icons.mjs';
 import { e, a, bt, biAttr, biData, waLink, ornament, head, header, footer, cartDrawer, lightbox, toastRegion, scripts, pageBanner, ctaBand, jsonLd, breadcrumbJsonLd } from './layout.mjs';
 
@@ -34,11 +34,15 @@ export function tile(card, { lazy = true, delay = 0 } = {}) {
 /* -------------------------------------------------------------- HOME */
 
 export function home() {
-  const featured = ['hilal-eid', 'noor-al-zafaf', 'sana-helwa', 'mabrouk-grad', 'fanoos', 'ward-blush']
-    .map((id) => cards.find((c) => c.id === id));
+  /* One piece per occasion, so the strip shows the range rather than six
+     variations on a wedding. */
+  const featured = ['zafaf-mohammad-laila', 'henna-rand-thobe', 'ramadan-27-arch',
+    'birthday-norma-bunny', 'najah-tawjihi-reel', 'mawlood-carousel-reel']
+    .map((id) => works.find((w) => w.id === id));
 
-  const showcaseCards = ['noor-al-zafaf', 'hilal-eid', 'qamar-wedding', 'sana-helwa', 'mabrouk-grad']
-    .map((id) => cards.find((c) => c.id === id));
+  const showcaseCards = ['zafaf-wildflower-arch', 'henna-rand-thobe', 'eid-bow-blush',
+    'birthday-lily-bunny', 'mawlood-ali-sky']
+    .map((id) => works.find((w) => w.id === id));
 
   const valueProps = [
     { icon: icons.pen, en: { t: 'Drawn, not templated', b: 'Every card starts as a fresh drawing. The girih rosettes, the foil rules and the flourishes are all original artwork — you will not find this card in anyone else’s shop.' },
@@ -100,9 +104,9 @@ export function home() {
         ${showcaseCards.map((c, i) => `
         <li class="showcase__slide" data-index="${i}" data-card="${c.id}"
             aria-roledescription="slide" aria-label="${i + 1} / ${showcaseCards.length}">
-          <img src="assets/img/cards/${c.id}.svg" width="500" height="700" draggable="false"
+          <img src="${a(c.src)}" width="${c.w}" height="${c.h}" draggable="false"
                ${i === 0 ? 'fetchpriority="high"' : 'loading="lazy"'} decoding="async"
-               ${biAttr('alt', { en: `${c.en.title} \u2014 ${occLabel(c.occasion).en} card`, ar: `${c.ar.title} \u2014 \u0628\u0637\u0627\u0642\u0629 ${occLabel(c.occasion).ar}` })}>
+               ${biAttr('alt', { en: `${c.en.title} \u2014 ${occLabel(c.occasion).en}`, ar: `${c.ar.title} \u2014 ${occLabel(c.occasion).ar}` })}>
         </li>`).join('')}
       </ul>
       <button class="showcase__arrow showcase__arrow--prev" id="showcasePrev" type="button"
@@ -132,14 +136,17 @@ export function home() {
   <div class="container">
     <div class="section-head center">
       ${bt('p', { en: 'Selected work', ar: 'مختارات من أعمالنا' }, 'class="eyebrow center-line" style="justify-content:center"')}
-      ${bt('h2', { en: 'Designs people keep on the shelf', ar: 'تصاميم يحتفظ بها الناس على الرف' })}
-      ${bt('p', { en: 'A few of the cards ordered most this season. Tap any design to see it up close.', ar: 'بعض البطاقات الأكثر طلباً هذا الموسم. اضغط على أي تصميم لتراه عن قرب.' }, 'class="lede"')}
+      ${bt('h2', { en: 'Cards we have already delivered', ar: 'بطاقات سلّمناها بالفعل' })}
+      ${bt('p', {
+        en: 'Real pieces made for real occasions. Tap any of them to see it up close — and any one of them can be remade in your names.',
+        ar: 'أعمال حقيقية لمناسبات حقيقية. اضغط على أي منها لتراه عن قرب — وكلّها يمكن إعادة تصميمها بأسمائك.'
+      }, 'class="lede"')}
     </div>
-    <div class="grid gallery">
-      ${featured.map((c, i) => tile(c, { delay: i * 70 })).join('\n      ')}
+    <div class="work-grid">
+      ${featured.map((wk, i) => workTile(wk, i)).join('\n      ')}
     </div>
     <p class="center mt-lg">
-      ${bt('a', { en: 'View all 18 designs', ar: 'شاهد كل الـ ١٨ تصميماً' }, 'class="btn btn--ghost" href="portfolio.html"')}
+      ${bt('a', { en: `View all ${works.length} pieces`, ar: `شاهد كل الـ ${works.length} عملاً` }, 'class="btn btn--ghost" href="portfolio.html"')}
     </p>
   </div>
 </section>
@@ -212,6 +219,7 @@ function occBlurb(id) {
     eid: { en: 'Crescents, lanterns and arches for Eid al-Fitr, Eid al-Adha and Ramadan.', ar: 'أهلّة وفوانيس وأقواس لعيد الفطر وعيد الأضحى ورمضان.' },
     birthday: { en: 'Warm, gilded and never childish — for mothers, sisters and friends.', ar: 'دافئة ومذهّبة وغير طفولية أبداً — للأمهات والأخوات والأصدقاء.' },
     graduation: { en: 'Single cards or a set of ten with a different name on each.', ar: 'بطاقة مفردة أو طقم من عشر باسم مختلف على كل واحدة.' },
+    henna: { en: 'Invitations and favour tags for the henna night \u2014 thobe embroidery, garnet roses and gold.', ar: '\u062f\u0639\u0648\u0627\u062a \u0648\u0628\u0637\u0627\u0642\u0627\u062a \u0647\u062f\u0627\u064a\u0627 \u0644\u0644\u064a\u0644\u0629 \u0627\u0644\u062d\u0646\u0629 \u2014 \u062a\u0637\u0631\u064a\u0632 \u0627\u0644\u062b\u0648\u0628 \u0648\u0627\u0644\u0648\u0631\u062f \u0627\u0644\u0639\u0646\u0651\u0627\u0628\u064a \u0648\u0627\u0644\u0630\u0647\u0628\u064a.' },
     corporate: { en: 'Your logo, your colours, invoiced properly — from fifty cards up.', ar: 'شعارك وألوانك مع فاتورة رسمية — من خمسين بطاقة فأكثر.' },
     newborn: { en: 'Announcements with room for the name, weight and birth date.', ar: 'إعلانات مع مساحة للاسم والوزن وتاريخ الميلاد.' },
     thanks: { en: 'Appreciation cards sized to slip into a gift box or bouquet.', ar: 'بطاقات شكر بمقاس يناسب علبة الهدية أو باقة الورد.' }
@@ -281,44 +289,95 @@ function instagramSection() {
 
 /* --------------------------------------------------------- PORTFOLIO */
 
+
+/* A delivered piece: her real artwork, a photograph of it in place, or an
+   animated card reel. Every one carries the same offer — we can make you
+   one like it — deep-linked so the order opens on the right occasion with
+   the piece already named in the brief. */
+function workTile(wk, i) {
+  const occ = occLabel(wk.occasion);
+  const isVideo = wk.type === 'video';
+  const cta = `order.html?occasion=${encodeURIComponent(wk.occasion)}&ref=${encodeURIComponent(wk.id)}`;
+  const media = isVideo
+    ? `<div class="work__media work__media--video">
+         <video src="${a(wk.src)}" controls preload="none" playsinline poster="${a(wk.poster)}"
+                width="${wk.w}" height="${wk.h}"
+                ${biAttr('aria-label', { en: `${wk.en.title} — animated card`, ar: `${wk.ar.title} — بطاقة متحرّكة` })}></video>
+         ${bt('span', { en: 'Reel', ar: 'فيديو' }, 'class="work__badge"')}
+       </div>`
+    : `<button type="button" class="work__media" data-work="${a(wk.id)}"
+               ${biAttr('aria-label', { en: `Open ${wk.en.title} larger`, ar: `افتح ${wk.ar.title} بحجم أكبر` })}>
+         <img src="${a(wk.src)}" width="${wk.w}" height="${wk.h}" loading="${i < 4 ? 'eager' : 'lazy'}" decoding="async"
+              ${biAttr('alt', { en: `${wk.en.title} — ${occ.en}`, ar: `${wk.ar.title} — ${occ.ar}` })}>
+       </button>`;
+  return `
+      <figure class="work reveal" data-occasion="${a(wk.occasion)}" style="--reveal-delay:${(i % 3) * 70}ms">
+        ${media}
+        <figcaption class="work__body">
+          ${bt('span', occ, 'class="work__occasion"')}
+          ${bt('h3', { en: wk.en.title, ar: wk.ar.title }, 'class="work__title"')}
+          ${bt('p', { en: wk.en.note, ar: wk.ar.note }, 'class="work__note"')}
+          ${bt('a', { en: 'Make me one like this', ar: 'نصمّم لك مثلها' }, `class="work__cta" href="${cta}"`)}
+        </figcaption>
+      </figure>`;
+}
+
 export function portfolio() {
   return head({
     page: 'portfolio.html',
-    title: { en: 'Portfolio — card designs', ar: 'معرض التصاميم' },
+    title: { en: 'Portfolio \u2014 delivered work', ar: '\u0645\u0639\u0631\u0636 \u0627\u0644\u0623\u0639\u0645\u0627\u0644' },
     description: {
-      en: 'Browse 18 original Arabic greeting card designs by occasion: weddings, Eid, birthdays, graduations, corporate gifting, new baby and thank-you cards.',
-      ar: 'تصفّح ١٨ تصميماً أصلياً لبطاقات التهنئة العربية حسب المناسبة: أعراس، عيد، أعياد ميلاد، تخرّج، شركات، مولود جديد، وبطاقات شكر.'
+      en: `${works.length} pieces delivered to real clients \u2014 wedding and katb ktab invitations, henna nights, Ramadan and Eid cards, birthdays, graduations and new-baby announcements. Any of them can be remade for your occasion.`,
+      ar: `${works.length} \u0639\u0645\u0644\u0627\u064b \u0633\u064f\u0644\u0651\u0645\u062a \u0644\u0639\u0645\u0644\u0627\u0621 \u062d\u0642\u064a\u0642\u064a\u064a\u0646 \u2014 \u062f\u0639\u0648\u0627\u062a \u0632\u0641\u0627\u0641 \u0648\u0639\u0642\u062f \u0642\u0631\u0627\u0646\u060c \u0644\u064a\u0627\u0644\u064a \u062d\u0646\u0629\u060c \u0628\u0637\u0627\u0642\u0627\u062a \u0631\u0645\u0636\u0627\u0646 \u0648\u0627\u0644\u0639\u064a\u062f\u060c \u0623\u0639\u064a\u0627\u062f \u0645\u064a\u0644\u0627\u062f\u060c \u062a\u062e\u0631\u0651\u062c\u060c \u0648\u0628\u0634\u0627\u0626\u0631 \u0645\u0648\u0627\u0644\u064a\u062f. \u0648\u0643\u0644\u0651\u0647\u0627 \u064a\u064f\u0639\u0627\u062f \u062a\u0635\u0645\u064a\u0645\u0647\u0627 \u0644\u0645\u0646\u0627\u0633\u0628\u062a\u0643.`
     },
-    keywords: 'معرض بطاقات, تصاميم بطاقات عربية, دعوات زفاف, بطاقات عيد, بطاقات تخرج, Arabic card designs, wedding invitation designs, Eid card gallery',
+    keywords: '\u0645\u0639\u0631\u0636 \u0628\u0637\u0627\u0642\u0627\u062a, \u062f\u0639\u0648\u0627\u062a \u0632\u0641\u0627\u0641, \u0628\u0637\u0627\u0642\u0627\u062a \u062d\u0646\u0629, \u062f\u0639\u0648\u0629 \u062d\u0646\u0629, \u0628\u0637\u0627\u0642\u0627\u062a \u0631\u0645\u0636\u0627\u0646, \u0628\u0637\u0627\u0642\u0627\u062a \u0639\u064a\u062f, \u0628\u0637\u0627\u0642\u0627\u062a \u062a\u062e\u0631\u062c, \u0639\u0645\u0627\u0646, Arabic card designs, henna night invitation, wedding invitation Jordan, Ramadan cards',
     extraHead: breadcrumbJsonLd('portfolio.html', 'Portfolio')
   }) + header('portfolio.html') + pageBanner({
-    crumb: { en: 'Portfolio', ar: 'أعمالنا' },
-    eyebrow: { en: '18 original designs', ar: '١٨ تصميماً أصلياً' },
-    title: { en: 'The portfolio', ar: 'معرض الأعمال' },
-    lede: { en: 'Every design below is drawn in-house and can be re-coloured, re-sized and re-lettered for your occasion. Filter by what you are celebrating.', ar: 'كل تصميم هنا مرسوم داخل الاستوديو ويمكن تغيير ألوانه ومقاسه ونصوصه ليناسب مناسبتك. صفِّ حسب ما تحتفل به.' }
+    crumb: { en: 'Portfolio', ar: '\u0623\u0639\u0645\u0627\u0644\u0646\u0627' },
+    eyebrow: { en: `${works.length} pieces delivered`, ar: `${works.length} \u0639\u0645\u0644\u0627\u064b \u0633\u064f\u0644\u0651\u0645` },
+    title: { en: 'Work we have delivered', ar: '\u0623\u0639\u0645\u0627\u0644 \u0633\u0644\u0651\u0645\u0646\u0627\u0647\u0627' },
+    lede: {
+      en: 'Real cards for real occasions \u2014 photographed where they were used, and a few of the animated ones you can send over WhatsApp. Anything here can be remade in your names, your colours and your date.',
+      ar: '\u0628\u0637\u0627\u0642\u0627\u062a \u062d\u0642\u064a\u0642\u064a\u0629 \u0644\u0645\u0646\u0627\u0633\u0628\u0627\u062a \u062d\u0642\u064a\u0642\u064a\u0629 \u2014 \u0645\u0635\u0648\u0651\u0631\u0629 \u062d\u064a\u062b \u0627\u0633\u062a\u064f\u062e\u062f\u0645\u062a\u060c \u0648\u0628\u0639\u0636\u0647\u0627 \u0645\u062a\u062d\u0631\u0651\u0643 \u064a\u064f\u0631\u0633\u0644 \u0639\u0628\u0631 \u0648\u0627\u062a\u0633\u0627\u0628. \u0643\u0644 \u0645\u0627 \u062a\u0631\u0627\u0647 \u0647\u0646\u0627 \u064a\u064f\u0639\u0627\u062f \u062a\u0635\u0645\u064a\u0645\u0647 \u0628\u0623\u0633\u0645\u0627\u0626\u0643 \u0648\u0623\u0644\u0648\u0627\u0646\u0643 \u0648\u062a\u0627\u0631\u064a\u062e\u0643.'
+    }
   }) + `
 
 <section class="section section--tight">
   <div class="container">
-    <div class="filters" role="group" ${biAttr('aria-label', { en: 'Filter designs by occasion', ar: 'تصفية التصاميم حسب المناسبة' })}>
+    <div class="filters" role="group" ${biAttr('aria-label', { en: 'Filter by occasion', ar: '\u062a\u0635\u0641\u064a\u0629 \u062d\u0633\u0628 \u0627\u0644\u0645\u0646\u0627\u0633\u0628\u0629' })}>
       ${occasions.map((o) => `${bt('button', o, `type="button" class="filter" data-filter="${o.id}" aria-pressed="${o.id === 'all' ? 'true' : 'false'}"`)}`).join('\n      ')}
     </div>
     <p class="center text-mute" style="margin-block-end:var(--space-md);font-size:var(--step--1)">
-      <span id="galleryCount" class="num">${cards.length}</span>
+      <span id="galleryCount" class="num">${works.length + cards.length}</span>
       ${bt('span', ui.designCount)}
     </p>
+
+    <div class="work-grid" id="workGrid">
+      ${works.map((wk, i) => workTile(wk, i)).join('\n      ')}
+    </div>
+  </div>
+</section>
+
+<section class="section section--cream" id="catalogueSection">
+  <div class="container">
+    <div class="section-head center">
+      ${ornament()}
+      ${bt('p', { en: 'Ready to order', ar: '\u062c\u0627\u0647\u0632\u0629 \u0644\u0644\u0637\u0644\u0628' }, 'class="eyebrow center-line" style="justify-content:center"')}
+      ${bt('h2', { en: 'Design families you can start from', ar: '\u0639\u0627\u0626\u0644\u0627\u062a \u062a\u0635\u0627\u0645\u064a\u0645 \u062a\u0628\u062f\u0623 \u0645\u0646\u0647\u0627' })}
+      ${bt('p', { en: 'Each one is a starting point with a set price \u2014 pick the closest, then tell me what to change.', ar: '\u0643\u0644 \u0648\u0627\u062d\u062f\u0629 \u0646\u0642\u0637\u0629 \u0628\u062f\u0627\u064a\u0629 \u0628\u0633\u0639\u0631 \u0645\u062d\u062f\u0651\u062f \u2014 \u0627\u062e\u062a\u0631 \u0627\u0644\u0623\u0642\u0631\u0628 \u062b\u0645 \u0623\u062e\u0628\u0631\u0646\u064a \u0628\u0645\u0627 \u062a\u0631\u064a\u062f \u062a\u063a\u064a\u064a\u0631\u0647.' }, 'class="lede"')}
+    </div>
     <div class="grid gallery" id="gallery">
-      ${cards.map((c, i) => tile(c, { lazy: i > 3, delay: (i % 4) * 60 })).join('\n      ')}
+      ${cards.map((c, i) => tile(c, { lazy: true, delay: (i % 4) * 60 })).join('\n      ')}
       ${bt('p', ui.noResults, 'class="gallery-empty" id="galleryEmpty" hidden')}
     </div>
   </div>
 </section>
 
 ${ctaBand({
-  title: { en: 'Found one you like?', ar: 'وجدت ما يعجبك؟' },
-  body: { en: 'Any design here can be adapted to your names, colours and occasion. Start the order and tell me what to change.', ar: 'أي تصميم هنا يمكن تعديله ليناسب أسماءك وألوانك ومناسبتك. ابدأ الطلب وأخبرني بما تريد تغييره.' },
-  primary: { label: { en: 'Start your order', ar: 'ابدأ طلبك' }, href: 'order.html' },
-  secondary: { label: { en: 'See pricing', ar: 'شاهد الأسعار' }, href: 'services.html' }
+  title: { en: 'Found one you like?', ar: '\u0648\u062c\u062f\u062a \u0645\u0627 \u064a\u0639\u062c\u0628\u0643\u061f' },
+  body: { en: 'Anything here can be adapted to your names, colours and occasion. Start the order and tell me what to change.', ar: '\u0623\u064a \u0639\u0645\u0644 \u0647\u0646\u0627 \u064a\u0645\u0643\u0646 \u062a\u0639\u062f\u064a\u0644\u0647 \u0644\u064a\u0646\u0627\u0633\u0628 \u0623\u0633\u0645\u0627\u0621\u0643 \u0648\u0623\u0644\u0648\u0627\u0646\u0643 \u0648\u0645\u0646\u0627\u0633\u0628\u062a\u0643. \u0627\u0628\u062f\u0623 \u0627\u0644\u0637\u0644\u0628 \u0648\u0623\u062e\u0628\u0631\u0646\u064a \u0628\u0645\u0627 \u062a\u0631\u064a\u062f \u062a\u063a\u064a\u064a\u0631\u0647.' },
+  primary: { label: { en: 'Start your order', ar: '\u0627\u0628\u062f\u0623 \u0637\u0644\u0628\u0643' }, href: 'order.html' },
+  secondary: { label: { en: 'See pricing', ar: '\u0634\u0627\u0647\u062f \u0627\u0644\u0623\u0633\u0639\u0627\u0631' }, href: 'services.html' }
 })}
 
 ` + footer() + cartDrawer() + lightbox() + toastRegion() + scripts(['gallery.js']);

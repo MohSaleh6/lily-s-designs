@@ -645,7 +645,7 @@ html[lang="ar"] .brand__tag { letter-spacing: .06em; }
   display: block;
   inline-size: 100%;
   block-size: auto;
-  aspect-ratio: 5 / 7;
+  aspect-ratio: 3 / 4;
   object-fit: cover;
   user-select: none;
   -webkit-user-drag: none;
@@ -1718,6 +1718,112 @@ html[lang="ar"] .channel__label { text-transform: none; letter-spacing: 0; }
   color: var(--ink-mute);
   line-height: 1.6;
 }
+
+
+/* --------------------------------------------------------------------------
+   17b. Delivered work
+   -------------------------------------------------------------------------- */
+.work-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 270px), 1fr));
+  gap: clamp(1rem, .6rem + 1.6vw, 1.75rem);
+  align-items: start;
+}
+.work {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-xs);
+  transition: transform .4s var(--ease-out), box-shadow .4s var(--ease-out), border-color .4s var(--ease);
+}
+.work:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); border-color: var(--leaf-soft); }
+.work.is-hidden { display: none; }
+
+.work__media {
+  position: relative;
+  display: block;
+  inline-size: 100%;
+  padding: 0;
+  border: 0;
+  background: var(--cream);
+  cursor: zoom-in;
+  overflow: hidden;
+}
+.work__media img,
+.work__media video {
+  display: block;
+  inline-size: 100%;
+  block-size: auto;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  transition: transform .6s var(--ease-out);
+}
+.work__media:hover img { transform: scale(1.04); }
+.work__media:focus-visible { outline: 2px solid var(--leaf); outline-offset: -3px; }
+.work__media--video { cursor: default; background: var(--leaf-darkest); }
+.work__media--video video { aspect-ratio: 9 / 16; object-fit: contain; }
+
+.work__badge {
+  position: absolute;
+  inset-block-start: .6rem;
+  inset-inline-start: .6rem;
+  z-index: 2;
+  padding: .2em .6em;
+  border-radius: var(--radius-pill);
+  background: rgba(20, 55, 38, .82);
+  color: #fff;
+  font-size: .68rem;
+  font-weight: 700;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  pointer-events: none;
+}
+html[lang="ar"] .work__badge { letter-spacing: 0; text-transform: none; }
+
+.work__body {
+  display: flex;
+  flex-direction: column;
+  gap: .4rem;
+  padding: var(--space-sm) var(--space-sm) var(--space-md);
+  flex: 1;
+}
+.work__occasion {
+  font-size: .68rem;
+  font-weight: 700;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--bloom-text);
+}
+html[lang="ar"] .work__occasion { letter-spacing: 0; text-transform: none; font-size: .78rem; }
+.work__title { font-size: var(--step-1); margin: 0; }
+.work__note {
+  margin: 0;
+  font-size: var(--step--1);
+  color: var(--ink-mute);
+  line-height: 1.65;
+  flex: 1;
+}
+.work__cta {
+  align-self: flex-start;
+  margin-block-start: .5rem;
+  padding: .5em 1.05em;
+  border-radius: var(--radius-pill);
+  background: var(--leaf-tint);
+  border: 1px solid var(--leaf-soft);
+  color: var(--leaf);
+  font-size: var(--step--1);
+  font-weight: 700;
+  text-decoration: none;
+  transition: background-color .25s var(--ease), color .25s var(--ease), border-color .25s var(--ease);
+}
+.work__cta::after { content: " \2192"; }
+[dir="rtl"] .work__cta::after { content: " \2190"; }
+.work__cta:hover { background: var(--leaf); border-color: var(--leaf); color: var(--ivory); }
+.work__cta:focus-visible { outline: 2px solid var(--leaf); outline-offset: 2px; }
 
 /* --------------------------------------------------------------------------
    18. CTA band

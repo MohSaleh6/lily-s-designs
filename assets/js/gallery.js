@@ -5,12 +5,19 @@
 (function () {
   'use strict';
 
+  /* Two collections share one filter bar: delivered work (.work) and the
+     orderable catalogue (.tile). Only the catalogue has prices and a cart,
+     so the lightbox branches on which kind it was handed. */
   var tiles = Array.prototype.slice.call(document.querySelectorAll('.tile'));
-  if (!tiles.length) return;
+  var workTiles = Array.prototype.slice.call(document.querySelectorAll('.work'));
+  var filterables = workTiles.concat(tiles);
+  if (!filterables.length) return;
 
   var LD = window.LD || {};
   var cardById = {};
   (LD.cards || []).forEach(function (c) { cardById[c.id] = c; });
+  var workById = {};
+  (LD.works || []).forEach(function (w) { workById[w.id] = w; });
 
   var t = function (key) {
     var pair = (LD.ui && LD.ui[key]) || null;
@@ -29,11 +36,18 @@
     activeFilter = value;
     var shown = 0;
 
-    tiles.forEach(function (tile) {
-      var match = value === 'all' || tile.getAttribute('data-occasion') === value;
-      tile.classList.toggle('is-hidden', !match);
+    filterables.forEach(function (el) {
+      var match = value === 'all' || el.getAttribute('data-occasion') === value;
+      el.classList.toggle('is-hidden', !match);
       if (match) shown++;
     });
+
+    /* An occasion with no catalogue entry (henna, say) would otherwise leave
+       a heading over an empty grid. */
+    var catalogue = document.getElementById('catalogueSection');
+    if (catalogue) {
+      catalogue.hidden = !tiles.some(function (tile) { return !tile.classList.contains('is-hidden'); });
+    }
 
     filters.forEach(function (button) {
       button.setAttribute('aria-pressed', button.getAttribute('data-filter') === value ? 'true' : 'false');
@@ -88,18 +102,69 @@
   var currentId = null;
   var lastFocus = null;
 
+  /* The order button is bilingual via data-en/data-ar, which i18n rewrites on
+     every language switch. Keep the catalogue wording so it can be restored
+     after a delivered piece has borrowed the button. */
+  var orderLabel = { en: els.order.getAttribute('data-en'), ar: els.order.getAttribute('data-ar') };
+  var workLabel = { en: 'Make me one like this', ar: '\u0646\u0635\u0645\u0651\u0645 \u0644\u0643 \u0645\u062b\u0644\u0647\u0627' };
+
+  function setOrderLabel(pair) {
+    els.order.setAttribute('data-en', pair.en);
+    els.order.setAttribute('data-ar', pair.ar);
+    els.order.textContent = pair[lang()] || pair.ar;
+  }
+
   function visibleTiles() {
     return tiles.filter(function (tile) { return !tile.classList.contains('is-hidden'); });
   }
+
+  function visibleWorks() {
+    return workTiles.filter(function (el) {
+      return !el.classList.contains('is-hidden') && el.querySelector('.work__media[data-work]');
+    });
+  }
+
+  var mode = 'card';
 
   function occasionLabel(id) {
     var match = (LD.occasions || []).filter(function (o) { return o.id === id; })[0];
     return match ? match[lang()] : '';
   }
 
+  function paintWork(id) {
+    var wk = workById[id];
+    if (!wk) return;
+    mode = 'work';
+    currentId = id;
+    var L = lang();
+
+    els.image.src = wk.src;
+    els.image.width = wk.w;
+    els.image.height = wk.h;
+    els.image.alt = wk[L].title + ' — ' + occasionLabel(wk.occasion);
+    els.title.textContent = wk[L].title;
+    els.desc.textContent = wk[L].desc;
+    els.occasion.textContent = occasionLabel(wk.occasion);
+    els.tags.innerHTML = '';
+
+    /* A delivered piece has no price and nothing to add to a cart; the one
+       action that matters is commissioning something like it. */
+    var priceRow = els.price.closest('.lightbox__price');
+    if (priceRow) priceRow.hidden = true;
+    els.add.hidden = true;
+    els.order.href = 'order.html?occasion=' + encodeURIComponent(wk.occasion) +
+                     '&ref=' + encodeURIComponent(wk.id);
+    setOrderLabel(workLabel);
+  }
+
   function paint(id) {
     var card = cardById[id];
     if (!card) return;
+    mode = 'card';
+    var priceRow = els.price.closest('.lightbox__price');
+    if (priceRow) priceRow.hidden = false;
+    els.add.hidden = false;
+    setOrderLabel(orderLabel);
     currentId = id;
     var L = lang();
 
@@ -121,9 +186,9 @@
     els.order.href = 'order.html?design=' + encodeURIComponent(card.id);
   }
 
-  function open(id) {
+  function open(id, kind) {
     lastFocus = document.activeElement;
-    paint(id);
+    if (kind === 'work') paintWork(id); else paint(id);
     lightbox.hidden = false;
     requestAnimationFrame(function () { lightbox.classList.add('is-open'); });
     document.body.classList.add('is-locked');
@@ -138,16 +203,28 @@
   }
 
   function step(direction) {
-    var pool = visibleTiles();
+    var isWork = mode === 'work';
+    var pool = isWork ? visibleWorks() : visibleTiles();
     if (!pool.length) return;
-    var ids = pool.map(function (tile) { return tile.getAttribute('data-card'); });
+    var ids = pool.map(function (el) {
+      return isWork ? el.querySelector('.work__media[data-work]').getAttribute('data-work')
+                    : el.getAttribute('data-card');
+    });
     var at = ids.indexOf(currentId);
     var next = (at + direction + ids.length) % ids.length;
-    paint(ids[next]);
+    if (isWork) paintWork(ids[next]); else paint(ids[next]);
   }
 
   tiles.forEach(function (tile) {
-    tile.addEventListener('click', function () { open(tile.getAttribute('data-card')); });
+    tile.addEventListener('click', function () { open(tile.getAttribute('data-card'), 'card'); });
+  });
+
+  workTiles.forEach(function (el) {
+    var trigger = el.querySelector('.work__media[data-work]');
+    if (!trigger) return;
+    trigger.addEventListener('click', function () {
+      open(trigger.getAttribute('data-work'), 'work');
+    });
   });
 
   els.close.addEventListener('click', close);
@@ -182,6 +259,7 @@
   });
 
   document.addEventListener('languagechange', function () {
-    if (currentId) paint(currentId);
+    if (!currentId) return;
+    if (mode === 'work') paintWork(currentId); else paint(currentId);
   });
 })();

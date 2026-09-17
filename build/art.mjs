@@ -418,11 +418,6 @@ ${frame(w, h, id, p)}
 </svg>`;
 }
 
-/** Square crop used for the Instagram strip. */
-export function squareSVG({ id, palette = 'creamRose', motif = 'confetti' }) {
-  return cardSVG({ id, palette, motif, w: 560, h: 560 });
-}
-
 /** Wide flat-lay used for testimonial cards. */
 export function sceneSVG({ id, palette = 'creamLeaf', w = 800, h = 500 }) {
   const p = PALETTES[palette] || PALETTES.creamLeaf;

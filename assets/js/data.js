@@ -201,6 +201,11 @@ window.LD = {
       "ar": "تخرّج"
     },
     {
+      "id": "henna",
+      "en": "Henna nights",
+      "ar": "حنة"
+    },
+    {
       "id": "corporate",
       "en": "Corporate",
       "ar": "شركات"
@@ -607,6 +612,552 @@ window.LD = {
           "فعاليات",
           "تدعم رمز QR"
         ]
+      }
+    }
+  ],
+  "works": [
+    {
+      "id": "zafaf-mohammad-laila",
+      "type": "image",
+      "occasion": "wedding",
+      "src": "assets/img/work/zafaf-mohammad-laila.jpg",
+      "poster": "",
+      "w": 900,
+      "h": 1191,
+      "en": {
+        "title": "Mohammad & Laila",
+        "desc": "A wedding invitation framed in olive and deep green foliage, the names set inside a gilded frame."
+      },
+      "ar": {
+        "title": "محمد وليلى",
+        "desc": "دعوة زفاف بإطار من أوراق الزيتون والأخضر الداكن، والأسماء داخل إطار ذهبي."
+      }
+    },
+    {
+      "id": "zafaf-wildflower-arch",
+      "type": "image",
+      "occasion": "wedding",
+      "src": "assets/img/work/zafaf-wildflower-arch.jpg",
+      "poster": "",
+      "w": 900,
+      "h": 1178,
+      "en": {
+        "title": "Wildflower Arch",
+        "desc": "A wedding invitation under a white arch with violet wildflowers, headed by the verse of mawadda wa rahma."
+      },
+      "ar": {
+        "title": "قوس الأزهار البرية",
+        "desc": "دعوة زفاف بقوس أبيض وأزهار برية بنفسجية، مع آية «وجعل بينكم مودّة ورحمة»."
+      }
+    },
+    {
+      "id": "zafaf-omar-sara",
+      "type": "image",
+      "occasion": "wedding",
+      "src": "assets/img/work/zafaf-omar-sara.jpg",
+      "poster": "",
+      "w": 900,
+      "h": 1173,
+      "en": {
+        "title": "Omar & Sara",
+        "desc": "A blush wedding invitation built on the couple's monogram, with time, venue and date set beneath."
+      },
+      "ar": {
+        "title": "عمر وسارة",
+        "desc": "دعوة زفاف وردية بحرفَي العروسين، وأيقونات الوقت والمكان والتاريخ أسفلها."
+      }
+    },
+    {
+      "id": "katb-ktab-hadeel",
+      "type": "image",
+      "occasion": "wedding",
+      "src": "assets/img/work/katb-ktab-hadeel.jpg",
+      "poster": "",
+      "w": 900,
+      "h": 1184,
+      "en": {
+        "title": "Katb Ktab — Mohammad & Hadeel",
+        "desc": "A katb ktab invitation in a bold hand with garnet roses, made for the smaller family gathering."
+      },
+      "ar": {
+        "title": "عقد قران محمد وهديل",
+        "desc": "دعوة عقد قران بخط عريض وورود عنّابية، للاحتفال العائلي المصغّر."
+      }
+    },
+    {
+      "id": "welcome-ameen-shahd",
+      "type": "image",
+      "occasion": "wedding",
+      "src": "assets/img/work/welcome-ameen-shahd.jpg",
+      "poster": "",
+      "w": 900,
+      "h": 1171,
+      "en": {
+        "title": "Welcome Sign — Ameen & Shahd",
+        "desc": "A large-format welcome sign in pink peonies and a flowing English script."
+      },
+      "ar": {
+        "title": "لوحة ترحيب — أمين وشهد",
+        "desc": "لوحة ترحيب بمقاس كبير، بورود البيوني الوردية وخط إنجليزي منساب."
+      }
+    },
+    {
+      "id": "thanks-dancefloor",
+      "type": "image",
+      "occasion": "wedding",
+      "src": "assets/img/work/thanks-dancefloor.jpg",
+      "poster": "",
+      "w": 900,
+      "h": 1182,
+      "en": {
+        "title": "Dance Floor Card",
+        "desc": "A table card thanking guests and inviting them to the dance floor."
+      },
+      "ar": {
+        "title": "بطاقة حلبة الرقص",
+        "desc": "بطاقة شكر توضع على الطاولات تدعو الضيوف إلى حلبة الرقص."
+      }
+    },
+    {
+      "id": "thanks-ahmad-rand",
+      "type": "image",
+      "occasion": "wedding",
+      "src": "assets/img/work/thanks-ahmad-rand.jpg",
+      "poster": "",
+      "w": 900,
+      "h": 1277,
+      "en": {
+        "title": "Thank You — Ahmad & Rand",
+        "desc": "A thank-you card in white roses and eucalyptus, sized to sit on the guest's plate."
+      },
+      "ar": {
+        "title": "بطاقة شكر — أحمد ورند",
+        "desc": "بطاقة شكر بالورد الأبيض والأوكالبتوس، بمقاس يناسب طبق الضيف."
+      }
+    },
+    {
+      "id": "thanks-table-gold",
+      "type": "image",
+      "occasion": "wedding",
+      "src": "assets/img/work/thanks-table-gold.jpg",
+      "poster": "",
+      "w": 900,
+      "h": 1180,
+      "en": {
+        "title": "The Card on the Table",
+        "desc": "The thank-you card printed and placed on a gold charger at the venue."
+      },
+      "ar": {
+        "title": "البطاقة على طاولة الحفل",
+        "desc": "بطاقة الشكر مطبوعة وموضوعة على صحن ذهبي في القاعة."
+      }
+    },
+    {
+      "id": "thanks-table-flowers",
+      "type": "image",
+      "occasion": "wedding",
+      "src": "assets/img/work/thanks-table-flowers.jpg",
+      "poster": "",
+      "w": 900,
+      "h": 1179,
+      "en": {
+        "title": "Table Setting",
+        "desc": "The guest table once dressed, with the thank-you card in place."
+      },
+      "ar": {
+        "title": "تنسيق الطاولة",
+        "desc": "طاولة الضيوف بعد التنسيق، وبطاقة الشكر في مكانها."
+      }
+    },
+    {
+      "id": "thanks-table-candles",
+      "type": "image",
+      "occasion": "wedding",
+      "src": "assets/img/work/thanks-table-candles.jpg",
+      "poster": "",
+      "w": 900,
+      "h": 1188,
+      "en": {
+        "title": "Among the Candles",
+        "desc": "The same card on another table, among candles and white roses."
+      },
+      "ar": {
+        "title": "بين الشموع والورد",
+        "desc": "البطاقة نفسها على طاولة أخرى بين الشموع وباقات الورد الأبيض."
+      }
+    },
+    {
+      "id": "welcome-ameen-printed",
+      "type": "image",
+      "occasion": "wedding",
+      "src": "assets/img/work/welcome-ameen-printed.jpg",
+      "poster": "",
+      "w": 900,
+      "h": 1198,
+      "en": {
+        "title": "The Welcome Sign, Installed",
+        "desc": "The welcome sign printed and mounted on a flower-dressed easel."
+      },
+      "ar": {
+        "title": "لوحة الترحيب في القاعة",
+        "desc": "لوحة الترحيب بعد الطباعة والتركيب على حامل مزيّن بالورد."
+      }
+    },
+    {
+      "id": "henna-rand-thobe",
+      "type": "image",
+      "occasion": "henna",
+      "src": "assets/img/work/henna-rand-thobe.jpg",
+      "poster": "",
+      "w": 900,
+      "h": 1201,
+      "en": {
+        "title": "Rand's Henna",
+        "desc": "A henna-night invitation built around an embroidered Palestinian thobe and garnet roses, drawn for the bride."
+      },
+      "ar": {
+        "title": "حنة رند",
+        "desc": "دعوة حنة بالثوب الفلسطيني المطرّز والورد العنّابي، مرسومة خصيصاً للعروس."
+      }
+    },
+    {
+      "id": "henna-rand-favour",
+      "type": "image",
+      "occasion": "henna",
+      "src": "assets/img/work/henna-rand-favour.jpg",
+      "poster": "",
+      "w": 900,
+      "h": 1188,
+      "en": {
+        "title": "Henna Card & Favour",
+        "desc": "The henna card printed and paired with a perfume bottle as the guest favour."
+      },
+      "ar": {
+        "title": "بطاقة الحنة مع الهدية",
+        "desc": "بطاقة الحنة مطبوعة ومرفقة بزجاجة عطر كهدية للضيوف."
+      }
+    },
+    {
+      "id": "najah-mohammad",
+      "type": "image",
+      "occasion": "graduation",
+      "src": "assets/img/work/najah-mohammad.jpg",
+      "poster": "",
+      "w": 900,
+      "h": 1184,
+      "en": {
+        "title": "Mohammad's Graduation",
+        "desc": "A secondary-school graduation invitation in blue and blush roses with the graduation cap."
+      },
+      "ar": {
+        "title": "حفل نجاح محمّد",
+        "desc": "دعوة حفل نجاح بالثانوية العامة، بورود زرقاء ووردية وقبّعة التخرّج."
+      }
+    },
+    {
+      "id": "birthday-norma-bunny",
+      "type": "image",
+      "occasion": "birthday",
+      "src": "assets/img/work/birthday-norma-bunny.jpg",
+      "poster": "",
+      "w": 900,
+      "h": 1190,
+      "en": {
+        "title": "Norma Turns One",
+        "desc": "A first-birthday invitation with a bunny and stars on a pink ground."
+      },
+      "ar": {
+        "title": "عيد ميلاد نورما الأول",
+        "desc": "دعوة عيد ميلاد أول بالأرنب والنجوم على خلفية وردية."
+      }
+    },
+    {
+      "id": "birthday-norma-setup",
+      "type": "image",
+      "occasion": "birthday",
+      "src": "assets/img/work/birthday-norma-setup.jpg",
+      "poster": "",
+      "w": 900,
+      "h": 1187,
+      "en": {
+        "title": "The Party, Printed",
+        "desc": "The party signage printed and set among the pink balloon arches."
+      },
+      "ar": {
+        "title": "الحفل بعد الطباعة",
+        "desc": "لوحات الحفل مطبوعة ومركّبة بين أقواس البالونات الوردية."
+      }
+    },
+    {
+      "id": "birthday-lily-bunny",
+      "type": "image",
+      "occasion": "birthday",
+      "src": "assets/img/work/birthday-lily-bunny.jpg",
+      "poster": "",
+      "w": 900,
+      "h": 1178,
+      "en": {
+        "title": "Lily Turns One",
+        "desc": "An invitation under a blush arch with a watercolour bunny and a fine English script."
+      },
+      "ar": {
+        "title": "عيد ميلاد ليلى الأول",
+        "desc": "دعوة بقوس وردي وأرنب مائي، بخط إنجليزي رفيع."
+      }
+    },
+    {
+      "id": "birthday-zaid-construction",
+      "type": "image",
+      "occasion": "birthday",
+      "src": "assets/img/work/birthday-zaid-construction.jpg",
+      "poster": "",
+      "w": 900,
+      "h": 1195,
+      "en": {
+        "title": "Zaid Turns Three",
+        "desc": "A construction-site invitation, made for a third birthday."
+      },
+      "ar": {
+        "title": "عيد ميلاد زيد الثالث",
+        "desc": "دعوة بموضوع الورشة والآليات، للأطفال في عمر الثالثة."
+      }
+    },
+    {
+      "id": "baby-shower-zaid",
+      "type": "image",
+      "occasion": "newborn",
+      "src": "assets/img/work/baby-shower-zaid.jpg",
+      "poster": "",
+      "w": 900,
+      "h": 1181,
+      "en": {
+        "title": "Baby Shower — Zaid",
+        "desc": "A baby-shower invitation with watercolour animals and eucalyptus branches."
+      },
+      "ar": {
+        "title": "بيبي شاور — زيد",
+        "desc": "دعوة بيبي شاور بحيوانات مائية وأغصان الأوكالبتوس."
+      }
+    },
+    {
+      "id": "mawlood-mohammad",
+      "type": "image",
+      "occasion": "newborn",
+      "src": "assets/img/work/mawlood-mohammad.jpg",
+      "poster": "",
+      "w": 900,
+      "h": 1194,
+      "en": {
+        "title": "New Arrival — Mohammad",
+        "desc": "A birth announcement in soft blue, with a du'a and the baby's name set large."
+      },
+      "ar": {
+        "title": "مولود جديد — محمّد",
+        "desc": "بشارة مولود بالأزرق الهادئ، مع دعاء واسم المولود بخط كبير."
+      }
+    },
+    {
+      "id": "mawlood-ali-sky",
+      "type": "image",
+      "occasion": "newborn",
+      "src": "assets/img/work/mawlood-ali-sky.jpg",
+      "poster": "",
+      "w": 900,
+      "h": 1286,
+      "en": {
+        "title": "You Lit Up the World — Ali",
+        "desc": "A birth announcement with hot-air balloons and bears on a pale blue sky."
+      },
+      "ar": {
+        "title": "نوّرت الدنيا — علي",
+        "desc": "بشارة مولود بالمناطيد والدببة على سماء زرقاء فاتحة."
+      }
+    },
+    {
+      "id": "eid-bow-blush",
+      "type": "image",
+      "occasion": "eid",
+      "src": "assets/img/work/eid-bow-blush.jpg",
+      "poster": "",
+      "w": 900,
+      "h": 1192,
+      "en": {
+        "title": "Eidkum Mubarak — Blush Ribbon",
+        "desc": "An Eid card framed in pink ribbon and watercolour blooms."
+      },
+      "ar": {
+        "title": "عيدكم مبارك — الشريطة الوردية",
+        "desc": "بطاقة عيد بإطار من الشرائط الوردية والأزهار المائية."
+      }
+    },
+    {
+      "id": "eid-bow-cream",
+      "type": "image",
+      "occasion": "eid",
+      "src": "assets/img/work/eid-bow-cream.jpg",
+      "poster": "",
+      "w": 900,
+      "h": 1193,
+      "en": {
+        "title": "Eidkum Mubarak — Flower Frame",
+        "desc": "A quieter take on the Eid card, a flowered frame on striped paper."
+      },
+      "ar": {
+        "title": "عيدكم مبارك — إطار الورد",
+        "desc": "نسخة أهدأ من بطاقة العيد، بإطار مزهر على ورق مخطط."
+      }
+    },
+    {
+      "id": "eid-adha-blue",
+      "type": "image",
+      "occasion": "eid",
+      "src": "assets/img/work/eid-adha-blue.jpg",
+      "poster": "",
+      "w": 900,
+      "h": 1181,
+      "en": {
+        "title": "Eid Al-Adha Mubarak",
+        "desc": "An Eid al-Adha card in blue and silver, built around a full table of hospitality."
+      },
+      "ar": {
+        "title": "عيد أضحى مبارك",
+        "desc": "بطاقة عيد أضحى بالأزرق والفضي، بمشهد ضيافة كامل."
+      }
+    },
+    {
+      "id": "ramadan-27-arch",
+      "type": "image",
+      "occasion": "eid",
+      "src": "assets/img/work/ramadan-27-arch.jpg",
+      "poster": "",
+      "w": 900,
+      "h": 1190,
+      "en": {
+        "title": "Ramadan 27 — The Du'a Arch",
+        "desc": "From the daily Ramadan du'a series: a flowered arch around the du'a of the 27th night."
+      },
+      "ar": {
+        "title": "٢٧ رمضان — قوس الدعاء",
+        "desc": "من سلسلة أدعية رمضان اليومية: قوس مزهر يحيط بدعاء ليلة السابع والعشرين."
+      }
+    },
+    {
+      "id": "ramadan-23-lantern",
+      "type": "image",
+      "occasion": "eid",
+      "src": "assets/img/work/ramadan-23-lantern.jpg",
+      "poster": "",
+      "w": 900,
+      "h": 1122,
+      "en": {
+        "title": "Ramadan 23 — The Lantern",
+        "desc": "The du'a of the 23rd inside a blue-grey arch, with a lantern and candles."
+      },
+      "ar": {
+        "title": "٢٣ رمضان — الفانوس",
+        "desc": "دعاء اليوم الثالث والعشرين داخل قوس رمادي أزرق، مع فانوس وشموع."
+      }
+    },
+    {
+      "id": "ramadan-23-sand",
+      "type": "image",
+      "occasion": "eid",
+      "src": "assets/img/work/ramadan-23-sand.jpg",
+      "poster": "",
+      "w": 900,
+      "h": 1117,
+      "en": {
+        "title": "Ramadan 23 — Sand Pattern",
+        "desc": "Another version of the same day's du'a on a quiet sand-coloured Islamic pattern."
+      },
+      "ar": {
+        "title": "٢٣ رمضان — النقش الرملي",
+        "desc": "نسخة أخرى من دعاء اليوم نفسه على نقش إسلامي رملي هادئ."
+      }
+    },
+    {
+      "id": "ramadan-21-sajjada",
+      "type": "image",
+      "occasion": "eid",
+      "src": "assets/img/work/ramadan-21-sajjada.jpg",
+      "poster": "",
+      "w": 900,
+      "h": 1106,
+      "en": {
+        "title": "Ramadan 21 — The Prayer Rug",
+        "desc": "The du'a of light for the 21st, with a prayer rug and hanging lanterns."
+      },
+      "ar": {
+        "title": "٢١ رمضان — سجادة الصلاة",
+        "desc": "دعاء النور ليوم الحادي والعشرين، مع سجادة صلاة وفوانيس معلّقة."
+      }
+    },
+    {
+      "id": "ramadan-20-blossom",
+      "type": "image",
+      "occasion": "eid",
+      "src": "assets/img/work/ramadan-20-blossom.jpg",
+      "poster": "",
+      "w": 900,
+      "h": 1119,
+      "en": {
+        "title": "Ramadan 20 — Spring Blossom",
+        "desc": "The qunut du'a for the 20th, among pink blossom branches and a crescent."
+      },
+      "ar": {
+        "title": "٢٠ رمضان — أزهار الربيع",
+        "desc": "دعاء القنوت ليوم العشرين، بين أغصان الأزهار الوردية والهلال."
+      }
+    },
+    {
+      "id": "zafaf-ahmad-rand-reel",
+      "type": "video",
+      "occasion": "wedding",
+      "src": "assets/video/zafaf-ahmad-rand-reel.mp4",
+      "poster": "assets/img/work/zafaf-ahmad-rand-reel-poster.jpg",
+      "w": 405,
+      "h": 720,
+      "en": {
+        "title": "Animated Wedding Invitation",
+        "desc": "An animated wedding invitation in white roses, eucalyptus and candlelight — sent as a video over WhatsApp."
+      },
+      "ar": {
+        "title": "دعوة زفاف متحرّكة",
+        "desc": "دعوة زفاف متحرّكة بالورد الأبيض والأوكالبتوس والشموع — تُرسل كفيديو عبر واتساب."
+      }
+    },
+    {
+      "id": "mawlood-carousel-reel",
+      "type": "video",
+      "occasion": "newborn",
+      "src": "assets/video/mawlood-carousel-reel.mp4",
+      "poster": "assets/img/work/mawlood-carousel-reel-poster.jpg",
+      "w": 405,
+      "h": 720,
+      "en": {
+        "title": "Animated Birth Announcement",
+        "desc": "An animated announcement for a baby girl, pink roses and a carousel, with petals falling through it."
+      },
+      "ar": {
+        "title": "بشارة مولودة متحرّكة",
+        "desc": "بشارة مولودة متحرّكة بالورد الوردي والمرجيحة الدوّارة، مع تساقط البتلات."
+      }
+    },
+    {
+      "id": "najah-tawjihi-reel",
+      "type": "video",
+      "occasion": "graduation",
+      "src": "assets/video/najah-tawjihi-reel.mp4",
+      "poster": "assets/img/work/najah-tawjihi-reel-poster.jpg",
+      "w": 405,
+      "h": 720,
+      "en": {
+        "title": "Animated Tawjihi Card",
+        "desc": "An animated tawjihi results card: branch shadows drift across, then the graduate's name resolves."
+      },
+      "ar": {
+        "title": "بطاقة توجيهي متحرّكة",
+        "desc": "بطاقة نجاح توجيهي متحرّكة، يظهر فيها ظل الأغصان ثم اسم الخرّيجة."
       }
     }
   ],

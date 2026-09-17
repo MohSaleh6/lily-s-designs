@@ -705,10 +705,27 @@
     var params = new URLSearchParams(window.location.search);
     var pkg = params.get('package');
     var design = params.get('design');
+    var occasion = params.get('occasion');
+    var ref = params.get('ref');
 
     if (pkg) {
       var pkgInput = form.querySelector('input[name="package"][value="' + q(pkg) + '"]');
       if (pkgInput) pkgInput.checked = true;
+    }
+    if (occasion) {
+      var occPick = form.querySelector('input[name="occasion"][value="' + q(occasion) + '"]');
+      if (occPick) { occPick.checked = true; syncOccasion(); }
+    }
+    /* Arriving from a delivered piece: name it in the brief so the studio
+       knows which one they want theirs to look like. */
+    if (ref) {
+      var piece = (LD.works || []).filter(function (w) { return w.id === ref; })[0];
+      var notes = form.querySelector('[name="notes"]');
+      if (piece && notes && !notes.value) {
+        var L = window.I18N ? window.I18N.lang : 'ar';
+        notes.value = (L === 'ar' ? 'أرغب بتصميم مشابه لـ: ' : 'I would like something similar to: ')
+          + piece[L].title;
+      }
     }
     if (design && byId[design]) {
       var occInput = form.querySelector('input[name="occasion"][value="' + q(byId[design].occasion) + '"]');
@@ -717,7 +734,7 @@
       var styleInput = form.querySelector('input[name="style"][value="' + q(design) + '"]');
       if (styleInput) styleInput.checked = true;
     }
-    return !!(pkg || design);
+    return !!(pkg || design || occasion || ref);
   }
 
   document.addEventListener('languagechange', function () {

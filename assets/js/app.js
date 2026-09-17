@@ -113,7 +113,7 @@
     var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
     var cardById = {};
-    (LD.cards || []).forEach(function (c) { cardById[c.id] = c; });
+    (LD.works || []).forEach(function (w) { cardById[w.id] = w; });
 
     var dots = slides.map(function (_, i) {
       var dot = document.createElement('button');
@@ -147,14 +147,18 @@
       if (caption && card) caption.textContent = card[lang()].title;
     }
 
-    /* scrollIntoView keeps this direction-agnostic, so RTL needs no branch. */
+    /* Scrolls the track and nothing else. scrollIntoView would walk every
+       scrollable ancestor up to the document, so an auto-advance fired while
+       the reader was further down the page yanked them back to the hero.
+       The offset is measured from rendered geometry, which is already
+       direction-agnostic, so RTL still needs no special case. */
     function goTo(next, instant) {
       var i = (next + slides.length) % slides.length;
-      slides[i].scrollIntoView({
-        behavior: instant || reduced ? 'auto' : 'smooth',
-        block: 'nearest',
-        inline: 'center'
-      });
+      var trackBox = track.getBoundingClientRect();
+      var slideBox = slides[i].getBoundingClientRect();
+      var delta = (slideBox.left + slideBox.width / 2) - (trackBox.left + trackBox.width / 2);
+      if (Math.abs(delta) < 1) return;
+      track.scrollBy({ left: delta, behavior: instant || reduced ? 'auto' : 'smooth' });
     }
 
     var settle = null;
@@ -219,6 +223,11 @@
 
     showcase.addEventListener('mouseenter', stop);
     showcase.addEventListener('mouseleave', restart);
+    if ('IntersectionObserver' in window) {
+      new IntersectionObserver(function (entries) {
+        if (entries[0].isIntersecting) restart(); else stop();
+      }, { threshold: 0.25 }).observe(showcase);
+    }
     track.addEventListener('focusin', stop);
     track.addEventListener('focusout', restart);
     document.addEventListener('visibilitychange', function () {

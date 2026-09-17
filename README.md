@@ -24,7 +24,7 @@ npx http-server -p 8080 .
 | File | What is in it |
 |---|---|
 | `build/content.mjs` | All copy, prices, card catalogue, FAQ, testimonials — every string in both languages |
-| `build/art.mjs` | The SVG artwork generator (card designs, brand mark, OG image) |
+| `build/art.mjs` | The SVG artwork generator (illustrated card designs, studio scene, OG image) |
 | `build/pages.mjs` | Home, portfolio, services, about, testimonials |
 | `build/pages-order.mjs` | The order wizard and contact page |
 | `build/layout.mjs` | Shared head, header, footer, cart drawer, lightbox, structured data |
@@ -36,7 +36,7 @@ After any change:
 node build/build.mjs
 ```
 
-This regenerates the seven pages, all 38 SVG assets, `assets/js/data.js`,
+This regenerates the seven pages, all SVG assets, `assets/js/data.js`,
 `sitemap.xml`, `robots.txt` and `site.webmanifest`.
 
 ### Adding a card design
@@ -48,19 +48,40 @@ tile, lightbox entry, order-form swatch and cart pricing all follow automaticall
 (`ivoryLeaf`, `creamRose`, `leafDeep`, `periDeep`, `roseDeep`, `creamLeaf`,
 `mintIvory`, `periBlush`).
 
+### Adding delivered work (photos and reels)
+
+The portfolio is driven by `works` in `build/content.mjs` — 32 pieces at the
+time of writing, each classified by `occasion`. To add more:
+
+1. **Photos** — resize to about 900px wide, save as `assets/img/work/<slug>.jpg`.
+2. **Videos** — encode to H.264 MP4 (`assets/video/<slug>.mp4`) and save a
+   poster frame as `assets/img/work/<slug>-poster.jpg`. Something like:
+   ```bash
+   ffmpeg -i in.mov -vf scale=540:-2 -c:v libx264 -crf 30 -preset slow \
+          -movflags +faststart -c:a aac -b:a 64k assets/video/<slug>.mp4
+   ffmpeg -i in.mov -vf scale=540:-2 -frames:v 1 -ss 1 poster.png
+   ```
+3. Add a row to `works` with the file's **real pixel dimensions** (`w`/`h`) —
+   they set the aspect ratio, so the grid does not jump while images load.
+4. `occasion` must match an id in `occasions`.
+5. Rebuild.
+
+Every piece automatically gets the "make me one like this" button, which
+deep-links to `order.html?occasion=<occasion>&ref=<id>`. That opens the
+wizard on the right occasion and names the piece in the brief.
+
 ### Adding an Instagram post or reel
 
 The feed strip on the home page is driven by `instagramPosts` in
 `build/content.mjs`. To publish a real post:
 
-1. Save the image to `assets/img/instagram/<name>.jpg` (square crops look best).
+1. Point `image` at any file under `assets/img/work/` (or add a new one).
 2. Add a row: set `image` to that path, `url` to the post's permalink, and
    `type` to `'post'` or `'reel'` — reels get a play badge.
 3. Write the caption in both languages under `en.caption` / `ar.caption`.
 4. Rebuild.
 
 A row whose `url` is empty falls back to the profile link, so nothing can 404.
-Rows still pointing at `assets/img/square/` get generated placeholder artwork.
 
 ### The brand mark
 

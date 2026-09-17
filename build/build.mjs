@@ -12,8 +12,8 @@ import { writeFileSync, mkdirSync, rmSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
-import { site, cards, testimonials, occasions, plans, addons, ui, instagramPosts } from './content.mjs';
-import { cardSVG, squareSVG, sceneSVG, portraitSVG, ogSVG, faviconSVG } from './art.mjs';
+import { site, cards, testimonials, occasions, plans, addons, ui, works } from './content.mjs';
+import { cardSVG, sceneSVG, portraitSVG, ogSVG, faviconSVG } from './art.mjs';
 import { home, portfolio, services, about, testimonialsPage } from './pages.mjs';
 import { order, contact } from './pages-order.mjs';
 
@@ -49,22 +49,12 @@ pages.forEach(([name, html]) => write(name, html));
 /* --------------------------------------------------------- artwork */
 
 rmSync(out('assets/img/cards'), { recursive: true, force: true });
-rmSync(out('assets/img/square'), { recursive: true, force: true });
 rmSync(out('assets/img/reviews'), { recursive: true, force: true });
 
 cards.forEach((c) => {
   write(`assets/img/cards/${c.id}.svg`, cardSVG({
     id: c.id, palette: c.palette, motif: c.motif || MOTIF_BY_OCCASION[c.occasion] || 'rings'
   }));
-});
-
-/* One square per feed row, so a placeholder exists until a real photo
-   replaces it. Rows already pointing at a real image are skipped. */
-instagramPosts.forEach((post) => {
-  if (!post.image.startsWith('assets/img/square/')) return;
-  const c = cards.find((x) => x.id === post.id);
-  if (!c) return;
-  write(`assets/img/square/${c.id}.svg`, squareSVG({ id: `sq-${c.id}`, palette: c.palette, motif: c.motif }));
 });
 
 testimonials.forEach((t) => {
@@ -96,6 +86,12 @@ const runtime = {
     id: c.id, occasion: c.occasion, price: c.price,
     en: { title: c.en.title, desc: c.en.desc, tags: c.tags.en },
     ar: { title: c.ar.title, desc: c.ar.desc, tags: c.tags.ar }
+  })),
+  works: works.map((w) => ({
+    id: w.id, type: w.type, occasion: w.occasion, src: w.src, poster: w.poster || '',
+    w: w.w, h: w.h,
+    en: { title: w.en.title, desc: w.en.note },
+    ar: { title: w.ar.title, desc: w.ar.note }
   })),
   plans: plans.map((p) => ({
     id: p.id, price: p.price, minQty: p.minQty, pricing: p.pricing,
