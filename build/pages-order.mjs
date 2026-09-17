@@ -341,8 +341,8 @@ export function order() {
         <!-- nav -->
         <div class="wizard__nav" id="wizardNav">
           ${bt('button', { en: 'Back', ar: 'رجوع' }, 'type="button" class="btn btn--ghost" id="wizardBack" hidden')}
-          ${bt('button', { en: 'Continue', ar: 'التالي' }, 'type="button" class="btn btn--gold" id="wizardNext"')}
-          ${bt('button', { en: 'Confirm order', ar: 'تأكيد الطلب' }, 'type="submit" class="btn btn--gold" id="wizardSubmit" hidden')}
+          ${bt('button', { en: 'Continue', ar: 'التالي' }, 'type="button" class="btn btn--bloom" id="wizardNext"')}
+          ${bt('button', { en: 'Confirm order', ar: 'تأكيد الطلب' }, 'type="submit" class="btn btn--bloom" id="wizardSubmit" hidden')}
         </div>
         </form>
 
@@ -355,7 +355,7 @@ export function order() {
             ${bt('p', { en: 'Your reference number', ar: 'رقمك المرجعي' }, 'class="text-mute" style="margin-block-start:var(--space-md);margin-block-end:0"')}
             <span class="order-ref" id="orderRef">—</span>
             <div class="lightbox__actions" style="justify-content:center">
-              <a class="btn btn--gold btn--lg" id="sendWhatsApp" target="_blank" rel="noopener"
+              <a class="btn btn--bloom btn--lg" id="sendWhatsApp" target="_blank" rel="noopener"
                  href="${waLink('مرحباً ليلى، أود طلب بطاقة.')}">
                 ${icons.whatsapp}${bt('span', { en: 'Send order on WhatsApp', ar: 'أرسل الطلب عبر واتساب' })}
               </a>
@@ -504,7 +504,7 @@ export function contact() {
             <span class="error-text" id="err-cMessage" ${biData(ui.required)}>${e(ui.required.ar)}</span>
           </div>
 
-          ${bt('button', { en: 'Send on WhatsApp', ar: 'أرسل عبر واتساب' }, 'type="submit" class="btn btn--gold btn--block"')}
+          ${bt('button', { en: 'Send on WhatsApp', ar: 'أرسل عبر واتساب' }, 'type="submit" class="btn btn--bloom btn--block"')}
           ${bt('p', {
             en: 'The message opens in WhatsApp with everything filled in — you press send. Nothing is stored on this site.',
             ar: 'تُفتح الرسالة في واتساب وكل شيء مكتوب فيها — ما عليك سوى الضغط على إرسال. ولا يُخزَّن أي شيء على هذا الموقع.'
@@ -527,7 +527,7 @@ export function contact() {
           ${bt('p', { en: 'Messages sent outside these hours are answered first thing the next working day.', ar: 'الرسائل خارج هذه الساعات يُرد عليها أول يوم العمل التالي.' })}
           <p class="mt-md" style="margin-block-end:0">
             <span class="card__icon" style="display:inline-grid;vertical-align:middle;margin:0 0 0 .5rem;inline-size:34px;block-size:34px">${icons.pin}</span>
-            ${bt('span', site.city, 'style="font-weight:700;color:var(--emerald-deep)"')}
+            ${bt('span', site.city, 'style="font-weight:700;color:var(--leaf-deep)"')}
           </p>
           ${bt('p', { en: 'Collection by appointment. Delivery across Amman and shipping to every governorate.', ar: 'الاستلام بموعد مسبق. توصيل داخل عمّان وشحن لكل المحافظات.' }, 'class="text-mute" style="font-size:var(--step--1)"')}
         </div>

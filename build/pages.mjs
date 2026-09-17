@@ -1,4 +1,4 @@
-import { site, nav, cards, occasions, plans, addons, process, testimonials, faqs, ui } from './content.mjs';
+import { site, nav, cards, occasions, plans, addons, process, testimonials, faqs, ui, instagramPosts } from './content.mjs';
 import { icons, occasionIcon } from './icons.mjs';
 import { e, a, bt, biAttr, biData, waLink, ornament, head, header, footer, cartDrawer, lightbox, toastRegion, scripts, pageBanner, ctaBand, jsonLd, breadcrumbJsonLd } from './layout.mjs';
 
@@ -73,34 +73,45 @@ export function home() {
   <div class="pattern-field" aria-hidden="true"></div>
   <div class="container hero__grid">
     <div class="hero__text">
-      ${bt('p', { en: 'Card studio · Amman, Jordan', ar: 'استوديو بطاقات · عمّان، الأردن' }, 'class="eyebrow"')}
+      ${bt('p', { en: 'Card studio \u00b7 Amman, Jordan', ar: '\u0627\u0633\u062a\u0648\u062f\u064a\u0648 \u0628\u0637\u0627\u0642\u0627\u062a \u00b7 \u0639\u0645\u0651\u0627\u0646\u060c \u0627\u0644\u0623\u0631\u062f\u0646' }, 'class="eyebrow"')}
       <h1 class="hero__title">
-        <span ${biData({ en: 'Cards worth', ar: 'بطاقات تستحقّ' })}>بطاقات تستحقّ</span>
-        <span class="foil" ${biData({ en: 'keeping', ar: 'أن تُحفظ' })}>أن تُحفظ</span>
+        <span ${biData({ en: 'Because extraordinary moments deserve', ar: '\u0644\u0623\u0646 \u0627\u0644\u0644\u062d\u0638\u0627\u062a \u0627\u0644\u0627\u0633\u062a\u062b\u0646\u0627\u0626\u064a\u0629 \u062a\u0633\u062a\u062d\u0642' })}>\u0644\u0623\u0646 \u0627\u0644\u0644\u062d\u0638\u0627\u062a \u0627\u0644\u0627\u0633\u062a\u062b\u0646\u0627\u0626\u064a\u0629 \u062a\u0633\u062a\u062d\u0642</span>
+        <span class="bloom-ink" ${biData({ en: 'cards worthy of their beauty', ar: '\u0628\u0637\u0627\u0642\u0627\u062a \u062a\u0644\u064a\u0642 \u0628\u062c\u0645\u0627\u0644\u0647\u0627' })}>\u0628\u0637\u0627\u0642\u0627\u062a \u062a\u0644\u064a\u0642 \u0628\u062c\u0645\u0627\u0644\u0647\u0627</span>
       </h1>
       ${bt('p', {
-        en: 'Bespoke Arabic and English greeting cards, drawn one at a time for weddings, Eid, graduations and every occasion that deserves more than a message on a screen.',
-        ar: 'بطاقات تهنئة عربية وإنجليزية مصمّمة خصيصاً، تُرسم واحدة تلو الأخرى للأعراس والعيد والتخرّج ولكل مناسبة تستحق أكثر من رسالة على شاشة.'
+        en: 'We make Arabic and English greeting cards designed especially to hold on to your finest occasions \u2014 weddings, Eid, graduations and new arrivals. Your card is delivered within 48 hours, with revisions guaranteed until it matches your taste.',
+        ar: '\u0646\u0642\u062f\u0651\u0645 \u0644\u0643\u0645 \u0628\u0637\u0627\u0642\u0627\u062a \u062a\u0647\u0646\u0626\u0629 \u0639\u0631\u0628\u064a\u0629 \u0648\u0625\u0646\u062c\u0644\u064a\u0632\u064a\u0629 \u0645\u0635\u0645\u0645\u0629 \u062e\u0635\u064a\u0635\u0627\u064b \u0644\u062a\u062e\u0644\u064a\u062f \u0627\u0644\u0645\u0646\u0627\u0633\u0628\u0627\u062a \u0627\u0644\u0645\u0645\u064a\u0632\u0629 \u0643\u0627\u0644\u0623\u0639\u0631\u0627\u0633 \u0648\u0627\u0644\u0623\u0639\u064a\u0627\u062f \u0648\u0627\u0644\u062a\u062e\u0631\u0651\u062c \u0648\u0627\u0644\u0645\u0648\u0627\u0644\u064a\u062f \u0627\u0644\u062c\u062f\u062f. \u0646\u062a\u0645\u064a\u0632 \u0628\u0633\u0631\u0639\u0629 \u062a\u0633\u0644\u064a\u0645 \u0627\u0644\u0628\u0637\u0627\u0642\u0629 \u062e\u0644\u0627\u0644 \u0664\u0668 \u0633\u0627\u0639\u0629 \u0645\u0639 \u0636\u0645\u0627\u0646 \u0627\u0644\u062a\u0639\u062f\u064a\u0644\u0627\u062a \u0627\u0644\u062a\u064a \u062a\u0646\u0627\u0633\u0628 \u0630\u0648\u0642\u0643 \u0627\u0644\u0631\u0627\u0642\u064a.'
       }, 'class="lede"')}
       <div class="hero__actions">
-        ${bt('a', { en: 'Order your custom card', ar: 'اطلب بطاقتك المخصصة' }, 'class="btn btn--gold btn--lg" href="order.html"')}
-        ${bt('a', { en: 'See the portfolio', ar: 'شاهد أعمالنا' }, 'class="btn btn--ghost btn--lg" href="portfolio.html"')}
+        ${bt('a', { en: 'Order your custom card', ar: '\u0627\u0637\u0644\u0628 \u0628\u0637\u0627\u0642\u062a\u0643 \u0627\u0644\u0645\u062e\u0635\u0635\u0629' }, 'class="btn btn--bloom btn--lg" href="order.html"')}
+        ${bt('a', { en: 'See the portfolio', ar: '\u0634\u0627\u0647\u062f \u0623\u0639\u0645\u0627\u0644\u0646\u0627' }, 'class="btn btn--ghost btn--lg" href="portfolio.html"')}
       </div>
       <div class="hero__proof">
-        <div class="stat"><span class="stat__value num">48h</span>${bt('span', { en: 'First draft', ar: 'المسودة الأولى' }, 'class="stat__label"')}</div>
-        <div class="stat"><span class="stat__value num">600+</span>${bt('span', { en: 'Cards delivered', ar: 'بطاقة سُلّمت' }, 'class="stat__label"')}</div>
-        <div class="stat"><span class="stat__value num">2</span>${bt('span', { en: 'Revisions included', ar: 'تعديلان مشمولان' }, 'class="stat__label"')}</div>
+        <div class="stat"><span class="stat__value num">48h</span>${bt('span', { en: 'Card delivered', ar: '\u062a\u0633\u0644\u064a\u0645 \u0627\u0644\u0628\u0637\u0627\u0642\u0629' }, 'class="stat__label"')}</div>
+        <div class="stat"><span class="stat__value num">600+</span>${bt('span', { en: 'Cards delivered', ar: '\u0628\u0637\u0627\u0642\u0629 \u0633\u064f\u0644\u0651\u0645\u062a' }, 'class="stat__label"')}</div>
+        <div class="stat"><span class="stat__value num">\u221e</span>${bt('span', { en: 'Revisions guaranteed', ar: '\u0636\u0645\u0627\u0646 \u0627\u0644\u062a\u0639\u062f\u064a\u0644\u0627\u062a' }, 'class="stat__label"')}</div>
       </div>
     </div>
 
-    <div class="showcase" id="showcase" ${biAttr('aria-label', { en: 'Featured card designs', ar: 'تصاميم بطاقات مختارة' })} role="group">
-      ${showcaseCards.map((c, i) => `
-      <figure class="showcase__slide${i === 0 ? ' is-active' : i === showcaseCards.length - 1 ? ' is-prev' : i === 1 ? ' is-next' : ''}" data-index="${i}" data-card="${c.id}">
-        <img src="assets/img/cards/${c.id}.svg" width="500" height="700" ${i === 0 ? 'fetchpriority="high"' : 'loading="lazy"'} decoding="async"
-             ${biAttr('alt', { en: `${c.en.title} — ${occLabel(c.occasion).en} card`, ar: `${c.ar.title} — بطاقة ${occLabel(c.occasion).ar}` })}>
-      </figure>`).join('')}
-      <figcaption class="showcase__caption" id="showcaseCaption" aria-live="polite">${e(showcaseCards[0].ar.title)}</figcaption>
+    <div class="showcase" id="showcase" role="group" aria-roledescription="carousel"
+         ${biAttr('aria-label', { en: 'Featured card designs \u2014 drag to browse', ar: '\u062a\u0635\u0627\u0645\u064a\u0645 \u0645\u062e\u062a\u0627\u0631\u0629 \u2014 \u0627\u0633\u062d\u0628 \u0644\u0644\u062a\u0635\u0641\u062d' })}>
+      <ul class="showcase__track" id="showcaseTrack" tabindex="0"
+          ${biAttr('aria-label', { en: 'Card designs, drag or use arrow keys', ar: '\u0627\u0644\u062a\u0635\u0627\u0645\u064a\u0645\u060c \u0627\u0633\u062d\u0628 \u0623\u0648 \u0627\u0633\u062a\u062e\u062f\u0645 \u0623\u0633\u0647\u0645 \u0644\u0648\u062d\u0629 \u0627\u0644\u0645\u0641\u0627\u062a\u064a\u062d' })}>
+        ${showcaseCards.map((c, i) => `
+        <li class="showcase__slide" data-index="${i}" data-card="${c.id}"
+            aria-roledescription="slide" aria-label="${i + 1} / ${showcaseCards.length}">
+          <img src="assets/img/cards/${c.id}.svg" width="500" height="700" draggable="false"
+               ${i === 0 ? 'fetchpriority="high"' : 'loading="lazy"'} decoding="async"
+               ${biAttr('alt', { en: `${c.en.title} \u2014 ${occLabel(c.occasion).en} card`, ar: `${c.ar.title} \u2014 \u0628\u0637\u0627\u0642\u0629 ${occLabel(c.occasion).ar}` })}>
+        </li>`).join('')}
+      </ul>
+      <button class="showcase__arrow showcase__arrow--prev" id="showcasePrev" type="button"
+        ${biAttr('aria-label', { en: 'Previous design', ar: '\u0627\u0644\u062a\u0635\u0645\u064a\u0645 \u0627\u0644\u0633\u0627\u0628\u0642' })}>${icons.chevronL}</button>
+      <button class="showcase__arrow showcase__arrow--next" id="showcaseNext" type="button"
+        ${biAttr('aria-label', { en: 'Next design', ar: '\u0627\u0644\u062a\u0635\u0645\u064a\u0645 \u0627\u0644\u062a\u0627\u0644\u064a' })}>${icons.chevronR}</button>
+      <p class="showcase__caption" id="showcaseCaption" aria-live="polite">${e(showcaseCards[0].ar.title)}</p>
       <div class="showcase__dots" id="showcaseDots"></div>
+      ${bt('p', { en: 'Drag to browse', ar: '\u0627\u0633\u062d\u0628 \u0644\u0644\u062a\u0635\u0641\u062d' }, 'class="showcase__hint"')}
     </div>
   </div>
 </section>
@@ -233,28 +244,36 @@ function quoteCard(t, i) {
 }
 
 function instagramSection() {
-  const picks = ['hilal-eid', 'ward-blush', 'mabrouk-grad', 'corporate-navy'];
   return `
-<section class="section">
+<section class="section section--blush">
   <div class="container">
     <div class="section-head center">
-      ${bt('p', { en: 'Follow along', ar: 'تابعنا' }, 'class="eyebrow center-line" style="justify-content:center"')}
-      ${bt('h2', { en: 'New designs first on Instagram', ar: 'التصاميم الجديدة أولاً على إنستغرام' })}
-      ${bt('p', { en: 'Work in progress, printed proofs and finished cards — posted as they leave the studio.', ar: 'أعمال قيد التنفيذ ونماذج مطبوعة وبطاقات جاهزة — تُنشر فور خروجها من الاستوديو.' }, 'class="lede"')}
+      ${bt('p', { en: 'Follow along', ar: '\u062a\u0627\u0628\u0639\u0646\u0627' }, 'class="eyebrow center-line" style="justify-content:center"')}
+      ${bt('h2', { en: 'New designs first on Instagram', ar: '\u0627\u0644\u062a\u0635\u0627\u0645\u064a\u0645 \u0627\u0644\u062c\u062f\u064a\u062f\u0629 \u0623\u0648\u0644\u0627\u064b \u0639\u0644\u0649 \u0625\u0646\u0633\u062a\u063a\u0631\u0627\u0645' })}
+      ${bt('p', { en: 'Work in progress, printed proofs and finished cards \u2014 posted as they leave the studio.', ar: '\u0623\u0639\u0645\u0627\u0644 \u0642\u064a\u062f \u0627\u0644\u062a\u0646\u0641\u064a\u0630 \u0648\u0646\u0645\u0627\u0630\u062c \u0645\u0637\u0628\u0648\u0639\u0629 \u0648\u0628\u0637\u0627\u0642\u0627\u062a \u062c\u0627\u0647\u0632\u0629 \u2014 \u062a\u064f\u0646\u0634\u0631 \u0641\u0648\u0631 \u062e\u0631\u0648\u062c\u0647\u0627 \u0645\u0646 \u0627\u0644\u0627\u0633\u062a\u0648\u062f\u064a\u0648.' }, 'class="lede"')}
     </div>
-    <div class="grid ig-strip">
-      ${picks.map((id, i) => {
-        const c = cards.find((x) => x.id === id);
-        return `<a class="ig-item reveal" style="--reveal-delay:${i * 60}ms" href="${site.instagramUrl}" target="_blank" rel="noopener"
-             ${biAttr('aria-label', { en: `${c.en.title} on Instagram — opens in a new tab`, ar: `${c.ar.title} على إنستغرام — يفتح في تبويب جديد` })}>
-          <img src="assets/img/square/${id}.svg" width="560" height="560" loading="lazy" decoding="async"
-               ${biAttr('alt', { en: `${c.en.title} card design`, ar: `تصميم بطاقة ${c.ar.title}` })}>
-          <span class="ig-item__icon">${icons.instagram}</span>
-        </a>`;
+    <ul class="ig-strip">
+      ${instagramPosts.map((post, i) => {
+        const isReel = post.type === 'reel';
+        const label = {
+          en: `${post.en.caption} \u2014 ${isReel ? 'reel' : 'post'} on Instagram, opens in a new tab`,
+          ar: `${post.ar.caption} \u2014 ${isReel ? '\u0631\u064a\u0644' : '\u0645\u0646\u0634\u0648\u0631'} \u0639\u0644\u0649 \u0625\u0646\u0633\u062a\u063a\u0631\u0627\u0645\u060c \u064a\u0641\u062a\u062d \u0641\u064a \u062a\u0628\u0648\u064a\u0628 \u062c\u062f\u064a\u062f`
+        };
+        return `
+      <li class="ig-cell reveal" style="--reveal-delay:${i * 60}ms">
+        <a class="ig-item" href="${a(post.url || site.instagramUrl)}" target="_blank" rel="noopener"
+           ${biAttr('aria-label', label)}>
+          <img src="${a(post.image)}" width="560" height="560" loading="lazy" decoding="async" alt="">
+          <span class="ig-item__icon">${isReel ? icons.monitor : icons.instagram}</span>
+          ${isReel ? `<span class="ig-item__reel" aria-hidden="true">\u25b6</span>` : ''}
+          <span class="ig-item__caption" aria-hidden="true"
+                ${biData({ en: post.en.caption, ar: post.ar.caption })}>${e(post.ar.caption)}</span>
+        </a>
+      </li>`;
       }).join('')}
-    </div>
+    </ul>
     <p class="center mt-lg">
-      ${bt('a', { en: `Follow @${site.instagram}`, ar: `تابع @${site.instagram}` }, `class="btn btn--ghost" href="${site.instagramUrl}" target="_blank" rel="noopener"`)}
+      ${bt('a', { en: `Follow @${site.instagram}`, ar: `\u062a\u0627\u0628\u0639 @${site.instagram}` }, `class="btn btn--ghost" href="${site.instagramUrl}" target="_blank" rel="noopener"`)}
     </p>
   </div>
 </section>`;
@@ -322,7 +341,7 @@ export function services() {
           ${p.includes.en.map((_, k) => bt('li', { en: p.includes.en[k], ar: p.includes.ar[k] })).join('\n          ')}
         </ul>
         ${bt('a', p.id === 'corporate' ? { en: 'Request a quote', ar: 'اطلب عرض سعر' } : { en: 'Choose this package', ar: 'اختر هذه الباقة' },
-          `class="btn ${p.featured ? 'btn--gold' : 'btn--ghost'} btn--block plan__cta" href="order.html?package=${p.id}"`)}
+          `class="btn ${p.featured ? 'btn--bloom' : 'btn--ghost'} btn--block plan__cta" href="order.html?package=${p.id}"`)}
       </article>`;
 
   return head({
@@ -451,6 +470,14 @@ export function about() {
 
 <section class="section section--tight">
   <div class="container">
+    <figure class="crest reveal">
+      <img src="assets/img/brand/logo.jpg" width="240" height="240" loading="lazy" decoding="async"
+           ${biAttr('alt', { en: "The Lily's Designs mark: a lily-of-the-valley wreath tied with a periwinkle ribbon", ar: '\u0634\u0639\u0627\u0631 \u0644\u064a\u0644\u064a\u0632 \u062f\u064a\u0632\u0627\u064a\u0646\u0632: \u0625\u0643\u0644\u064a\u0644 \u0645\u0646 \u0632\u0646\u0628\u0642 \u0627\u0644\u0648\u0627\u062f\u064a \u0645\u0639\u0642\u0648\u062f \u0628\u0634\u0631\u064a\u0637 \u0628\u0646\u0641\u0633\u062c\u064a' })}>
+      ${bt('figcaption', {
+        en: 'Lily of the valley for a fresh start, drawn in green and tied in periwinkle \u2014 the same three colours every card is built from.',
+        ar: '\u0632\u0646\u0628\u0642 \u0627\u0644\u0648\u0627\u062f\u064a \u0631\u0645\u0632 \u0644\u0644\u0628\u062f\u0627\u064a\u0627\u062a\u060c \u0645\u0631\u0633\u0648\u0645 \u0628\u0627\u0644\u0623\u062e\u0636\u0631 \u0648\u0645\u0639\u0642\u0648\u062f \u0628\u0627\u0644\u0628\u0646\u0641\u0633\u062c\u064a \u2014 \u0627\u0644\u0623\u0644\u0648\u0627\u0646 \u0627\u0644\u062b\u0644\u0627\u062b\u0629 \u0646\u0641\u0633\u0647\u0627 \u0627\u0644\u062a\u064a \u062a\u064f\u0628\u0646\u0649 \u0645\u0646\u0647\u0627 \u0643\u0644 \u0628\u0637\u0627\u0642\u0629.'
+      })}
+    </figure>
     <div class="split">
       <div class="portrait reveal">
         <img src="assets/img/brand/studio.svg" width="640" height="800" loading="lazy" decoding="async"
@@ -472,7 +499,7 @@ export function about() {
           ar: 'ما زال الاستوديو شخصاً واحداً. وهذا مقصود — فهو السبيل الوحيد لتبقى كل بطاقة مرسومة لا مُجمَّعة.'
         })}
         <p class="mt-md">
-          ${bt('a', { en: 'See the work', ar: 'شاهد الأعمال' }, 'class="btn btn--gold" href="portfolio.html"')}
+          ${bt('a', { en: 'See the work', ar: 'شاهد الأعمال' }, 'class="btn btn--bloom" href="portfolio.html"')}
         </p>
       </div>
     </div>

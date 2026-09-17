@@ -28,11 +28,17 @@ export const waLink = (text) =>
   `https://wa.me/${site.phoneE164}?text=${encodeURIComponent(text)}`;
 
 const ORNAMENT = `<svg class="ornament" viewBox="0 0 120 22" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true" focusable="false">
-  <path d="M2 11h34M84 11h34"/>
-  <path d="M60 2 66.4 5.6 70 11l-3.6 5.4L60 20l-6.4-3.6L50 11l3.6-5.4Z"/>
-  <path d="M60 6.4 63.8 8.6 66 11l-2.2 2.4-3.8 2.2-3.8-2.2L54 11l2.2-2.4Z"/>
-  <path d="M40 11h6M74 11h6"/>
-  <circle cx="44" cy="11" r="1.6" fill="currentColor"/><circle cx="76" cy="11" r="1.6" fill="currentColor"/>
+  <path d="M2 11h30M88 11h30"/>
+  <path d="M34 11q6-7 12 0-6 7-12 0Z" fill="currentColor" opacity=".55" stroke="none"/>
+  <path d="M74 11q6-7 12 0-6 7-12 0Z" fill="currentColor" opacity=".55" stroke="none"/>
+  <g transform="translate(60 11)">
+    <circle cx="0" cy="-4.6" r="3.4" fill="currentColor" opacity=".85" stroke="none"/>
+    <circle cx="4.4" cy="-1.4" r="3.4" fill="currentColor" opacity=".85" stroke="none"/>
+    <circle cx="2.7" cy="3.7" r="3.4" fill="currentColor" opacity=".85" stroke="none"/>
+    <circle cx="-2.7" cy="3.7" r="3.4" fill="currentColor" opacity=".85" stroke="none"/>
+    <circle cx="-4.4" cy="-1.4" r="3.4" fill="currentColor" opacity=".85" stroke="none"/>
+    <circle cx="0" cy="0" r="2.2" fill="currentColor" stroke="none"/>
+  </g>
 </svg>`;
 
 export const ornament = (cls = '') => ORNAMENT.replace('class="ornament"', `class="ornament ${cls}"`.trim());
@@ -50,7 +56,7 @@ export function head({ title, description, keywords, page, extraHead = '' }) {
 <meta name="description" content="${a(description.ar)}">
 <meta name="keywords" content="${a(keywords)}">
 <meta name="author" content="${a(site.name.en)}">
-<meta name="theme-color" content="#0E4C41">
+<meta name="theme-color" content="#1C4D33">
 <link rel="canonical" href="${canonical}">
 <link rel="alternate" hreflang="ar" href="${canonical}">
 <link rel="alternate" hreflang="en" href="${canonical}">
@@ -63,14 +69,15 @@ export function head({ title, description, keywords, page, extraHead = '' }) {
 <meta property="og:url" content="${canonical}">
 <meta property="og:locale" content="ar_JO">
 <meta property="og:locale:alternate" content="en_US">
-<meta property="og:image" content="${site.url}/assets/img/brand/og-card.svg">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
+<meta property="og:image" content="${site.url}/assets/img/brand/logo.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1254">
+<meta property="og:image:height" content="1254">
 <meta property="og:image:alt" content="${a(site.name.en)} — bespoke Arabic greeting cards">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="${a(title.en)} | ${a(site.name.en)}">
 <meta name="twitter:description" content="${a(description.en)}">
-<meta name="twitter:image" content="${site.url}/assets/img/brand/og-card.svg">
+<meta name="twitter:image" content="${site.url}/assets/img/brand/logo.jpg">
 
 <link rel="icon" href="assets/img/brand/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="assets/img/brand/favicon.svg">
@@ -101,7 +108,7 @@ export function header(current) {
 <header class="site-header" id="siteHeader">
   <div class="container header-inner">
     <a class="brand" href="index.html" ${biAttr('aria-label', { en: "Lily's Designs — home", ar: 'ليليز ديزاينز — الرئيسية' })}>
-      <span class="brand__mark" aria-hidden="true">${brandMark()}</span>
+      <span class="brand__mark" aria-hidden="true">${brandMark(52)}</span>
       <span class="brand__text">
         ${bt('span', site.name, 'class="brand__name"')}
         ${bt('span', site.tagline, 'class="brand__tag"')}
@@ -110,7 +117,7 @@ export function header(current) {
 
     <nav class="nav" id="primaryNav" ${biAttr('aria-label', { en: 'Primary', ar: 'التنقل الرئيسي' })}>
         ${links}
-        ${bt('a', { en: 'Order a card', ar: 'اطلب بطاقتك' }, 'href="order.html" class="btn btn--gold btn--sm nav-cta"')}
+        ${bt('a', { en: 'Order a card', ar: 'اطلب بطاقتك' }, 'href="order.html" class="btn btn--bloom btn--sm nav-cta"')}
     </nav>
 
     <div class="header-actions">
@@ -135,25 +142,11 @@ export function header(current) {
 <main id="main">`;
 }
 
-let markSeq = 0;
-export function brandMark() {
-  /* Each mark needs its own gradient id: two identical ids in one document
-     is invalid, and the second reference becomes ambiguous. */
-  const gid = `bm-foil-${++markSeq}`;
-  /* Eight-point rosette enclosing an L, drawn inline so the header never
-     waits on a network request. */
-  return `<svg viewBox="0 0 64 64" width="40" height="40" aria-hidden="true" focusable="false">
-  <defs><linearGradient id="${gid}" x1="0" y1="0" x2="1" y2="1">
-    <stop offset="0%" stop-color="#9C7A2E"/><stop offset="20%" stop-color="#D8B45F"/>
-    <stop offset="38%" stop-color="#F5E7BC"/><stop offset="55%" stop-color="#C9A34C"/>
-    <stop offset="74%" stop-color="#E8D08A"/><stop offset="100%" stop-color="#A8842F"/>
-  </linearGradient></defs>
-  <path d="M32 3 40.6 13.6 54 11.2 51.6 24.6 62.2 33.2 51.6 41.8 54 55.2 40.6 52.8 32 63.4 23.4 52.8 10 55.2 12.4 41.8 1.8 33.2 12.4 24.6 10 11.2 23.4 13.6Z"
-        fill="none" stroke="url(#${gid})" stroke-width="2.1" stroke-linejoin="round"/>
-  <path d="M32 15.5 41 24.5 50 33.2 41 41.9 32 50.9 23 41.9 14 33.2 23 24.5Z"
-        fill="none" stroke="url(#${gid})" stroke-width="0.9" opacity="0.6"/>
-  <path d="M26.5 23.5V41h12" fill="none" stroke="url(#${gid})" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>`;
+export function brandMark(size = 44) {
+  /* The studio's own mark. Its paper matches --ivory, so the square sits
+     seamlessly on the header without needing a cut-out. */
+  return `<img src="assets/img/brand/logo.jpg" width="${size}" height="${size}"
+    alt="" aria-hidden="true" decoding="async" class="brand__logo">`;
 }
 
 /* -------------------------------------------------------------- footer */
@@ -174,7 +167,7 @@ export function footer() {
     <div class="footer-grid">
       <div class="footer-about">
         <a class="brand" href="index.html">
-          <span class="brand__mark" aria-hidden="true">${brandMark()}</span>
+          <span class="brand__mark" aria-hidden="true">${brandMark(52)}</span>
           <span class="brand__text">
             ${bt('span', site.name, 'class="brand__name"')}
             ${bt('span', site.tagline, 'class="brand__tag"')}
@@ -254,7 +247,7 @@ export function cartDrawer() {
       ${bt('span', ui.subtotal)}
       <span class="amount"><span id="cartTotal" class="num">0</span> ${bt('span', ui.currency)}</span>
     </div>
-    ${bt('a', ui.checkout, 'href="order.html" class="btn btn--gold btn--block" id="cartCheckout"')}
+    ${bt('a', ui.checkout, 'href="order.html" class="btn btn--bloom btn--block" id="cartCheckout"')}
     ${bt('p', { en: 'Card designs are confirmed by message before payment — nothing is charged automatically.', ar: 'تُؤكَّد التصاميم عبر الرسائل قبل الدفع — لا يُخصم أي مبلغ تلقائياً.' }, 'class="text-mute" style="font-size:.74rem;margin-block-start:.6rem"')}
   </div>
 </aside>`;
@@ -275,7 +268,7 @@ export function lightbox() {
       <p id="lbDesc" class="text-mute"></p>
       <p class="lightbox__price"><span id="lbPrice" class="num"></span> ${bt('span', ui.currency)}</p>
       <div class="lightbox__actions">
-        <button class="btn btn--gold" id="lbAdd" type="button" ${biData(ui.addToCart)}>${e(ui.addToCart.ar)}</button>
+        <button class="btn btn--bloom" id="lbAdd" type="button" ${biData(ui.addToCart)}>${e(ui.addToCart.ar)}</button>
         ${bt('a', ui.orderThis, 'class="btn btn--ghost" id="lbOrder" href="order.html"')}
       </div>
     </div>
@@ -326,7 +319,7 @@ export function ctaBand({ title, body, primary, secondary }) {
       ${bt('h2', title)}
       ${bt('p', body, 'class="lede"')}
       <div class="btn-row">
-        ${bt('a', primary.label, `class="btn btn--gold btn--lg" href="${primary.href}"`)}
+        ${bt('a', primary.label, `class="btn btn--bloom btn--lg" href="${primary.href}"`)}
         ${bt('a', secondary.label, `class="btn btn--light" href="${secondary.href}"${secondary.ext ? ' target="_blank" rel="noopener"' : ''}`)}
       </div>
     </div>
@@ -347,8 +340,8 @@ export function jsonLd() {
     url: site.url,
     telephone: `+${site.phoneE164}`,
     email: site.email,
-    image: `${site.url}/assets/img/brand/og-card.svg`,
-    logo: `${site.url}/assets/img/brand/favicon.svg`,
+    image: `${site.url}/assets/img/brand/logo.jpg`,
+    logo: `${site.url}/assets/img/brand/logo.jpg`,
     priceRange: 'JOD 6 – JOD 500',
     currenciesAccepted: 'JOD',
     paymentAccepted: 'Cash, Bank transfer, CliQ, Credit Card',

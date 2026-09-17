@@ -1,88 +1,138 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 560" width="560" height="560" role="img">
 <defs>
-  <linearGradient id="foil-sq-mabrouk-grad" x1="0" y1="0" x2="1" y2="1">
-    <stop offset="0%" stop-color="#9C7A2E"/><stop offset="20%" stop-color="#D8B45F"/><stop offset="38%" stop-color="#F5E7BC"/><stop offset="55%" stop-color="#C9A34C"/><stop offset="74%" stop-color="#E8D08A"/><stop offset="100%" stop-color="#A8842F"/>
+  <linearGradient id="ribbon-sq-mabrouk-grad" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#7FD69B"/>
+    <stop offset="52%" stop-color="#C7D2F3"/>
+    <stop offset="100%" stop-color="#F8A9C6"/>
   </linearGradient>
   <linearGradient id="bg-sq-mabrouk-grad" x1="0" y1="0" x2="0.3" y2="1">
-    <stop offset="0%" stop-color="#17304F"/><stop offset="100%" stop-color="#0E2038"/>
+    <stop offset="0%" stop-color="#1C4D33"/><stop offset="100%" stop-color="#123422"/>
   </linearGradient>
-  <radialGradient id="glow-sq-mabrouk-grad" cx="50%" cy="42%" r="58%">
-    <stop offset="0%" stop-color="#ffffff" stop-opacity="0.34"/>
+  <radialGradient id="glow-sq-mabrouk-grad" cx="50%" cy="40%" r="60%">
+    <stop offset="0%" stop-color="#ffffff" stop-opacity="0.30"/>
     <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
   </radialGradient>
 </defs>
 <defs>
-  <pattern id="girih-sq-mabrouk-grad" width="88" height="88" patternUnits="userSpaceOnUse">
-    <g fill="none" stroke="#EFDFB8" stroke-width="1.1">
-      <path d="M44.00 10.00L51.27 26.45L68.04 19.96L61.55 36.73L78.00 44.00L61.55 51.27L68.04 68.04L51.27 61.55L44.00 78.00L36.73 61.55L19.96 68.04L26.45 51.27L10.00 44.00L26.45 36.73L19.96 19.96L36.73 26.45Z"/>
-      <path d="M57.86 49.74L49.74 57.86L38.26 57.86L30.14 49.74L30.14 38.26L38.26 30.14L49.74 30.14L57.86 38.26Z"/>
-      <path d="M0 0 8 8M88 0 80 8M0 88 8 80M88 88 80 80"/>
+  <pattern id="vine-sq-mabrouk-grad" width="104" height="104" patternUnits="userSpaceOnUse">
+    <g fill="none" stroke="#7FD69B" stroke-width="1.1" stroke-linecap="round">
+      <path d="M0 78 Q26 44 52 78 T104 78"/>
+      <path d="M0 26 Q26 -8 52 26 T104 26"/>
     </g>
+    <path d="M0 0 Q7.20 -5.10 15.00 0 Q7.20 5.10 0 0Z"
+    fill="#7FD69B" opacity="0.55" transform="translate(26.00 60.00) rotate(-108.86)"/><path d="M0 0 Q7.20 -5.10 15.00 0 Q7.20 5.10 0 0Z"
+    fill="#7FD69B" opacity="0.55" transform="translate(78.00 60.00) rotate(-71.05)"/>
+    <path d="M0 0 Q7.20 -5.10 15.00 0 Q7.20 5.10 0 0Z"
+    fill="#7FD69B" opacity="0.55" transform="translate(26.00 8.00) rotate(-108.86)"/><path d="M0 0 Q7.20 -5.10 15.00 0 Q7.20 5.10 0 0Z"
+    fill="#7FD69B" opacity="0.55" transform="translate(78.00 8.00) rotate(-71.05)"/>
+    <circle cx="52" cy="52" r="2.6" fill="#7FD69B" opacity="0.5"/>
   </pattern>
   <clipPath id="clip-sq-mabrouk-grad"><rect width="560" height="560"/></clipPath>
 </defs>
 <rect width="560" height="560" fill="url(#bg-sq-mabrouk-grad)"/>
-<g opacity="0.07" clip-path="url(#clip-sq-mabrouk-grad)">
-    <rect width="560" height="560" fill="url(#girih-sq-mabrouk-grad)"/>
+<g opacity="0.1" clip-path="url(#clip-sq-mabrouk-grad)">
+    <rect width="560" height="560" fill="url(#vine-sq-mabrouk-grad)"/>
   </g>
 <rect width="560" height="560" fill="url(#glow-sq-mabrouk-grad)"/>
-<ellipse cx="331.3" cy="140.1" rx="15" ry="6.5" fill="url(#foil-sq-mabrouk-grad)" opacity="0.9"
-                 transform="rotate(44 331.3 140.1)"/><ellipse cx="356.2" cy="152.8" rx="15" ry="6.5" fill="url(#foil-sq-mabrouk-grad)" opacity="0.9"
-                 transform="rotate(57 356.2 152.8)"/><ellipse cx="377.7" cy="171.5" rx="15" ry="6.5" fill="url(#foil-sq-mabrouk-grad)" opacity="0.9"
-                 transform="rotate(71 377.7 171.5)"/><ellipse cx="394.0" cy="195.4" rx="15" ry="6.5" fill="url(#foil-sq-mabrouk-grad)" opacity="0.9"
-                 transform="rotate(84 394.0 195.4)"/><ellipse cx="403.7" cy="222.9" rx="15" ry="6.5" fill="url(#foil-sq-mabrouk-grad)" opacity="0.9"
-                 transform="rotate(97 403.7 222.9)"/><ellipse cx="405.7" cy="252.2" rx="15" ry="6.5" fill="url(#foil-sq-mabrouk-grad)" opacity="0.9"
-                 transform="rotate(111 405.7 252.2)"/><ellipse cx="400.1" cy="280.8" rx="15" ry="6.5" fill="url(#foil-sq-mabrouk-grad)" opacity="0.9"
-                 transform="rotate(124 400.1 280.8)"/><ellipse cx="387.3" cy="306.8" rx="15" ry="6.5" fill="url(#foil-sq-mabrouk-grad)" opacity="0.9"
-                 transform="rotate(137 387.3 306.8)"/><ellipse cx="368.7" cy="328.3" rx="15" ry="6.5" fill="url(#foil-sq-mabrouk-grad)" opacity="0.9"
-                 transform="rotate(151 368.7 328.3)"/><ellipse cx="228.7" cy="140.1" rx="15" ry="6.5" fill="url(#foil-sq-mabrouk-grad)" opacity="0.9"
-                 transform="rotate(-44 228.7 140.1)"/><ellipse cx="203.8" cy="152.8" rx="15" ry="6.5" fill="url(#foil-sq-mabrouk-grad)" opacity="0.9"
-                 transform="rotate(-57 203.8 152.8)"/><ellipse cx="182.3" cy="171.5" rx="15" ry="6.5" fill="url(#foil-sq-mabrouk-grad)" opacity="0.9"
-                 transform="rotate(-71 182.3 171.5)"/><ellipse cx="166.0" cy="195.4" rx="15" ry="6.5" fill="url(#foil-sq-mabrouk-grad)" opacity="0.9"
-                 transform="rotate(-84 166.0 195.4)"/><ellipse cx="156.3" cy="222.9" rx="15" ry="6.5" fill="url(#foil-sq-mabrouk-grad)" opacity="0.9"
-                 transform="rotate(-97 156.3 222.9)"/><ellipse cx="154.3" cy="252.2" rx="15" ry="6.5" fill="url(#foil-sq-mabrouk-grad)" opacity="0.9"
-                 transform="rotate(-111 154.3 252.2)"/><ellipse cx="159.9" cy="280.8" rx="15" ry="6.5" fill="url(#foil-sq-mabrouk-grad)" opacity="0.9"
-                 transform="rotate(-124 159.9 280.8)"/><ellipse cx="172.7" cy="306.8" rx="15" ry="6.5" fill="url(#foil-sq-mabrouk-grad)" opacity="0.9"
-                 transform="rotate(-137 172.7 306.8)"/><ellipse cx="191.3" cy="328.3" rx="15" ry="6.5" fill="url(#foil-sq-mabrouk-grad)" opacity="0.9"
-                 transform="rotate(-151 191.3 328.3)"/>
-      <g fill="none" stroke="#EFDFB8" stroke-width="1" opacity="0.4"><circle cx="280" cy="246.4" r="138"/></g>
+<path d="M0 0 Q9.60 -6.80 20.00 0 Q9.60 6.80 0 0Z"
+    fill="url(#ribbon-sq-mabrouk-grad)" opacity="0.92" transform="translate(327.51 134.03) rotate(42.40)"/><path d="M0 0 Q10.79 -7.64 22.47 0 Q10.79 7.64 0 0Z"
+    fill="url(#ribbon-sq-mabrouk-grad)" opacity="0.92" transform="translate(351.99 144.48) rotate(54.72)"/><path d="M0 0 Q11.86 -8.40 24.70 0 Q11.86 8.40 0 0Z"
+    fill="url(#ribbon-sq-mabrouk-grad)" opacity="0.92" transform="translate(373.93 160.50) rotate(67.04)"/><path d="M0 0 Q12.71 -9.00 26.47 0 Q12.71 9.00 0 0Z"
+    fill="url(#ribbon-sq-mabrouk-grad)" opacity="0.92" transform="translate(391.82 181.51) rotate(79.35)"/><path d="M0 0 Q13.25 -9.39 27.61 0 Q13.25 9.39 0 0Z"
+    fill="url(#ribbon-sq-mabrouk-grad)" opacity="0.92" transform="translate(404.30 206.47) rotate(91.67)"/><path d="M0 0 Q13.44 -9.52 28.00 0 Q13.44 9.52 0 0Z"
+    fill="url(#ribbon-sq-mabrouk-grad)" opacity="0.92" transform="translate(410.40 233.87) rotate(103.99)"/><path d="M0 0 Q13.25 -9.39 27.61 0 Q13.25 9.39 0 0Z"
+    fill="url(#ribbon-sq-mabrouk-grad)" opacity="0.92" transform="translate(409.63 261.93) rotate(116.31)"/><path d="M0 0 Q12.71 -9.00 26.47 0 Q12.71 9.00 0 0Z"
+    fill="url(#ribbon-sq-mabrouk-grad)" opacity="0.92" transform="translate(402.13 288.81) rotate(128.63)"/><path d="M0 0 Q11.86 -8.40 24.70 0 Q11.86 8.40 0 0Z"
+    fill="url(#ribbon-sq-mabrouk-grad)" opacity="0.92" transform="translate(388.57 312.85) rotate(140.95)"/><path d="M0 0 Q10.79 -7.64 22.47 0 Q10.79 7.64 0 0Z"
+    fill="url(#ribbon-sq-mabrouk-grad)" opacity="0.92" transform="translate(370.08 332.74) rotate(153.27)"/><path d="M0 0 Q9.60 -6.80 20.00 0 Q9.60 6.80 0 0Z"
+    fill="url(#ribbon-sq-mabrouk-grad)" opacity="0.92" transform="translate(232.49 134.03) rotate(-42.40)"/><path d="M0 0 Q10.79 -7.64 22.47 0 Q10.79 7.64 0 0Z"
+    fill="url(#ribbon-sq-mabrouk-grad)" opacity="0.92" transform="translate(208.01 144.48) rotate(-54.72)"/><path d="M0 0 Q11.86 -8.40 24.70 0 Q11.86 8.40 0 0Z"
+    fill="url(#ribbon-sq-mabrouk-grad)" opacity="0.92" transform="translate(186.07 160.50) rotate(-67.04)"/><path d="M0 0 Q12.71 -9.00 26.47 0 Q12.71 9.00 0 0Z"
+    fill="url(#ribbon-sq-mabrouk-grad)" opacity="0.92" transform="translate(168.18 181.51) rotate(-79.35)"/><path d="M0 0 Q13.25 -9.39 27.61 0 Q13.25 9.39 0 0Z"
+    fill="url(#ribbon-sq-mabrouk-grad)" opacity="0.92" transform="translate(155.70 206.47) rotate(-91.67)"/><path d="M0 0 Q13.44 -9.52 28.00 0 Q13.44 9.52 0 0Z"
+    fill="url(#ribbon-sq-mabrouk-grad)" opacity="0.92" transform="translate(149.60 233.87) rotate(-103.99)"/><path d="M0 0 Q13.25 -9.39 27.61 0 Q13.25 9.39 0 0Z"
+    fill="url(#ribbon-sq-mabrouk-grad)" opacity="0.92" transform="translate(150.37 261.93) rotate(-116.31)"/><path d="M0 0 Q12.71 -9.00 26.47 0 Q12.71 9.00 0 0Z"
+    fill="url(#ribbon-sq-mabrouk-grad)" opacity="0.92" transform="translate(157.87 288.81) rotate(-128.63)"/><path d="M0 0 Q11.86 -8.40 24.70 0 Q11.86 8.40 0 0Z"
+    fill="url(#ribbon-sq-mabrouk-grad)" opacity="0.92" transform="translate(171.43 312.85) rotate(-140.95)"/><path d="M0 0 Q10.79 -7.64 22.47 0 Q10.79 7.64 0 0Z"
+    fill="url(#ribbon-sq-mabrouk-grad)" opacity="0.92" transform="translate(189.92 332.74) rotate(-153.27)"/>
+      <circle cx="280" cy="246.4" r="142" fill="none" stroke="#7FD69B" stroke-width="1" opacity="0.45"/>
+      <ellipse cx="292.19" cy="378.17"
+      rx="11.44" ry="9.24" fill="#F58FB4" opacity="0.95"
+      transform="rotate(17.19 292.19 378.17)"/><ellipse cx="282.83" cy="386.84"
+      rx="11.44" ry="9.24" fill="#F58FB4" opacity="0.95"
+      transform="rotate(77.19 282.83 386.84)"/><ellipse cx="270.64" cy="383.07"
+      rx="11.44" ry="9.24" fill="#F58FB4" opacity="0.95"
+      transform="rotate(137.19 270.64 383.07)"/><ellipse cx="267.81" cy="370.63"
+      rx="11.44" ry="9.24" fill="#F58FB4" opacity="0.95"
+      transform="rotate(197.19 267.81 370.63)"/><ellipse cx="277.17" cy="361.96"
+      rx="11.44" ry="9.24" fill="#F58FB4" opacity="0.95"
+      transform="rotate(257.19 277.17 361.96)"/><ellipse cx="289.36" cy="365.73"
+      rx="11.44" ry="9.24" fill="#F58FB4" opacity="0.95"
+      transform="rotate(317.19 289.36 365.73)"/><ellipse cx="285.79" cy="371.24"
+      rx="7.92" ry="6.60" fill="#7FD69B" opacity="0.9"
+      transform="rotate(-28.65 285.79 371.24)"/><ellipse cx="284.80" cy="378.93"
+      rx="7.92" ry="6.60" fill="#7FD69B" opacity="0.9"
+      transform="rotate(43.35 284.80 378.93)"/><ellipse cx="277.17" cy="380.36"
+      rx="7.92" ry="6.60" fill="#7FD69B" opacity="0.9"
+      transform="rotate(115.35 277.17 380.36)"/><ellipse cx="273.45" cy="373.56"
+      rx="7.92" ry="6.60" fill="#7FD69B" opacity="0.9"
+      transform="rotate(187.35 273.45 373.56)"/><ellipse cx="278.78" cy="367.91"
+      rx="7.92" ry="6.60" fill="#7FD69B" opacity="0.9"
+      transform="rotate(259.35 278.78 367.91)"/><path d="M275.60 374.40 a4.40 4.40 0 1 1 8.80 0
+    a2.86 2.86 0 1 0 -5.72 0" fill="none"
+    stroke="url(#ribbon-sq-mabrouk-grad)" stroke-width="1.65" stroke-linecap="round"/>
       <g transform="translate(280 246.4)">
-        <path d="M-72 -14 L0 -48 L72 -14 L0 20Z" fill="url(#foil-sq-mabrouk-grad)"/>
-        <path d="M-44 0 L-44 44 Q0 68 44 44 L44 0" fill="none" stroke="url(#foil-sq-mabrouk-grad)" stroke-width="3.4"/>
-        <path d="M72 -14 L72 46" stroke="url(#foil-sq-mabrouk-grad)" stroke-width="2.4" fill="none"/>
-        <circle cx="72" cy="52" r="7" fill="url(#foil-sq-mabrouk-grad)"/>
+        <path d="M-72 -14 L0 -48 L72 -14 L0 20Z" fill="url(#ribbon-sq-mabrouk-grad)"/>
+        <path d="M-44 0 L-44 44 Q0 68 44 44 L44 0" fill="none" stroke="url(#ribbon-sq-mabrouk-grad)" stroke-width="3.4"/>
+        <path d="M72 -14 L72 46" stroke="url(#ribbon-sq-mabrouk-grad)" stroke-width="2.4" fill="none"/>
+        <circle cx="72" cy="52" r="7" fill="#F58FB4"/>
       </g>
-      <g fill="none" stroke="url(#foil-sq-mabrouk-grad)" stroke-linecap="round" opacity="1">
-    <path d="M195 425.6 C229 374.6, 269.8 461.3, 280 425.6
-             S331 374.6, 365 425.6" stroke-width="3"/>
-    <path d="M222.2 447.02000000000004 C263 466.40000000000003, 297 466.40000000000003, 337.8 447.02000000000004" stroke-width="1.6" opacity="0.7"/>
-    <circle cx="186" cy="425.6" r="2.6" fill="url(#foil-sq-mabrouk-grad)" stroke="none"/>
-    <circle cx="374" cy="425.6" r="2.6" fill="url(#foil-sq-mabrouk-grad)" stroke="none"/>
+      <g fill="none" stroke="url(#ribbon-sq-mabrouk-grad)" stroke-linecap="round" opacity="1">
+    <path d="M200.00 459.20 C232.00 411.20, 270.40 492.80, 280.00 459.20
+             S328.00 411.20, 360.00 459.20" stroke-width="2.6"/>
+    <circle cx="191.00" cy="459.20" r="2.6" fill="url(#ribbon-sq-mabrouk-grad)" stroke="none"/>
+    <circle cx="369.00" cy="459.20" r="2.6" fill="url(#ribbon-sq-mabrouk-grad)" stroke="none"/>
   </g>
 <g>
-    <rect x="26" y="26" width="508" height="508" rx="6"
-          fill="none" stroke="url(#foil-sq-mabrouk-grad)" stroke-width="1.6"/>
-    <rect x="33" y="33" width="494" height="494" rx="3"
-          fill="none" stroke="url(#foil-sq-mabrouk-grad)" stroke-width="0.7" opacity="0.65"/>
-    <g transform="translate(22 22) scale(1 1)" fill="none" stroke="url(#foil-sq-mabrouk-grad)" stroke-width="1.8">
-      <path d="M0 26 L0 8 Q0 0 8 0 L26 0"/>
-      <path d="M8 30 L8 14 Q8 8 14 8 L30 8" opacity="0.6"/>
-      <path d="M26.47 22.68L22.68 26.47L17.32 26.47L13.53 22.68L13.53 17.32L17.32 13.53L22.68 13.53L26.47 17.32Z" opacity="0.85"/>
+    <rect x="26" y="26" width="508" height="508" rx="8"
+          fill="none" stroke="url(#ribbon-sq-mabrouk-grad)" stroke-width="1.5"/>
+    <rect x="33" y="33" width="494" height="494" rx="4"
+          fill="none" stroke="#7FD69B" stroke-width="0.7" opacity="0.5"/>
+    <g transform="translate(20 20) scale(1 1)">
+      <path d="M2 34 Q2 2 34 2" fill="none" stroke="url(#ribbon-sq-mabrouk-grad)" stroke-width="1.6"/>
+      <path d="M0 0 Q8.16 -5.78 17.00 0 Q8.16 5.78 0 0Z"
+    fill="url(#ribbon-sq-mabrouk-grad)" opacity="0.9" transform="translate(6.00 22.00) rotate(-65.89)"/>
+      <path d="M0 0 Q8.16 -5.78 17.00 0 Q8.16 5.78 0 0Z"
+    fill="url(#ribbon-sq-mabrouk-grad)" opacity="0.9" transform="translate(22.00 6.00) rotate(-24.06)"/>
+      <path d="M0 0 Q6.24 -4.42 13.00 0 Q6.24 4.42 0 0Z"
+    fill="#7FD69B" opacity="0.75" transform="translate(11.00 11.00) rotate(-45.26)"/>
     </g>
-    <g transform="translate(538 22) scale(-1 1)" fill="none" stroke="url(#foil-sq-mabrouk-grad)" stroke-width="1.8">
-      <path d="M0 26 L0 8 Q0 0 8 0 L26 0"/>
-      <path d="M8 30 L8 14 Q8 8 14 8 L30 8" opacity="0.6"/>
-      <path d="M26.47 22.68L22.68 26.47L17.32 26.47L13.53 22.68L13.53 17.32L17.32 13.53L22.68 13.53L26.47 17.32Z" opacity="0.85"/>
+    <g transform="translate(540 20) scale(-1 1)">
+      <path d="M2 34 Q2 2 34 2" fill="none" stroke="url(#ribbon-sq-mabrouk-grad)" stroke-width="1.6"/>
+      <path d="M0 0 Q8.16 -5.78 17.00 0 Q8.16 5.78 0 0Z"
+    fill="url(#ribbon-sq-mabrouk-grad)" opacity="0.9" transform="translate(6.00 22.00) rotate(-65.89)"/>
+      <path d="M0 0 Q8.16 -5.78 17.00 0 Q8.16 5.78 0 0Z"
+    fill="url(#ribbon-sq-mabrouk-grad)" opacity="0.9" transform="translate(22.00 6.00) rotate(-24.06)"/>
+      <path d="M0 0 Q6.24 -4.42 13.00 0 Q6.24 4.42 0 0Z"
+    fill="#7FD69B" opacity="0.75" transform="translate(11.00 11.00) rotate(-45.26)"/>
     </g>
-    <g transform="translate(22 538) scale(1 -1)" fill="none" stroke="url(#foil-sq-mabrouk-grad)" stroke-width="1.8">
-      <path d="M0 26 L0 8 Q0 0 8 0 L26 0"/>
-      <path d="M8 30 L8 14 Q8 8 14 8 L30 8" opacity="0.6"/>
-      <path d="M26.47 22.68L22.68 26.47L17.32 26.47L13.53 22.68L13.53 17.32L17.32 13.53L22.68 13.53L26.47 17.32Z" opacity="0.85"/>
+    <g transform="translate(20 540) scale(1 -1)">
+      <path d="M2 34 Q2 2 34 2" fill="none" stroke="url(#ribbon-sq-mabrouk-grad)" stroke-width="1.6"/>
+      <path d="M0 0 Q8.16 -5.78 17.00 0 Q8.16 5.78 0 0Z"
+    fill="url(#ribbon-sq-mabrouk-grad)" opacity="0.9" transform="translate(6.00 22.00) rotate(-65.89)"/>
+      <path d="M0 0 Q8.16 -5.78 17.00 0 Q8.16 5.78 0 0Z"
+    fill="url(#ribbon-sq-mabrouk-grad)" opacity="0.9" transform="translate(22.00 6.00) rotate(-24.06)"/>
+      <path d="M0 0 Q6.24 -4.42 13.00 0 Q6.24 4.42 0 0Z"
+    fill="#7FD69B" opacity="0.75" transform="translate(11.00 11.00) rotate(-45.26)"/>
     </g>
-    <g transform="translate(538 538) scale(-1 -1)" fill="none" stroke="url(#foil-sq-mabrouk-grad)" stroke-width="1.8">
-      <path d="M0 26 L0 8 Q0 0 8 0 L26 0"/>
-      <path d="M8 30 L8 14 Q8 8 14 8 L30 8" opacity="0.6"/>
-      <path d="M26.47 22.68L22.68 26.47L17.32 26.47L13.53 22.68L13.53 17.32L17.32 13.53L22.68 13.53L26.47 17.32Z" opacity="0.85"/>
+    <g transform="translate(540 540) scale(-1 -1)">
+      <path d="M2 34 Q2 2 34 2" fill="none" stroke="url(#ribbon-sq-mabrouk-grad)" stroke-width="1.6"/>
+      <path d="M0 0 Q8.16 -5.78 17.00 0 Q8.16 5.78 0 0Z"
+    fill="url(#ribbon-sq-mabrouk-grad)" opacity="0.9" transform="translate(6.00 22.00) rotate(-65.89)"/>
+      <path d="M0 0 Q8.16 -5.78 17.00 0 Q8.16 5.78 0 0Z"
+    fill="url(#ribbon-sq-mabrouk-grad)" opacity="0.9" transform="translate(22.00 6.00) rotate(-24.06)"/>
+      <path d="M0 0 Q6.24 -4.42 13.00 0 Q6.24 4.42 0 0Z"
+    fill="#7FD69B" opacity="0.75" transform="translate(11.00 11.00) rotate(-45.26)"/>
     </g>
   </g>
 </svg>

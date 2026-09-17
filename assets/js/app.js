@@ -94,15 +94,22 @@
     }
   }
 
-  /* -------------------------------------------------------- showcase */
+  /* -------------------------------------------------------- showcase
+     A real scroll container, so touch swipe and momentum come from the
+     platform. Pointer drag is layered on for mouse users, and every
+     position is read geometrically rather than from scrollLeft, whose
+     sign convention differs between engines under RTL. */
 
   var showcase = document.getElementById('showcase');
-  if (showcase) {
-    var slides = Array.prototype.slice.call(showcase.querySelectorAll('.showcase__slide'));
+  var track = document.getElementById('showcaseTrack');
+  if (showcase && track) {
+    var slides = Array.prototype.slice.call(track.querySelectorAll('.showcase__slide'));
     var caption = document.getElementById('showcaseCaption');
     var dotsWrap = document.getElementById('showcaseDots');
-    var index = 0;
+    var prevBtn = document.getElementById('showcasePrev');
+    var nextBtn = document.getElementById('showcaseNext');
     var timer = null;
+    var index = 0;
     var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
     var cardById = {};
@@ -113,38 +120,114 @@
       dot.type = 'button';
       dot.className = 'showcase__dot' + (i === 0 ? ' is-active' : '');
       dot.setAttribute('aria-label', (lang() === 'ar' ? 'التصميم ' : 'Design ') + (i + 1));
-      dot.addEventListener('click', function () { show(i); restart(); });
+      dot.addEventListener('click', function () { goTo(i); restart(); });
       if (dotsWrap) dotsWrap.appendChild(dot);
       return dot;
     });
 
-    function show(next) {
-      index = (next + slides.length) % slides.length;
+    /* Which slide sits closest to the middle of the viewport? */
+    function nearest() {
+      var box = track.getBoundingClientRect();
+      var mid = box.left + box.width / 2;
+      var best = 0;
+      var bestGap = Infinity;
       slides.forEach(function (slide, i) {
-        slide.classList.remove('is-active', 'is-prev', 'is-next');
-        if (i === index) slide.classList.add('is-active');
-        else if (i === (index - 1 + slides.length) % slides.length) slide.classList.add('is-prev');
-        else if (i === (index + 1) % slides.length) slide.classList.add('is-next');
+        var r = slide.getBoundingClientRect();
+        var gap = Math.abs(r.left + r.width / 2 - mid);
+        if (gap < bestGap) { bestGap = gap; best = i; }
       });
+      return best;
+    }
+
+    function paint() {
+      index = nearest();
+      slides.forEach(function (slide, i) { slide.classList.toggle('is-active', i === index); });
       dots.forEach(function (dot, i) { dot.classList.toggle('is-active', i === index); });
       var card = cardById[slides[index].getAttribute('data-card')];
       if (caption && card) caption.textContent = card[lang()].title;
     }
 
-    function restart() {
-      if (timer) clearInterval(timer);
-      if (reduced) return;
-      timer = setInterval(function () { show(index + 1); }, 4800);
+    /* scrollIntoView keeps this direction-agnostic, so RTL needs no branch. */
+    function goTo(next, instant) {
+      var i = (next + slides.length) % slides.length;
+      slides[i].scrollIntoView({
+        behavior: instant || reduced ? 'auto' : 'smooth',
+        block: 'nearest',
+        inline: 'center'
+      });
     }
 
-    showcase.addEventListener('mouseenter', function () { if (timer) clearInterval(timer); });
-    showcase.addEventListener('mouseleave', restart);
-    document.addEventListener('visibilitychange', function () {
-      if (document.hidden) { if (timer) clearInterval(timer); } else { restart(); }
-    });
-    document.addEventListener('languagechange', function () { show(index); });
+    var settle = null;
+    track.addEventListener('scroll', function () {
+      if (settle) clearTimeout(settle);
+      settle = setTimeout(paint, 90);
+    }, { passive: true });
 
-    show(0);
+    if (prevBtn) prevBtn.addEventListener('click', function () { goTo(index - 1); restart(); });
+    if (nextBtn) nextBtn.addEventListener('click', function () { goTo(index + 1); restart(); });
+
+    track.addEventListener('keydown', function (event) {
+      var rtl = document.documentElement.getAttribute('dir') === 'rtl';
+      var step = 0;
+      if (event.key === 'ArrowRight') step = rtl ? -1 : 1;
+      else if (event.key === 'ArrowLeft') step = rtl ? 1 : -1;
+      else if (event.key === 'Home') { event.preventDefault(); goTo(0); restart(); return; }
+      else if (event.key === 'End') { event.preventDefault(); goTo(slides.length - 1); restart(); return; }
+      if (!step) return;
+      event.preventDefault();
+      goTo(index + step);
+      restart();
+    });
+
+    /* Mouse drag. Touch is left to the browser so momentum stays native. */
+    var dragging = false;
+    var lastX = 0;
+    track.addEventListener('pointerdown', function (event) {
+      if (event.pointerType !== 'mouse' || event.button !== 0) return;
+      dragging = true;
+      lastX = event.clientX;
+      track.classList.add('is-dragging');
+      track.setPointerCapture(event.pointerId);
+      stop();
+    });
+    track.addEventListener('pointermove', function (event) {
+      if (!dragging) return;
+      var dx = event.clientX - lastX;
+      lastX = event.clientX;
+      track.scrollLeft -= dx;
+      event.preventDefault();
+    });
+    function endDrag(event) {
+      if (!dragging) return;
+      dragging = false;
+      track.classList.remove('is-dragging');
+      if (event && event.pointerId != null && track.hasPointerCapture(event.pointerId)) {
+        track.releasePointerCapture(event.pointerId);
+      }
+      goTo(nearest());
+      restart();
+    }
+    track.addEventListener('pointerup', endDrag);
+    track.addEventListener('pointercancel', endDrag);
+
+    function stop() { if (timer) { clearInterval(timer); timer = null; } }
+    function restart() {
+      stop();
+      if (reduced) return;
+      timer = setInterval(function () { goTo(index + 1); }, 5200);
+    }
+
+    showcase.addEventListener('mouseenter', stop);
+    showcase.addEventListener('mouseleave', restart);
+    track.addEventListener('focusin', stop);
+    track.addEventListener('focusout', restart);
+    document.addEventListener('visibilitychange', function () {
+      if (document.hidden) stop(); else restart();
+    });
+    document.addEventListener('languagechange', paint);
+
+    goTo(0, true);
+    paint();
     restart();
   }
 

@@ -1,83 +1,195 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 700" width="500" height="700" role="img">
 <defs>
-  <linearGradient id="foil-khotoba-ivory" x1="0" y1="0" x2="1" y2="1">
-    <stop offset="0%" stop-color="#9C7A2E"/><stop offset="20%" stop-color="#D8B45F"/><stop offset="38%" stop-color="#F5E7BC"/><stop offset="55%" stop-color="#C9A34C"/><stop offset="74%" stop-color="#E8D08A"/><stop offset="100%" stop-color="#A8842F"/>
+  <linearGradient id="ribbon-khotoba-ivory" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#2E6B45"/>
+    <stop offset="52%" stop-color="#5FB87E"/>
+    <stop offset="100%" stop-color="#7D8CCB"/>
   </linearGradient>
   <linearGradient id="bg-khotoba-ivory" x1="0" y1="0" x2="0.3" y2="1">
-    <stop offset="0%" stop-color="#F4EBE0"/><stop offset="100%" stop-color="#E6D7C3"/>
+    <stop offset="0%" stop-color="#F8F3E8"/><stop offset="100%" stop-color="#EADFCB"/>
   </linearGradient>
-  <radialGradient id="glow-khotoba-ivory" cx="50%" cy="42%" r="58%">
-    <stop offset="0%" stop-color="#ffffff" stop-opacity="0.34"/>
+  <radialGradient id="glow-khotoba-ivory" cx="50%" cy="40%" r="60%">
+    <stop offset="0%" stop-color="#ffffff" stop-opacity="0.30"/>
     <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
   </radialGradient>
 </defs>
 <defs>
-  <pattern id="girih-khotoba-ivory" width="88" height="88" patternUnits="userSpaceOnUse">
-    <g fill="none" stroke="#7A5C22" stroke-width="1.1">
-      <path d="M44.00 10.00L51.27 26.45L68.04 19.96L61.55 36.73L78.00 44.00L61.55 51.27L68.04 68.04L51.27 61.55L44.00 78.00L36.73 61.55L19.96 68.04L26.45 51.27L10.00 44.00L26.45 36.73L19.96 19.96L36.73 26.45Z"/>
-      <path d="M57.86 49.74L49.74 57.86L38.26 57.86L30.14 49.74L30.14 38.26L38.26 30.14L49.74 30.14L57.86 38.26Z"/>
-      <path d="M0 0 8 8M88 0 80 8M0 88 8 80M88 88 80 80"/>
+  <pattern id="vine-khotoba-ivory" width="104" height="104" patternUnits="userSpaceOnUse">
+    <g fill="none" stroke="#5FB87E" stroke-width="1.1" stroke-linecap="round">
+      <path d="M0 78 Q26 44 52 78 T104 78"/>
+      <path d="M0 26 Q26 -8 52 26 T104 26"/>
     </g>
+    <path d="M0 0 Q7.20 -5.10 15.00 0 Q7.20 5.10 0 0Z"
+    fill="#5FB87E" opacity="0.55" transform="translate(26.00 60.00) rotate(-108.86)"/><path d="M0 0 Q7.20 -5.10 15.00 0 Q7.20 5.10 0 0Z"
+    fill="#5FB87E" opacity="0.55" transform="translate(78.00 60.00) rotate(-71.05)"/>
+    <path d="M0 0 Q7.20 -5.10 15.00 0 Q7.20 5.10 0 0Z"
+    fill="#5FB87E" opacity="0.55" transform="translate(26.00 8.00) rotate(-108.86)"/><path d="M0 0 Q7.20 -5.10 15.00 0 Q7.20 5.10 0 0Z"
+    fill="#5FB87E" opacity="0.55" transform="translate(78.00 8.00) rotate(-71.05)"/>
+    <circle cx="52" cy="52" r="2.6" fill="#5FB87E" opacity="0.5"/>
   </pattern>
   <clipPath id="clip-khotoba-ivory"><rect width="500" height="700"/></clipPath>
 </defs>
 <rect width="500" height="700" fill="url(#bg-khotoba-ivory)"/>
-<g opacity="0.07" clip-path="url(#clip-khotoba-ivory)">
-    <rect width="500" height="700" fill="url(#girih-khotoba-ivory)"/>
+<g opacity="0.1" clip-path="url(#clip-khotoba-ivory)">
+    <rect width="500" height="700" fill="url(#vine-khotoba-ivory)"/>
   </g>
 <rect width="500" height="700" fill="url(#glow-khotoba-ivory)"/>
-<g stroke="url(#foil-khotoba-ivory)" stroke-width="1.1" fill="none" stroke-linejoin="round">
-    <path d="M250.00 180.00L277.43 241.78L340.51 217.49L316.22 280.57L378.00 308.00L316.22 335.43L340.51 398.51L277.43 374.22L250.00 436.00L222.57 374.22L159.49 398.51L183.78 335.43L122.00 308.00L183.78 280.57L159.49 217.49L222.57 241.78Z"/>
-    <path d="M286.25 220.49L288.01 269.99L337.51 271.75L303.76 308.00L337.51 344.25L288.01 346.01L286.25 395.51L250.00 361.76L213.75 395.51L211.99 346.01L162.49 344.25L196.24 308.00L162.49 271.75L211.99 269.99L213.75 220.49L250.00 254.24Z"/>
-    <path d="M299.67 328.57L270.57 357.67L229.43 357.67L200.33 328.57L200.33 287.43L229.43 258.33L270.57 258.33L299.67 287.43Z"/>
-    <circle cx="250" cy="308" r="25.60"/>
-  </g>
-      <g fill="none" stroke="url(#foil-khotoba-ivory)" stroke-width="3.4">
-        <circle cx="224" cy="308" r="42"/>
-        <circle cx="276" cy="308" r="42"/>
+<circle cx="250.00 " cy="301.00" r="132.00" fill="none" stroke="url(#ribbon-khotoba-ivory)" stroke-width="1.6" opacity="0.85"/><path d="M0 0 Q10.56 -7.48 22.00 0 Q10.56 7.48 0 0Z"
+    fill="#5FB87E" opacity="0.9" transform="translate(250.00 169.00) rotate(-28.65)"/><path d="M0 0 Q12.96 -9.18 27.00 0 Q12.96 9.18 0 0Z"
+    fill="#5FB87E" opacity="0.9" transform="translate(287.19 174.35) rotate(45.01)"/><path d="M0 0 Q15.36 -10.88 32.00 0 Q15.36 10.88 0 0Z"
+    fill="#5FB87E" opacity="0.9" transform="translate(321.36 189.95) rotate(4.08)"/><path d="M0 0 Q10.56 -7.48 22.00 0 Q10.56 7.48 0 0Z"
+    fill="#5FB87E" opacity="0.9" transform="translate(349.76 214.56) rotate(77.74)"/><path d="M0 0 Q12.96 -9.18 27.00 0 Q12.96 9.18 0 0Z"
+    fill="#5FB87E" opacity="0.9" transform="translate(370.07 246.17) rotate(36.81)"/><path d="M0 0 Q15.36 -10.88 32.00 0 Q15.36 10.88 0 0Z"
+    fill="#5FB87E" opacity="0.9" transform="translate(380.66 282.21) rotate(110.47)"/><path d="M0 0 Q10.56 -7.48 22.00 0 Q10.56 7.48 0 0Z"
+    fill="#5FB87E" opacity="0.9" transform="translate(380.66 319.79) rotate(69.53)"/><path d="M0 0 Q12.96 -9.18 27.00 0 Q12.96 9.18 0 0Z"
+    fill="#5FB87E" opacity="0.9" transform="translate(370.07 355.83) rotate(143.19)"/><path d="M0 0 Q15.36 -10.88 32.00 0 Q15.36 10.88 0 0Z"
+    fill="#5FB87E" opacity="0.9" transform="translate(349.76 387.44) rotate(102.26)"/><path d="M0 0 Q10.56 -7.48 22.00 0 Q10.56 7.48 0 0Z"
+    fill="#5FB87E" opacity="0.9" transform="translate(321.36 412.05) rotate(175.92)"/><path d="M0 0 Q12.96 -9.18 27.00 0 Q12.96 9.18 0 0Z"
+    fill="#5FB87E" opacity="0.9" transform="translate(287.19 427.65) rotate(134.99)"/><path d="M0 0 Q15.36 -10.88 32.00 0 Q15.36 10.88 0 0Z"
+    fill="#5FB87E" opacity="0.9" transform="translate(250.00 433.00) rotate(208.65)"/><path d="M0 0 Q10.56 -7.48 22.00 0 Q10.56 7.48 0 0Z"
+    fill="#5FB87E" opacity="0.9" transform="translate(212.81 427.65) rotate(167.72)"/><path d="M0 0 Q12.96 -9.18 27.00 0 Q12.96 9.18 0 0Z"
+    fill="#5FB87E" opacity="0.9" transform="translate(178.64 412.05) rotate(241.38)"/><path d="M0 0 Q15.36 -10.88 32.00 0 Q15.36 10.88 0 0Z"
+    fill="#5FB87E" opacity="0.9" transform="translate(150.24 387.44) rotate(200.44)"/><path d="M0 0 Q10.56 -7.48 22.00 0 Q10.56 7.48 0 0Z"
+    fill="#5FB87E" opacity="0.9" transform="translate(129.93 355.83) rotate(274.10)"/><path d="M0 0 Q12.96 -9.18 27.00 0 Q12.96 9.18 0 0Z"
+    fill="#5FB87E" opacity="0.9" transform="translate(119.34 319.79) rotate(233.17)"/><path d="M0 0 Q15.36 -10.88 32.00 0 Q15.36 10.88 0 0Z"
+    fill="#5FB87E" opacity="0.9" transform="translate(119.34 282.21) rotate(306.83)"/><path d="M0 0 Q10.56 -7.48 22.00 0 Q10.56 7.48 0 0Z"
+    fill="#5FB87E" opacity="0.9" transform="translate(129.93 246.17) rotate(265.90)"/><path d="M0 0 Q12.96 -9.18 27.00 0 Q12.96 9.18 0 0Z"
+    fill="#5FB87E" opacity="0.9" transform="translate(150.24 214.56) rotate(339.56)"/><path d="M0 0 Q15.36 -10.88 32.00 0 Q15.36 10.88 0 0Z"
+    fill="#5FB87E" opacity="0.9" transform="translate(178.64 189.95) rotate(298.62)"/><path d="M0 0 Q10.56 -7.48 22.00 0 Q10.56 7.48 0 0Z"
+    fill="#5FB87E" opacity="0.9" transform="translate(212.81 174.35) rotate(372.28)"/><ellipse cx="371.95" cy="372.91"
+      rx="8.84" ry="7.14" fill="#E86B9A" opacity="0.95"
+      transform="rotate(17.19 371.95 372.91)"/><ellipse cx="364.72" cy="379.61"
+      rx="8.84" ry="7.14" fill="#E86B9A" opacity="0.95"
+      transform="rotate(77.19 364.72 379.61)"/><ellipse cx="355.30" cy="376.70"
+      rx="8.84" ry="7.14" fill="#E86B9A" opacity="0.95"
+      transform="rotate(137.19 355.30 376.70)"/><ellipse cx="353.11" cy="367.08"
+      rx="8.84" ry="7.14" fill="#E86B9A" opacity="0.95"
+      transform="rotate(197.19 353.11 367.08)"/><ellipse cx="360.35" cy="360.38"
+      rx="8.84" ry="7.14" fill="#E86B9A" opacity="0.95"
+      transform="rotate(257.19 360.35 360.38)"/><ellipse cx="369.77" cy="363.29"
+      rx="8.84" ry="7.14" fill="#E86B9A" opacity="0.95"
+      transform="rotate(317.19 369.77 363.29)"/><ellipse cx="367.01" cy="367.55"
+      rx="6.12" ry="5.10" fill="#2E6B45" opacity="0.9"
+      transform="rotate(-28.65 367.01 367.55)"/><ellipse cx="366.24" cy="373.50"
+      rx="6.12" ry="5.10" fill="#2E6B45" opacity="0.9"
+      transform="rotate(43.35 366.24 373.50)"/><ellipse cx="360.35" cy="374.60"
+      rx="6.12" ry="5.10" fill="#2E6B45" opacity="0.9"
+      transform="rotate(115.35 360.35 374.60)"/><ellipse cx="357.48" cy="369.34"
+      rx="6.12" ry="5.10" fill="#2E6B45" opacity="0.9"
+      transform="rotate(187.35 357.48 369.34)"/><ellipse cx="361.59" cy="364.98"
+      rx="6.12" ry="5.10" fill="#2E6B45" opacity="0.9"
+      transform="rotate(259.35 361.59 364.98)"/><path d="M359.13 369.99 a3.40 3.40 0 1 1 6.80 0
+    a2.21 2.21 0 1 0 -4.42 0" fill="none"
+    stroke="url(#ribbon-khotoba-ivory)" stroke-width="1.27" stroke-linecap="round"/><ellipse cx="143.40" cy="366.87"
+      rx="8.84" ry="7.14" fill="#E86B9A" opacity="0.95"
+      transform="rotate(17.19 143.40 366.87)"/><ellipse cx="136.17" cy="373.57"
+      rx="8.84" ry="7.14" fill="#E86B9A" opacity="0.95"
+      transform="rotate(77.19 136.17 373.57)"/><ellipse cx="126.75" cy="370.66"
+      rx="8.84" ry="7.14" fill="#E86B9A" opacity="0.95"
+      transform="rotate(137.19 126.75 370.66)"/><ellipse cx="124.56" cy="361.05"
+      rx="8.84" ry="7.14" fill="#E86B9A" opacity="0.95"
+      transform="rotate(197.19 124.56 361.05)"/><ellipse cx="131.80" cy="354.34"
+      rx="8.84" ry="7.14" fill="#E86B9A" opacity="0.95"
+      transform="rotate(257.19 131.80 354.34)"/><ellipse cx="141.22" cy="357.26"
+      rx="8.84" ry="7.14" fill="#E86B9A" opacity="0.95"
+      transform="rotate(317.19 141.22 357.26)"/><ellipse cx="138.46" cy="361.51"
+      rx="6.12" ry="5.10" fill="#2E6B45" opacity="0.9"
+      transform="rotate(-28.65 138.46 361.51)"/><ellipse cx="137.69" cy="367.46"
+      rx="6.12" ry="5.10" fill="#2E6B45" opacity="0.9"
+      transform="rotate(43.35 137.69 367.46)"/><ellipse cx="131.80" cy="368.57"
+      rx="6.12" ry="5.10" fill="#2E6B45" opacity="0.9"
+      transform="rotate(115.35 131.80 368.57)"/><ellipse cx="128.92" cy="363.31"
+      rx="6.12" ry="5.10" fill="#2E6B45" opacity="0.9"
+      transform="rotate(187.35 128.92 363.31)"/><ellipse cx="133.04" cy="358.95"
+      rx="6.12" ry="5.10" fill="#2E6B45" opacity="0.9"
+      transform="rotate(259.35 133.04 358.95)"/><path d="M130.58 363.96 a3.40 3.40 0 1 1 6.80 0
+    a2.21 2.21 0 1 0 -4.42 0" fill="none"
+    stroke="url(#ribbon-khotoba-ivory)" stroke-width="1.27" stroke-linecap="round"/><ellipse cx="262.90" cy="171.96"
+      rx="8.84" ry="7.14" fill="#E86B9A" opacity="0.95"
+      transform="rotate(17.19 262.90 171.96)"/><ellipse cx="255.67" cy="178.66"
+      rx="8.84" ry="7.14" fill="#E86B9A" opacity="0.95"
+      transform="rotate(77.19 255.67 178.66)"/><ellipse cx="246.25" cy="175.75"
+      rx="8.84" ry="7.14" fill="#E86B9A" opacity="0.95"
+      transform="rotate(137.19 246.25 175.75)"/><ellipse cx="244.06" cy="166.13"
+      rx="8.84" ry="7.14" fill="#E86B9A" opacity="0.95"
+      transform="rotate(197.19 244.06 166.13)"/><ellipse cx="251.30" cy="159.43"
+      rx="8.84" ry="7.14" fill="#E86B9A" opacity="0.95"
+      transform="rotate(257.19 251.30 159.43)"/><ellipse cx="260.72" cy="162.35"
+      rx="8.84" ry="7.14" fill="#E86B9A" opacity="0.95"
+      transform="rotate(317.19 260.72 162.35)"/><ellipse cx="257.96" cy="166.60"
+      rx="6.12" ry="5.10" fill="#2E6B45" opacity="0.9"
+      transform="rotate(-28.65 257.96 166.60)"/><ellipse cx="257.19" cy="172.55"
+      rx="6.12" ry="5.10" fill="#2E6B45" opacity="0.9"
+      transform="rotate(43.35 257.19 172.55)"/><ellipse cx="251.30" cy="173.65"
+      rx="6.12" ry="5.10" fill="#2E6B45" opacity="0.9"
+      transform="rotate(115.35 251.30 173.65)"/><ellipse cx="248.43" cy="168.39"
+      rx="6.12" ry="5.10" fill="#2E6B45" opacity="0.9"
+      transform="rotate(187.35 248.43 168.39)"/><ellipse cx="252.54" cy="164.03"
+      rx="6.12" ry="5.10" fill="#2E6B45" opacity="0.9"
+      transform="rotate(259.35 252.54 164.03)"/><path d="M250.08 169.05 a3.40 3.40 0 1 1 6.80 0
+    a2.21 2.21 0 1 0 -4.42 0" fill="none"
+    stroke="url(#ribbon-khotoba-ivory)" stroke-width="1.27" stroke-linecap="round"/>
+      <g fill="none" stroke="url(#ribbon-khotoba-ivory)" stroke-width="3.6">
+        <circle cx="224" cy="301" r="42"/>
+        <circle cx="276" cy="301" r="42"/>
       </g>
-      <g fill="none" stroke="#7A5C22" stroke-width="1" opacity="0.5">
-        <circle cx="224" cy="308" r="48"/>
-        <circle cx="276" cy="308" r="48"/>
+      <g fill="none" stroke="#5FB87E" stroke-width="1" opacity="0.55">
+        <circle cx="224" cy="301" r="48"/>
+        <circle cx="276" cy="301" r="48"/>
       </g>
-      <g fill="none" stroke="url(#foil-khotoba-ivory)" stroke-linecap="round" opacity="1">
-    <path d="M155 504 C193 447, 238.6 543.9, 250 504
-             S307 447, 345 504" stroke-width="3"/>
-    <path d="M185.39999999999998 527.94 C231 549.6, 269 549.6, 314.6 527.94" stroke-width="1.6" opacity="0.7"/>
-    <circle cx="146" cy="504" r="2.6" fill="url(#foil-khotoba-ivory)" stroke="none"/>
-    <circle cx="354" cy="504" r="2.6" fill="url(#foil-khotoba-ivory)" stroke="none"/>
+      <g transform="translate(250.00 451.00) scale(0.78)">
+    <path d="M-4 0 Q-34 -20 -46 -4 Q-52 10 -32 14 Q-14 17 -4 4Z" fill="#5FB87E"/>
+    <path d="M4 0 Q34 -20 46 -4 Q52 10 32 14 Q14 17 4 4Z" fill="#5FB87E"/>
+    <path d="M-5 6 Q-16 40 -26 60 L-12 56 Q-4 34 -2 12Z" fill="#5FB87E" opacity="0.9"/>
+    <path d="M5 6 Q16 40 26 60 L12 56 Q4 34 2 12Z" fill="#5FB87E" opacity="0.9"/>
+    <ellipse cx="0" cy="3" rx="7.5" ry="8.5" fill="#5FB87E"/>
   </g>
-      <g fill="none" stroke="#7A5C22" stroke-linecap="round" opacity="0.45">
-    <path d="M190 560 C214 524, 242.8 585.2, 250 560
-             S286 524, 310 560" stroke-width="3"/>
-    <path d="M209.2 575.12 C238 588.8, 262 588.8, 290.8 575.12" stroke-width="1.6" opacity="0.7"/>
-    <circle cx="181" cy="560" r="2.6" fill="#7A5C22" stroke="none"/>
-    <circle cx="319" cy="560" r="2.6" fill="#7A5C22" stroke="none"/>
+      <g fill="none" stroke="url(#ribbon-khotoba-ivory)" stroke-linecap="round" opacity="1">
+    <path d="M165.00 581.00 C199.00 530.00, 239.80 616.70, 250.00 581.00
+             S301.00 530.00, 335.00 581.00" stroke-width="2.6"/>
+    <circle cx="156.00" cy="581.00" r="2.6" fill="url(#ribbon-khotoba-ivory)" stroke="none"/>
+    <circle cx="344.00" cy="581.00" r="2.6" fill="url(#ribbon-khotoba-ivory)" stroke="none"/>
   </g>
 <g>
-    <rect x="26" y="26" width="448" height="648" rx="6"
-          fill="none" stroke="url(#foil-khotoba-ivory)" stroke-width="1.6"/>
-    <rect x="33" y="33" width="434" height="634" rx="3"
-          fill="none" stroke="url(#foil-khotoba-ivory)" stroke-width="0.7" opacity="0.65"/>
-    <g transform="translate(22 22) scale(1 1)" fill="none" stroke="url(#foil-khotoba-ivory)" stroke-width="1.8">
-      <path d="M0 26 L0 8 Q0 0 8 0 L26 0"/>
-      <path d="M8 30 L8 14 Q8 8 14 8 L30 8" opacity="0.6"/>
-      <path d="M26.47 22.68L22.68 26.47L17.32 26.47L13.53 22.68L13.53 17.32L17.32 13.53L22.68 13.53L26.47 17.32Z" opacity="0.85"/>
+    <rect x="26" y="26" width="448" height="648" rx="8"
+          fill="none" stroke="url(#ribbon-khotoba-ivory)" stroke-width="1.5"/>
+    <rect x="33" y="33" width="434" height="634" rx="4"
+          fill="none" stroke="#5FB87E" stroke-width="0.7" opacity="0.5"/>
+    <g transform="translate(20 20) scale(1 1)">
+      <path d="M2 34 Q2 2 34 2" fill="none" stroke="url(#ribbon-khotoba-ivory)" stroke-width="1.6"/>
+      <path d="M0 0 Q8.16 -5.78 17.00 0 Q8.16 5.78 0 0Z"
+    fill="url(#ribbon-khotoba-ivory)" opacity="0.9" transform="translate(6.00 22.00) rotate(-65.89)"/>
+      <path d="M0 0 Q8.16 -5.78 17.00 0 Q8.16 5.78 0 0Z"
+    fill="url(#ribbon-khotoba-ivory)" opacity="0.9" transform="translate(22.00 6.00) rotate(-24.06)"/>
+      <path d="M0 0 Q6.24 -4.42 13.00 0 Q6.24 4.42 0 0Z"
+    fill="#5FB87E" opacity="0.75" transform="translate(11.00 11.00) rotate(-45.26)"/>
     </g>
-    <g transform="translate(478 22) scale(-1 1)" fill="none" stroke="url(#foil-khotoba-ivory)" stroke-width="1.8">
-      <path d="M0 26 L0 8 Q0 0 8 0 L26 0"/>
-      <path d="M8 30 L8 14 Q8 8 14 8 L30 8" opacity="0.6"/>
-      <path d="M26.47 22.68L22.68 26.47L17.32 26.47L13.53 22.68L13.53 17.32L17.32 13.53L22.68 13.53L26.47 17.32Z" opacity="0.85"/>
+    <g transform="translate(480 20) scale(-1 1)">
+      <path d="M2 34 Q2 2 34 2" fill="none" stroke="url(#ribbon-khotoba-ivory)" stroke-width="1.6"/>
+      <path d="M0 0 Q8.16 -5.78 17.00 0 Q8.16 5.78 0 0Z"
+    fill="url(#ribbon-khotoba-ivory)" opacity="0.9" transform="translate(6.00 22.00) rotate(-65.89)"/>
+      <path d="M0 0 Q8.16 -5.78 17.00 0 Q8.16 5.78 0 0Z"
+    fill="url(#ribbon-khotoba-ivory)" opacity="0.9" transform="translate(22.00 6.00) rotate(-24.06)"/>
+      <path d="M0 0 Q6.24 -4.42 13.00 0 Q6.24 4.42 0 0Z"
+    fill="#5FB87E" opacity="0.75" transform="translate(11.00 11.00) rotate(-45.26)"/>
     </g>
-    <g transform="translate(22 678) scale(1 -1)" fill="none" stroke="url(#foil-khotoba-ivory)" stroke-width="1.8">
-      <path d="M0 26 L0 8 Q0 0 8 0 L26 0"/>
-      <path d="M8 30 L8 14 Q8 8 14 8 L30 8" opacity="0.6"/>
-      <path d="M26.47 22.68L22.68 26.47L17.32 26.47L13.53 22.68L13.53 17.32L17.32 13.53L22.68 13.53L26.47 17.32Z" opacity="0.85"/>
+    <g transform="translate(20 680) scale(1 -1)">
+      <path d="M2 34 Q2 2 34 2" fill="none" stroke="url(#ribbon-khotoba-ivory)" stroke-width="1.6"/>
+      <path d="M0 0 Q8.16 -5.78 17.00 0 Q8.16 5.78 0 0Z"
+    fill="url(#ribbon-khotoba-ivory)" opacity="0.9" transform="translate(6.00 22.00) rotate(-65.89)"/>
+      <path d="M0 0 Q8.16 -5.78 17.00 0 Q8.16 5.78 0 0Z"
+    fill="url(#ribbon-khotoba-ivory)" opacity="0.9" transform="translate(22.00 6.00) rotate(-24.06)"/>
+      <path d="M0 0 Q6.24 -4.42 13.00 0 Q6.24 4.42 0 0Z"
+    fill="#5FB87E" opacity="0.75" transform="translate(11.00 11.00) rotate(-45.26)"/>
     </g>
-    <g transform="translate(478 678) scale(-1 -1)" fill="none" stroke="url(#foil-khotoba-ivory)" stroke-width="1.8">
-      <path d="M0 26 L0 8 Q0 0 8 0 L26 0"/>
-      <path d="M8 30 L8 14 Q8 8 14 8 L30 8" opacity="0.6"/>
-      <path d="M26.47 22.68L22.68 26.47L17.32 26.47L13.53 22.68L13.53 17.32L17.32 13.53L22.68 13.53L26.47 17.32Z" opacity="0.85"/>
+    <g transform="translate(480 680) scale(-1 -1)">
+      <path d="M2 34 Q2 2 34 2" fill="none" stroke="url(#ribbon-khotoba-ivory)" stroke-width="1.6"/>
+      <path d="M0 0 Q8.16 -5.78 17.00 0 Q8.16 5.78 0 0Z"
+    fill="url(#ribbon-khotoba-ivory)" opacity="0.9" transform="translate(6.00 22.00) rotate(-65.89)"/>
+      <path d="M0 0 Q8.16 -5.78 17.00 0 Q8.16 5.78 0 0Z"
+    fill="url(#ribbon-khotoba-ivory)" opacity="0.9" transform="translate(22.00 6.00) rotate(-24.06)"/>
+      <path d="M0 0 Q6.24 -4.42 13.00 0 Q6.24 4.42 0 0Z"
+    fill="#5FB87E" opacity="0.75" transform="translate(11.00 11.00) rotate(-45.26)"/>
     </g>
   </g>
 </svg>

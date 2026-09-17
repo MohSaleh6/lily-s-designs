@@ -12,7 +12,7 @@ import { writeFileSync, mkdirSync, rmSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
-import { site, cards, testimonials, occasions, plans, addons, ui } from './content.mjs';
+import { site, cards, testimonials, occasions, plans, addons, ui, instagramPosts } from './content.mjs';
 import { cardSVG, squareSVG, sceneSVG, portraitSVG, ogSVG, faviconSVG } from './art.mjs';
 import { home, portfolio, services, about, testimonialsPage } from './pages.mjs';
 import { order, contact } from './pages-order.mjs';
@@ -58,9 +58,13 @@ cards.forEach((c) => {
   }));
 });
 
-['hilal-eid', 'ward-blush', 'mabrouk-grad', 'corporate-navy'].forEach((id) => {
-  const c = cards.find((x) => x.id === id);
-  write(`assets/img/square/${id}.svg`, squareSVG({ id: `sq-${id}`, palette: c.palette, motif: c.motif }));
+/* One square per feed row, so a placeholder exists until a real photo
+   replaces it. Rows already pointing at a real image are skipped. */
+instagramPosts.forEach((post) => {
+  if (!post.image.startsWith('assets/img/square/')) return;
+  const c = cards.find((x) => x.id === post.id);
+  if (!c) return;
+  write(`assets/img/square/${c.id}.svg`, squareSVG({ id: `sq-${c.id}`, palette: c.palette, motif: c.motif }));
 });
 
 testimonials.forEach((t) => {
@@ -136,8 +140,8 @@ write('site.webmanifest', JSON.stringify({
   start_url: './index.html',
   scope: './',
   display: 'standalone',
-  background_color: '#FBF8F4',
-  theme_color: '#0E4C41',
+  background_color: '#FBF7EE',
+  theme_color: '#1C4D33',
   lang: 'ar',
   dir: 'rtl',
   icons: [

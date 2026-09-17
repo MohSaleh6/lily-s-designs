@@ -36,7 +36,7 @@ After any change:
 node build/build.mjs
 ```
 
-This regenerates the seven pages, all 36 SVG assets, `assets/js/data.js`,
+This regenerates the seven pages, all 38 SVG assets, `assets/js/data.js`,
 `sitemap.xml`, `robots.txt` and `site.webmanifest`.
 
 ### Adding a card design
@@ -44,7 +44,45 @@ This regenerates the seven pages, all 36 SVG assets, `assets/js/data.js`,
 Add an entry to `cards` in `build/content.mjs` and rebuild. The artwork, portfolio
 tile, lightbox entry, order-form swatch and cart pricing all follow automatically.
 `motif` picks the artwork family (`rings`, `eid`, `confetti`, `laurel`, `grid`,
-`arch`, `botanical`, `bands`) and `palette` picks the colourway.
+`arch`, `botanical`, `bands`) and `palette` picks the colourway
+(`ivoryLeaf`, `creamRose`, `leafDeep`, `periDeep`, `roseDeep`, `creamLeaf`,
+`mintIvory`, `periBlush`).
+
+### Adding an Instagram post or reel
+
+The feed strip on the home page is driven by `instagramPosts` in
+`build/content.mjs`. To publish a real post:
+
+1. Save the image to `assets/img/instagram/<name>.jpg` (square crops look best).
+2. Add a row: set `image` to that path, `url` to the post's permalink, and
+   `type` to `'post'` or `'reel'` — reels get a play badge.
+3. Write the caption in both languages under `en.caption` / `ar.caption`.
+4. Rebuild.
+
+A row whose `url` is empty falls back to the profile link, so nothing can 404.
+Rows still pointing at `assets/img/square/` get generated placeholder artwork.
+
+### The brand mark
+
+`assets/img/brand/logo.jpg` is the studio's own mark and is used for the header
+badge, the About-page crest and the social share image. The page background
+(`--ivory`) is set to the mark's own cream so it sits seamlessly; if the mark is
+ever re-exported on a different paper, update `--ivory` in `assets/css/styles.css`
+to match.
+
+### Colours
+
+The palette lives in one place — the `:root` block at the top of
+`assets/css/styles.css`. Three families, drawn from the mark:
+
+| Family | Use |
+|---|---|
+| `--leaf-*` | green stems and vines; `--leaf` is the text-safe green |
+| `--rose-*` | pink blooms; `--rose-text` for small text, `--rose` decorative |
+| `--bloom-*` | periwinkle ribbon; `--bloom-text` small text, `--bloom` decorative |
+
+Tones marked decorative are below 4.5:1 on light surfaces and must not carry
+small text.
 
 ### Changing prices
 

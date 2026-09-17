@@ -41,15 +41,46 @@ export const occasions = [
   { id: 'thanks',      en: 'Thank you',    ar: 'شكر وتقدير' }
 ];
 
+/* ------------------------------------------------------------ instagram
+
+   The studio feed. To publish a real post or reel:
+     1. save the image to assets/img/instagram/<name>.jpg
+     2. add a row below with `image` pointing at it and `url` set to the
+        post's permalink
+     3. run `node build/build.mjs`
+   Rows with `type: 'reel'` get the play badge. Until a row carries a real
+   permalink it links to the profile, so nothing here can 404. */
+
+export const instagramPosts = [
+  { id: 'hilal-eid', type: 'post', image: 'assets/img/square/hilal-eid.svg', url: '',
+    en: { caption: 'Hilal — this season\u2019s Eid card, gilded and ready to print.' },
+    ar: { caption: '\u0647\u0644\u0627\u0644 \u2014 \u0628\u0637\u0627\u0642\u0629 \u0627\u0644\u0639\u064a\u062f \u0644\u0647\u0630\u0627 \u0627\u0644\u0645\u0648\u0633\u0645\u060c \u062c\u0627\u0647\u0632\u0629 \u0644\u0644\u0637\u0628\u0627\u0639\u0629.' } },
+  { id: 'ward-blush', type: 'post', image: 'assets/img/square/ward-blush.svg', url: '',
+    en: { caption: 'Ward — a blush botanical suite for an engagement in Amman.' },
+    ar: { caption: '\u0648\u0631\u062f \u2014 \u0637\u0642\u0645 \u0646\u0628\u0627\u062a\u064a \u0648\u0631\u062f\u064a \u0644\u062e\u0637\u0648\u0628\u0629 \u0641\u064a \u0639\u0645\u0651\u0627\u0646.' } },
+  { id: 'mabrouk-grad', type: 'reel', image: 'assets/img/square/mabrouk-grad.svg', url: '',
+    en: { caption: 'Watch a graduation set come together, from pencil to foil.' },
+    ar: { caption: '\u0634\u0627\u0647\u062f \u0637\u0642\u0645 \u0627\u0644\u062a\u062e\u0631\u0651\u062c \u064a\u062a\u0643\u0648\u0651\u0646\u060c \u0645\u0646 \u0627\u0644\u0642\u0644\u0645 \u0625\u0644\u0649 \u0627\u0644\u0637\u0628\u0627\u0639\u0629.' } },
+  { id: 'sana-helwa', type: 'post', image: 'assets/img/square/sana-helwa.svg', url: '',
+    en: { caption: 'Sana Helwa — petals scattered around an open rose.' },
+    ar: { caption: '\u0633\u0646\u0629 \u062d\u0644\u0648\u0629 \u2014 \u0628\u062a\u0644\u0627\u062a \u0645\u062a\u0646\u0627\u062b\u0631\u0629 \u062d\u0648\u0644 \u0648\u0631\u062f\u0629 \u0645\u0641\u062a\u0648\u062d\u0629.' } },
+  { id: 'mawlood-mint', type: 'reel', image: 'assets/img/square/mawlood-mint.svg', url: '',
+    en: { caption: 'Unboxing a new-baby announcement set, mint on ivory.' },
+    ar: { caption: '\u0641\u062a\u062d \u0637\u0642\u0645 \u0625\u0639\u0644\u0627\u0646 \u0645\u0648\u0644\u0648\u062f \u062c\u062f\u064a\u062f\u060c \u0646\u0639\u0646\u0627\u0639\u064a \u0639\u0644\u0649 \u0639\u0627\u062c\u064a.' } },
+  { id: 'corporate-navy', type: 'post', image: 'assets/img/square/corporate-navy.svg', url: '',
+    en: { caption: 'Fifty corporate Ramadan greetings, packed and out the door.' },
+    ar: { caption: '\u062e\u0645\u0633\u0648\u0646 \u0628\u0637\u0627\u0642\u0629 \u062a\u0647\u0646\u0626\u0629 \u0631\u0645\u0636\u0627\u0646\u064a\u0629 \u0644\u0644\u0634\u0631\u0643\u0627\u062a\u060c \u062c\u0627\u0647\u0632\u0629 \u0644\u0644\u062a\u0633\u0644\u064a\u0645.' } }
+];
+
 /* ---------------------------------------------------------------- cards */
 
 export const cards = [
-  { id: 'noor-al-zafaf', occasion: 'wedding', palette: 'ivoryEmerald', motif: 'rings', price: 12,
+  { id: 'noor-al-zafaf', occasion: 'wedding', palette: 'ivoryLeaf', motif: 'rings', price: 12,
     en: { title: 'Noor Al Zafaf', desc: 'Two interlaced rings held inside an eight-point rosette, pressed in warm gold on heavy ivory stock. Names and date are hand-set in the arch above the seal.' },
     ar: { title: 'نور الزفاف', desc: 'حلقتان متشابكتان داخل نجمة ثمانية، مطبوعتان بلون ذهبي دافئ على ورق عاجي فاخر. تُكتب الأسماء والتاريخ يدوياً في القوس أعلى الختم.' },
     tags: { en: ['Gold foil', 'Ivory stock', 'Bilingual'], ar: ['طباعة ذهبية', 'ورق عاجي', 'ثنائي اللغة'] } },
 
-  { id: 'qamar-wedding', occasion: 'wedding', palette: 'emeraldGold', motif: 'bands', price: 15,
+  { id: 'qamar-wedding', occasion: 'wedding', palette: 'leafDeep', motif: 'bands', price: 15,
     en: { title: 'Qamar Invitation Suite', desc: 'A deep emerald invitation banded with arabesque rules. Supplied as a suite: main invitation, RSVP slip and a matching envelope liner.' },
     ar: { title: 'طقم دعوة قمر', desc: 'دعوة بلون أخضر زمردي عميق مزيّنة بأشرطة أرابيسك. تُسلّم كطقم كامل: الدعوة الأساسية، بطاقة التأكيد، وبطانة مغلّف متناسقة.' },
     tags: { en: ['Suite of 3', 'Emerald', 'Foil rules'], ar: ['طقم من ٣', 'زمردي', 'خطوط ذهبية'] } },
@@ -59,17 +90,17 @@ export const cards = [
     ar: { title: 'ورد — وردي ناعم', desc: 'باقة من الأغصان المذهّبة بلون وردي هادئ، مرسومة لتكون خلفية للخط العربي دون أن تزاحمه. مفضّلة للخطوبة وكتب الكتاب.' },
     tags: { en: ['Dusty rose', 'Botanical', 'Engagement'], ar: ['وردي باهت', 'نباتي', 'خطوبة'] } },
 
-  { id: 'hilal-eid', occasion: 'eid', palette: 'emeraldGold', motif: 'eid', price: 8,
+  { id: 'hilal-eid', occasion: 'eid', palette: 'leafDeep', motif: 'eid', price: 8,
     en: { title: 'Hilal — Eid Greeting', desc: 'The crescent rising between two hanging lanterns over a field of small stars. Our most-ordered Eid card, sold digitally and in print.' },
     ar: { title: 'هلال — بطاقة عيد', desc: 'الهلال يرتفع بين فانوسين معلّقين فوق سماء من النجوم الصغيرة. أكثر بطاقات العيد طلباً لدينا، متوفرة رقمياً ومطبوعة.' },
     tags: { en: ['Best seller', 'Eid', 'Digital + print'], ar: ['الأكثر طلباً', 'عيد', 'رقمي ومطبوع'] } },
 
-  { id: 'fanoos', occasion: 'eid', palette: 'navyGold', motif: 'arch', price: 9,
+  { id: 'fanoos', occasion: 'eid', palette: 'periDeep', motif: 'arch', price: 9,
     en: { title: 'Fanoos — Ramadan Arch', desc: 'A mihrab arch in midnight navy, flanked by two gilded lanterns. Designed for the first night of Ramadan and for corporate Ramadan greetings.' },
     ar: { title: 'فانوس — قوس رمضان', desc: 'قوس محراب بلون كحلي داكن يحيط به فانوسان مذهّبان. صُمّم لليلة الأولى من رمضان ولتهاني الشركات الرمضانية.' },
     tags: { en: ['Ramadan', 'Navy & gold', 'Arch motif'], ar: ['رمضان', 'كحلي وذهبي', 'زخرفة القوس'] } },
 
-  { id: 'eid-mubarak-sand', occasion: 'eid', palette: 'sandGold', motif: 'eid', price: 8,
+  { id: 'eid-mubarak-sand', occasion: 'eid', palette: 'creamLeaf', motif: 'eid', price: 8,
     en: { title: 'Eid Mubarak — Sand', desc: 'A lighter take on the Eid card in sand and antique gold, printed on textured cotton stock that takes a handwritten name beautifully.' },
     ar: { title: 'عيد مبارك — رملي', desc: 'نسخة أفتح من بطاقة العيد بلون رملي وذهبي عتيق، مطبوعة على ورق قطني مُحبّب يستقبل الكتابة اليدوية بشكل جميل.' },
     tags: { en: ['Cotton stock', 'Handwriting-ready'], ar: ['ورق قطني', 'مناسب للكتابة'] } },
@@ -79,12 +110,12 @@ export const cards = [
     ar: { title: 'سنة حلوة', desc: 'قصاصات مذهّبة متناثرة حول نجمة ذهبية صلبة. مبهجة دون صخب — النسخة التي يرسلها معظم الناس للأمهات والأخوات.' },
     tags: { en: ['Confetti', 'Blush', 'Ships same week'], ar: ['قصاصات', 'وردي', 'تسليم خلال الأسبوع'] } },
 
-  { id: 'birthday-plum', occasion: 'birthday', palette: 'plumBlush', motif: 'confetti', price: 7,
+  { id: 'birthday-plum', occasion: 'birthday', palette: 'periBlush', motif: 'confetti', price: 7,
     en: { title: 'Ihtifal — Plum', desc: 'The same confetti burst in a deeper plum palette, for milestone birthdays. Add a gold-foil age numeral as a finishing touch.' },
     ar: { title: 'احتفال — برقوقي', desc: 'نفس تناثر القصاصات بدرجات برقوقية أعمق، للأعياد المميزة. أضف رقم العمر بالطباعة الذهبية كلمسة أخيرة.' },
     tags: { en: ['Milestone', 'Foil numeral'], ar: ['مناسبة مميزة', 'رقم ذهبي'] } },
 
-  { id: 'mabrouk-grad', occasion: 'graduation', palette: 'navyGold', motif: 'laurel', price: 9,
+  { id: 'mabrouk-grad', occasion: 'graduation', palette: 'leafDeep', motif: 'laurel', price: 9,
     en: { title: 'Mabrouk — Laurel', desc: 'A gold laurel wreath closing around a cap, on midnight navy. Sold singly or as a set of ten for the whole graduating cohort.' },
     ar: { title: 'مبروك — إكليل الغار', desc: 'إكليل غار ذهبي يحيط بقبعة التخرّج على خلفية كحلية داكنة. تُباع مفردة أو بطقم من عشر بطاقات لدفعة التخرّج كاملة.' },
     tags: { en: ['Graduation', 'Set of 10 available'], ar: ['تخرّج', 'يتوفر طقم من ١٠'] } },
@@ -94,12 +125,12 @@ export const cards = [
     ar: { title: 'نجاح — نعناعي ناعم', desc: 'بطاقة تخرّج أهدأ بلون نعناعي وعاجي، بمقاس يسمح بإدراج صورة لتتحول البطاقة إلى إطار ذكرى.' },
     tags: { en: ['Photo insert', 'Keepsake'], ar: ['مساحة للصورة', 'تذكار'] } },
 
-  { id: 'corporate-noor', occasion: 'corporate', palette: 'emeraldGold', motif: 'grid', price: 6,
+  { id: 'corporate-noor', occasion: 'corporate', palette: 'leafDeep', motif: 'grid', price: 6,
     en: { title: 'Shukran — Corporate', desc: 'A restrained interlocking grid that carries a company logo cleanly. Priced per card at volume; minimum order fifty.' },
     ar: { title: 'شكراً — بطاقة شركات', desc: 'شبكة هندسية متداخلة ومتزنة تحمل شعار الشركة بوضوح. السعر لكل بطاقة بالجملة؛ الحد الأدنى خمسون بطاقة.' },
     tags: { en: ['Logo-ready', 'Min. 50', 'Volume pricing'], ar: ['يحمل الشعار', 'حد أدنى ٥٠', 'سعر الجملة'] } },
 
-  { id: 'corporate-navy', occasion: 'corporate', palette: 'navyGold', motif: 'grid', price: 6,
+  { id: 'corporate-navy', occasion: 'corporate', palette: 'periDeep', motif: 'grid', price: 6,
     en: { title: 'Maqam — Executive', desc: 'The executive version on navy with blind-deboss framing. Used for year-end client gifting and board correspondence.' },
     ar: { title: 'مقام — تنفيذية', desc: 'النسخة التنفيذية بلون كحلي مع إطار محفور بارز. تُستخدم لهدايا نهاية العام للعملاء ومراسلات مجلس الإدارة.' },
     tags: { en: ['Deboss', 'Year-end gifting'], ar: ['حفر بارز', 'هدايا نهاية العام'] } },
@@ -119,17 +150,17 @@ export const cards = [
     ar: { title: 'شكراً — وردي عميق', desc: 'بطاقة شكر بلون وردي عميق مع باقة مذهّبة. بمقاس A6 تناسب علبة الهدايا أو غلاف الباقة دون طيّ.' },
     tags: { en: ['A6', 'Gift box size'], ar: ['مقاس A6', 'مناسبة لعلبة الهدية'] } },
 
-  { id: 'taqdeer', occasion: 'thanks', palette: 'sandGold', motif: 'bands', price: 7,
+  { id: 'taqdeer', occasion: 'thanks', palette: 'creamLeaf', motif: 'bands', price: 7,
     en: { title: 'Taqdeer — Appreciation', desc: 'Three arabesque bands framing a central rosette, left deliberately open for a longer handwritten message.' },
     ar: { title: 'تقدير', desc: 'ثلاثة أشرطة أرابيسك تحيط بنجمة مركزية، مع مساحة مفتوحة عن قصد لرسالة يدوية أطول.' },
     tags: { en: ['Room to write', 'Arabesque'], ar: ['مساحة للكتابة', 'أرابيسك'] } },
 
-  { id: 'khotoba-ivory', occasion: 'wedding', palette: 'sandGold', motif: 'rings', price: 11,
+  { id: 'khotoba-ivory', occasion: 'wedding', palette: 'creamLeaf', motif: 'rings', price: 11,
     en: { title: 'Khotoba — Sand', desc: 'A warmer, sand-toned engagement card. The rosette halo is printed slightly larger so it reads clearly at A6.' },
     ar: { title: 'خطوبة — رملي', desc: 'بطاقة خطوبة بدرجات رملية أدفأ. طُبعت هالة النجمة بحجم أكبر قليلاً لتظهر بوضوح بمقاس A6.' },
     tags: { en: ['Engagement', 'Warm tones'], ar: ['خطوبة', 'ألوان دافئة'] } },
 
-  { id: 'daawa-plum', occasion: 'corporate', palette: 'plumBlush', motif: 'bands', price: 6,
+  { id: 'daawa-plum', occasion: 'corporate', palette: 'periBlush', motif: 'bands', price: 6,
     en: { title: 'Da’wa — Event Invite', desc: 'An event invitation panel for launches and galas. Room for venue, time and a QR code block along the lower third.' },
     ar: { title: 'دعوة — بطاقة فعالية', desc: 'بطاقة دعوة لفعاليات الإطلاق والحفلات. تتّسع لاسم المكان والوقت ومربع رمز QR في الثلث السفلي.' },
     tags: { en: ['Events', 'QR ready'], ar: ['فعاليات', 'تدعم رمز QR'] } }
@@ -214,16 +245,16 @@ export const testimonials = [
   { id: 'r1', rating: 5, palette: 'creamRose',
     en: { name: 'Rania K.', role: 'Wedding, Abdoun', text: 'She set our names in Arabic and English on the same card and neither one looked like an afterthought. Guests kept the cards.' },
     ar: { name: 'رانيا ك.', role: 'عرس، عبدون', text: 'كتبت أسماءنا بالعربية والإنجليزية على نفس البطاقة ولم تبدُ أي منهما إضافة لاحقة. احتفظ الضيوف بالبطاقات.' } },
-  { id: 'r2', rating: 5, palette: 'emeraldGold',
+  { id: 'r2', rating: 5, palette: 'leafDeep',
     en: { name: 'Omar H.', role: 'Corporate, 180 cards', text: 'We needed 180 Ramadan cards with our logo in nine days. The proof photo arrived on day three and the run was early.' },
     ar: { name: 'عمر ح.', role: 'شركة، ١٨٠ بطاقة', text: 'احتجنا ١٨٠ بطاقة رمضانية بشعارنا خلال تسعة أيام. وصلت صورة النموذج في اليوم الثالث وسُلّمت الكمية قبل الموعد.' } },
-  { id: 'r3', rating: 5, palette: 'navyGold',
+  { id: 'r3', rating: 5, palette: 'periDeep',
     en: { name: 'Layal S.', role: 'Graduation set', text: 'I ordered ten graduation cards and asked for a different name on each. Every single one was spelled correctly in Arabic.' },
     ar: { name: 'ليال س.', role: 'طقم تخرّج', text: 'طلبت عشر بطاقات تخرّج باسم مختلف على كل واحدة. كُتب كل اسم بالعربية بشكل صحيح تماماً.' } },
-  { id: 'r4', rating: 5, palette: 'sandGold',
+  { id: 'r4', rating: 5, palette: 'creamLeaf',
     en: { name: 'Dana M.', role: 'Eid — digital', text: 'The digital Eid card came back the same evening. I sent it to about sixty people and three of them asked me who designed it.' },
     ar: { name: 'دانا م.', role: 'عيد — رقمية', text: 'وصلت بطاقة العيد الرقمية في المساء نفسه. أرسلتها لحوالي ستين شخصاً وسألني ثلاثة منهم عن المصمّمة.' } },
-  { id: 'r5', rating: 5, palette: 'plumBlush',
+  { id: 'r5', rating: 5, palette: 'periBlush',
     en: { name: 'Sara A.', role: 'New baby', text: 'She matched the card to the nursery colours from one photo. The blush version is now framed on the wall.' },
     ar: { name: 'سارة ع.', role: 'مولود جديد', text: 'طابقت البطاقة مع ألوان غرفة الطفل من صورة واحدة. النسخة الوردية الآن معلّقة في إطار على الحائط.' } },
   { id: 'r6', rating: 5, palette: 'mintIvory',
