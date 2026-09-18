@@ -69,7 +69,7 @@ export function home() {
       en: "Hand-drawn Arabic and English greeting cards for weddings, Eid, birthdays, graduations and corporate gifting. Digital in 48 hours, printed in 5–7 days, delivered across Jordan.",
       ar: 'بطاقات تهنئة عربية وإنجليزية مرسومة يدوياً للأعراس والعيد وأعياد الميلاد والتخرّج وهدايا الشركات. رقمية خلال ٤٨ ساعة، مطبوعة خلال ٥–٧ أيام، مع التوصيل لكل الأردن.'
     },
-    keywords: 'بطاقات تهنئة, بطاقات عربية, تصميم بطاقات, دعوات زفاف, بطاقات عيد, بطاقات تخرج, بطاقات شركات, عمان, الأردن, Arabic greeting cards, custom card design, wedding invitations Jordan, Eid cards, graduation cards, corporate cards Amman',
+    keywords: 'بطاقات تهنئة, بطاقات عربية, تصميم بطاقات, دعوات زفاف, بطاقات عيد, بطاقات تخرج, بطاقات حنة, بطاقات شركات, عمان, الأردن, Arabic greeting cards, custom card design, wedding invitations Jordan, Eid cards, graduation cards, henna night invitations, corporate cards Amman',
     extraHead: jsonLd()
   }) + header('index.html') + `
 

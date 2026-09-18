@@ -195,6 +195,7 @@ export function footer() {
 
       ${col({ en: 'Occasions', ar: 'المناسبات' }, [
         { href: 'portfolio.html#wedding', en: 'Wedding invitations', ar: 'دعوات الأعراس' },
+        { href: 'portfolio.html#henna', en: 'Henna nights', ar: 'ليالي الحنة' },
         { href: 'portfolio.html#eid', en: 'Eid & Ramadan', ar: 'العيد ورمضان' },
         { href: 'portfolio.html#birthday', en: 'Birthday cards', ar: 'بطاقات أعياد الميلاد' },
         { href: 'portfolio.html#graduation', en: 'Graduation cards', ar: 'بطاقات التخرّج' },

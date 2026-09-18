@@ -22,7 +22,7 @@ const out = (...p) => join(root, ...p);
 
 const MOTIF_BY_OCCASION = {
   wedding: 'rings', eid: 'eid', birthday: 'confetti', graduation: 'laurel',
-  corporate: 'grid', newborn: 'botanical', thanks: 'botanical'
+  corporate: 'grid', newborn: 'botanical', thanks: 'botanical', henna: 'henna'
 };
 
 let written = 0;

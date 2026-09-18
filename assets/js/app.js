@@ -472,4 +472,39 @@
 
     window.ldOpenCart = openDrawer;
   }
+
+  /* ------------------------------------------------------ portfolio video
+     Only one clip plays at a time, and a clip stops the moment it scrolls
+     out of view — a muted autoplay carousel is one thing, but a dozen
+     narrated wedding videos all running behind a phone's viewport is
+     another. Delegated listeners so this also covers any tile added later
+     (e.g. more work dropped into the portfolio). */
+
+  var portfolioVideos = Array.prototype.slice.call(document.querySelectorAll('.work__media--video video'));
+  if (portfolioVideos.length) {
+    var nowPlaying = null;
+
+    portfolioVideos.forEach(function (video) {
+      video.addEventListener('play', function () {
+        if (nowPlaying && nowPlaying !== video) nowPlaying.pause();
+        nowPlaying = video;
+      });
+      video.addEventListener('pause', function () {
+        if (nowPlaying === video) nowPlaying = null;
+      });
+    });
+
+    if ('IntersectionObserver' in window) {
+      var videoWatcher = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (!entry.isIntersecting && !entry.target.paused) entry.target.pause();
+        });
+      }, { threshold: 0.2 });
+      portfolioVideos.forEach(function (video) { videoWatcher.observe(video); });
+    }
+
+    document.addEventListener('visibilitychange', function () {
+      if (document.hidden && nowPlaying) nowPlaying.pause();
+    });
+  }
 })();

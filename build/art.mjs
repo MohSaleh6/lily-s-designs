@@ -360,6 +360,66 @@ const MOTIFS = {
       ${flourish(cx, h * 0.84, 170, g)}`;
   },
 
+  /* Henna night — an open palm traced in vine, flanked by candles */
+  henna(w, h, id, p, r) {
+    const cx = w / 2, cy = h * 0.42, g = `url(#ribbon-${id})`;
+    /* A simplified open-hand outline, fingers together, palm up — the
+       shape a henna cone is actually drawn on. */
+    const hand = `M${cx - 46} ${cy + 92}
+      C${cx - 60} ${cy + 40} ${cx - 58} ${cy - 4} ${cx - 52} ${cy - 40}
+      C${cx - 50} ${cy - 58} ${cx - 34} ${cy - 58} ${cx - 33} ${cy - 40}
+      L${cx - 30} ${cy - 4}
+      C${cx - 29} ${cy - 66} ${cx - 12} ${cy - 66} ${cx - 11} ${cy - 44}
+      L${cx - 9} ${cy - 6}
+      C${cx - 8} ${cy - 70} ${cx + 10} ${cy - 70} ${cx + 10} ${cy - 46}
+      L${cx + 11} ${cy - 6}
+      C${cx + 12} ${cy - 60} ${cx + 28} ${cy - 58} ${cx + 27} ${cy - 38}
+      L${cx + 24} ${cy - 2}
+      C${cx + 40} ${cy - 14} ${cx + 56} ${cy + 6} ${cx + 50} ${cy + 30}
+      L${cx + 40} ${cy + 92}Z`;
+    /* A small mandala centred in the palm — the one detail that reads as
+       henna at a glance, held inside the hand rather than floating above
+       the fingers where it read as a stray blob. */
+    const palmCx = cx - 6, palmCy = cy + 12;
+    let mandala = `<circle cx="${palmCx}" cy="${palmCy}" r="3" fill="${p.accent}"/>`;
+    for (let i = 0; i < 8; i++) {
+      const a = (i / 8) * Math.PI * 2;
+      const x1 = palmCx + Math.cos(a) * 7, y1 = palmCy + Math.sin(a) * 7;
+      const x2 = palmCx + Math.cos(a) * 15, y2 = palmCy + Math.sin(a) * 15;
+      mandala += `<path d="M${x1.toFixed(1)} ${y1.toFixed(1)} L${x2.toFixed(1)} ${y2.toFixed(1)}"
+        stroke="${p.ink}" stroke-width="1" opacity="0.5" stroke-linecap="round"/>`;
+    }
+    mandala += `<circle cx="${palmCx}" cy="${palmCy}" r="10" fill="none" stroke="${p.ink}" stroke-width="1" opacity="0.45"/>`;
+    /* Bangles at the wrist. */
+    const bangles = [0, 7, 14].map((dy) =>
+      `<path d="M${cx - 44} ${cy + 82 + dy} Q${cx - 4} ${cy + 98 + dy} ${cx + 38} ${cy + 78 + dy}"
+        fill="none" stroke="${g}" stroke-width="2" opacity="${0.85 - dy * 0.02}"/>`).join('');
+    /* Fingertip dots — henna is worked densest at the tips. */
+    const fingertips = [
+      [cx - 42, cy - 41], [cx - 21, cy - 47], [cx - 0.5, cy - 51], [cx + 19, cy - 43]
+    ];
+    const tips = fingertips.map(([x, y]) =>
+      `<circle cx="${x}" cy="${y}" r="2.6" fill="${p.accent}" opacity="0.85"/>`).join('');
+    const candle = (x, y, s) => `<g transform="translate(${x} ${y}) scale(${s})">
+      <path d="M0 -18 Q5 -9 1.5 -2 Q0 2 -1.5 -2 Q-5 -9 0 -18Z" fill="${p.petal}"/>
+      <circle cx="0" cy="-2" r="1.6" fill="${p.ink}" opacity="0.4"/>
+      <rect x="-6.5" y="0" width="13" height="52" rx="3.5" fill="${p.soft}" stroke="${g}" stroke-width="1"/>
+      <rect x="-6.5" y="8" width="13" height="4" fill="${g}" opacity="0.5"/>
+      <rect x="-6.5" y="20" width="13" height="4" fill="${g}" opacity="0.5"/>
+    </g>`;
+    return `
+      <path d="${hand}" fill="${p.soft}" opacity="0.5"/>
+      <path d="${hand}" fill="none" stroke="${g}" stroke-width="2"/>
+      ${bangles}
+      ${mandala}
+      ${tips}
+      ${candle(cx - 132, cy + 56, 1)}
+      ${candle(cx + 132, cy + 40, 0.9)}
+      ${rose(cx - 132, cy - 4, 15, p.petal, p.accent, g)}
+      ${rose(cx + 132, cy - 12, 13, p.petal, p.accent, g)}
+      ${flourish(cx, h * 0.84, 170, g)}`;
+  },
+
   /* Thank-you / new baby — the lily-of-the-valley spray from the mark */
   botanical(w, h, id, p, r) {
     const cx = w / 2, cy = h * 0.46, g = `url(#ribbon-${id})`;

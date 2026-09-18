@@ -12,7 +12,7 @@ export const site = {
   phoneE164:  '962798114089',
   instagram:  'lilys.designs1',
   instagramUrl: 'https://www.instagram.com/lilys.designs1/',
-  email: 'hello@lilysdesigns.co',
+  email: 'shahd-saleh1@hotmail.com',
   city: { en: 'Amman, Jordan', ar: 'عمّان، الأردن' },
   hours: { en: 'Sun – Thu · 10:00 – 19:00', ar: 'الأحد – الخميس · ١٠:٠٠ – ١٩:٠٠' },
   currency: { en: 'JOD', ar: 'د.أ' },
@@ -183,6 +183,30 @@ export const works = [
     poster: 'assets/img/work/najah-tawjihi-reel-poster.jpg', w: 405, h: 720,
     en: { title: "Animated Tawjihi Card", note: "An animated tawjihi results card: branch shadows drift across, then the graduate's name resolves." },
     ar: { title: "بطاقة توجيهي متحرّكة", note: "بطاقة نجاح توجيهي متحرّكة، يظهر فيها ظل الأغصان ثم اسم الخرّيجة." } },
+  { id: 'najah-door-reel', type: 'video', occasion: 'graduation', src: 'assets/video/najah-door-reel.mp4',
+    poster: 'assets/img/work/najah-door-reel-poster.jpg', w: 405, h: 720,
+    en: { title: "Animated Graduation Card — The Door", note: "An animated graduation card: a white door opens slowly to reveal a du'a and the graduate's name, dated 18.8.2026." },
+    ar: { title: "بطاقة نجاح متحرّكة — الباب", note: "بطاقة نجاح متحرّكة: باب أبيض ينفتح تدريجياً ليكشف دعاء التوفيق واسم الخرّيج، بتاريخ ١٨.٨.٢٠٢٦." } },
+  { id: 'zafaf-roses-couple-reel', type: 'video', occasion: 'wedding', src: 'assets/video/zafaf-roses-couple-reel.mp4',
+    poster: 'assets/img/work/zafaf-roses-couple-reel-poster.jpg', w: 405, h: 720,
+    en: { title: "Animated Wedding Invitation — Red Roses", note: "An animated wedding invitation framed in red roses and a gold chandelier, with an illustrated couple and the line ‘the day love was made for’." },
+    ar: { title: "دعوة زفاف متحرّكة — ورد أحمر", note: "دعوة زفاف متحرّكة بإطار من الورد الأحمر وثريا ذهبية، مع رسمة للعروسين وعبارة «في يوم خُلق للحب»." } },
+  { id: 'zafaf-firstdance-reel', type: 'video', occasion: 'wedding', src: 'assets/video/zafaf-firstdance-reel.mp4',
+    poster: 'assets/img/work/zafaf-firstdance-reel-poster.jpg', w: 405, h: 726,
+    en: { title: "The First Dance", note: "An animated illustration of the couple in a red gown and black tie, dancing — suited to elegant wedding invitations and thank-you cards." },
+    ar: { title: "رقصة العروسين", note: "رسمة متحرّكة للعروسين بفستان أحمر وبدلة سوداء، تناسب دعوات الزفاف وبطاقات الشكر الأنيقة." } },
+  { id: 'qaat-alafrah-reel', type: 'video', occasion: 'wedding', src: 'assets/video/qaat-alafrah-reel.mp4',
+    poster: 'assets/img/work/qaat-alafrah-reel-poster.jpg', w: 405, h: 720,
+    en: { title: "The Hall Doors Open", note: "Grand doors open slowly onto a rose-wrapped column and chandeliers — a welcome video meant to run at the hall entrance." },
+    ar: { title: "أبواب قاعة الأفراح", note: "أبواب قاعة تُفتح تدريجياً لتكشف عموداً من الورد والثريات — فيديو ترحيب يُعرض على مدخل القاعة." } },
+  { id: 'mawlood-deer-reel', type: 'video', occasion: 'newborn', src: 'assets/video/mawlood-deer-reel.mp4',
+    poster: 'assets/img/work/mawlood-deer-reel-poster.jpg', w: 405, h: 726,
+    en: { title: "Birth Announcement — Deer & Rabbit", note: "An animated birth announcement in cherry blossom, a small glowing door, a deer and a rabbit, reading ‘the first joy of a happy life’." },
+    ar: { title: "بشارة مولود — الغزال والأرنب", note: "بشارة مولود متحرّكة بأزهار الكرز وباب مضيء صغير، مع غزال وأرنب، وعبارة «يا أول مولود الحياة السعيدة»." } },
+  { id: 'henna-rand-jerusalem-reel', type: 'video', occasion: 'henna', src: 'assets/video/henna-rand-jerusalem-reel.mp4',
+    poster: 'assets/img/work/henna-rand-jerusalem-reel-poster.jpg', w: 405, h: 720,
+    en: { title: "Rand's Henna — Scent of Jerusalem", note: "An animated version of Rand's henna invitation: a girl in an embroidered thobe before Jerusalem's skyline, under ‘from the scent of Jerusalem and the fragrance of flowers’." },
+    ar: { title: "حنة رند — عبق القدس", note: "نسخة متحرّكة من دعوة حنة رند: فتاة بالثوب المطرّز أمام معالم مقدسية، تحت عبارة «من عبق القدس وعطر الأزهار»." } },
 ];
 
 /* ---------------------------------------------------------------- cards */
@@ -276,7 +300,12 @@ export const cards = [
   { id: 'daawa-plum', occasion: 'corporate', palette: 'periBlush', motif: 'bands', price: 6,
     en: { title: 'Da’wa — Event Invite', desc: 'An event invitation panel for launches and galas. Room for venue, time and a QR code block along the lower third.' },
     ar: { title: 'دعوة — بطاقة فعالية', desc: 'بطاقة دعوة لفعاليات الإطلاق والحفلات. تتّسع لاسم المكان والوقت ومربع رمز QR في الثلث السفلي.' },
-    tags: { en: ['Events', 'QR ready'], ar: ['فعاليات', 'تدعم رمز QR'] } }
+    tags: { en: ['Events', 'QR ready'], ar: ['فعاليات', 'تدعم رمز QR'] } },
+
+  { id: 'hinnawi-garnet', occasion: 'henna', palette: 'roseDeep', motif: 'henna', price: 10,
+    en: { title: 'Hinnawi — Garnet Night', desc: 'A henna-night card built around a single hand in trailing mandala and gold bangles, flanked by candles. Room below for the bride’s name and date.' },
+    ar: { title: 'حنّاوي — ليلة عنّابية', desc: 'بطاقة حنة تدور حول يد واحدة بنقشة مندالا وأساور ذهبية، يحيط بها شمعتان. مساحة أسفلها لاسم العروس والتاريخ.' },
+    tags: { en: ['Henna night', 'Hand motif'], ar: ['ليلة حنة', 'زخرفة اليد'] } }
 ];
 
 /* -------------------------------------------------------------- services */
