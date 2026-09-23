@@ -40,7 +40,7 @@ export function home() {
     'birthday-norma-bunny', 'najah-tawjihi-reel', 'mawlood-carousel-reel']
     .map((id) => works.find((w) => w.id === id));
 
-  const showcaseCards = ['zafaf-wildflower-arch', 'henna-rand-thobe', 'eid-bow-blush',
+  const showcaseCards = ['thanks-ahmad-rand', 'henna-rand-thobe', 'eid-bow-blush',
     'birthday-lily-bunny', 'mawlood-ali-sky']
     .map((id) => works.find((w) => w.id === id));
 
