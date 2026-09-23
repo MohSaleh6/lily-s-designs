@@ -99,10 +99,10 @@ export function order() {
         </section>
 
         <!-- 2 · Package -->
-        <section class="step-panel" data-panel="2" ${biAttr('aria-label', { en: 'Step 2: Package', ar: 'الخطوة ٢: الباقة' })}>
+        <section class="step-panel" data-panel="2" ${biAttr('aria-label', { en: 'Step 2: Media type', ar: 'الخطوة ٢: نوع الوسيط' })}>
           <div class="step-panel__head">
-            ${bt('h2', { en: 'Digital, printed, or both?', ar: 'رقمية أم مطبوعة أم الاثنتان؟' })}
-            ${bt('p', { en: 'Digital cards arrive as files on WhatsApp. Printed cards are cut, foiled and delivered.', ar: 'البطاقات الرقمية تصل كملفات عبر واتساب. أما المطبوعة فتُقص وتُطبع ذهبياً وتُسلَّم.' })}
+            ${bt('h2', { en: 'What format would you like?', ar: 'أي صيغة تفضّل؟' })}
+            ${bt('p', { en: 'Choose between a photo of a completed design, an animated video reel, or an AI-enhanced video.', ar: 'اختر بين صورة لتصميم منجز، أو فيديو متحرّك، أو فيديو معزّز بالذكاء الاصطناعي.' })}
           </div>
           <fieldset style="border:0;padding:0;margin:0">
             ${bt('legend', { en: 'Choose a package', ar: 'اختر الباقة' }, 'class="visually-hidden"')}
@@ -121,14 +121,6 @@ export function order() {
             </div>
           </fieldset>
           <p class="error-text" id="err-package" ${biData(ui.pickOne)}>${e(ui.pickOne.ar)}</p>
-
-          <div class="card mt-md" id="corporateNote" hidden>
-            ${bt('h3', { en: 'Bulk & corporate orders', ar: 'طلبات الجملة والشركات' })}
-            ${bt('p', {
-              en: 'For fifty cards and above I price the run individually — stock, finish, logo handling and delivery all affect it. Finish this form and you will receive a written quote within one working day, with no obligation.',
-              ar: 'للطلبات من خمسين بطاقة فأكثر أسعّر كل مشروع على حدة — نوع الورق واللمسة النهائية والتعامل مع الشعار والتوصيل كلها تؤثر. أكمل هذا النموذج وسيصلك عرض سعر مكتوب خلال يوم عمل واحد دون أي التزام.'
-            })}
-          </div>
         </section>
 
         <!-- 3 · Style -->
@@ -239,16 +231,6 @@ export function order() {
             ${bt('span', { en: 'Printed orders start at 25 cards; corporate pricing begins at 50.', ar: 'الطلبات المطبوعة تبدأ من ٢٥ بطاقة؛ وأسعار الشركات تبدأ من ٥٠.' }, 'class="hint" id="qtyHint"')}
           </div>
 
-          <div class="field">
-            ${bt('label', { en: 'Finishing touches', ar: 'لمسات إضافية' })}
-            <div id="addonList">
-              ${addons.map((x) => checkRow({
-                name: 'addons', value: x.id, price: x.price,
-                title: { en: x.en.name, ar: x.ar.name },
-                note: addonNote(x.id)
-              })).join('')}
-            </div>
-          </div>
         </section>
 
         <!-- 6 · Your details -->
@@ -292,22 +274,7 @@ export function order() {
             <ul class="file-list" id="fileList"></ul>
           </div>
 
-          <div class="field">
-            ${bt('label', { en: 'Delivery', ar: 'التسليم' }, 'id="deliveryLabel"')}
-            <div class="choices" role="radiogroup" aria-labelledby="deliveryLabel">
-              ${choice({ name: 'delivery', value: 'whatsapp', id: 'dl-wa', checked: true, icon: icons.whatsapp, label: { en: 'Send on WhatsApp', ar: 'الإرسال عبر واتساب' }, note: { text: { en: 'Digital files', ar: 'ملفات رقمية' } } })}
-              ${choice({ name: 'delivery', value: 'amman', id: 'dl-amman', icon: icons.truck, label: { en: 'Delivery in Amman', ar: 'توصيل داخل عمّان' }, note: { text: { en: '3 JOD', ar: '٣ د.أ' } } })}
-              ${choice({ name: 'delivery', value: 'shipping', id: 'dl-ship', icon: icons.pin, label: { en: 'Ship to a governorate', ar: 'شحن إلى محافظة' }, note: { text: { en: 'Quoted by courier', ar: 'حسب سعر الشحن' } } })}
-              ${choice({ name: 'delivery', value: 'pickup', id: 'dl-pickup', icon: icons.gift, label: { en: 'Collect from the studio', ar: 'الاستلام من الاستوديو' }, note: { text: { en: 'Free', ar: 'مجاناً' } } })}
-            </div>
-          </div>
-
-          <div class="field" id="addressWrap" hidden>
-            ${bt('label', { en: 'Delivery address', ar: 'عنوان التسليم' }, 'for="address"')}
-            <textarea id="address" name="address"
-                      ${biAttr('placeholder', { en: 'Area, street, building, and any landmark that helps', ar: 'المنطقة، الشارع، المبنى، وأي معلَم يساعد' })}></textarea>
-            <span class="error-text" id="err-address" ${biData(ui.required)}>${e(ui.required.ar)}</span>
-          </div>
+          <input type="hidden" name="delivery" value="whatsapp">
         </section>
 
         <!-- 7 · Review -->

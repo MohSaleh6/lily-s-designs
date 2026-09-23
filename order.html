@@ -251,50 +251,45 @@
         </section>
 
         <!-- 2 · Package -->
-        <section class="step-panel" data-panel="2" aria-label="الخطوة ٢: الباقة" data-en-aria-label="Step 2: Package" data-ar-aria-label="الخطوة ٢: الباقة">
+        <section class="step-panel" data-panel="2" aria-label="الخطوة ٢: نوع الوسيط" data-en-aria-label="Step 2: Media type" data-ar-aria-label="الخطوة ٢: نوع الوسيط">
           <div class="step-panel__head">
-            <h2 data-en="Digital, printed, or both?" data-ar="رقمية أم مطبوعة أم الاثنتان؟">رقمية أم مطبوعة أم الاثنتان؟</h2>
-            <p data-en="Digital cards arrive as files on WhatsApp. Printed cards are cut, foiled and delivered." data-ar="البطاقات الرقمية تصل كملفات عبر واتساب. أما المطبوعة فتُقص وتُطبع ذهبياً وتُسلَّم.">البطاقات الرقمية تصل كملفات عبر واتساب. أما المطبوعة فتُقص وتُطبع ذهبياً وتُسلَّم.</p>
+            <h2 data-en="What format would you like?" data-ar="أي صيغة تفضّل؟">أي صيغة تفضّل؟</h2>
+            <p data-en="Choose between a photo of a completed design, an animated video reel, or an AI-enhanced video." data-ar="اختر بين صورة لتصميم منجز، أو فيديو متحرّك، أو فيديو معزّز بالذكاء الاصطناعي.">اختر بين صورة لتصميم منجز، أو فيديو متحرّك، أو فيديو معزّز بالذكاء الاصطناعي.</p>
           </div>
           <fieldset style="border:0;padding:0;margin:0">
             <legend class="visually-hidden" data-en="Choose a package" data-ar="اختر الباقة">اختر الباقة</legend>
             <div class="choices">
               
         <label class="choice">
-          <input type="radio" name="package" value="digital" id="pkg-digital" data-price="15"
-                 data-label="بطاقة رقمية" data-en-data-label="Digital Card" data-ar-data-label="بطاقة رقمية">
-          <span class="choice__box">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" ><rect x="2.5" y="4" width="19" height="12.5" rx="2"/><path d="M9 20.5h6M12 16.5v4"/></svg>
-            <span class="choice__label" data-en="Digital Card" data-ar="بطاقة رقمية">بطاقة رقمية</span>
-            <span class="choice__note" data-en="from 15 JOD · 48 hours" data-ar="من 15 د.أ · ٤٨ ساعة">من 15 د.أ · ٤٨ ساعة</span>
-          </span>
-        </label>
-        <label class="choice">
-          <input type="radio" name="package" value="printed" id="pkg-printed" data-price="8"
-                 data-label="بطاقات مطبوعة" data-en-data-label="Printed Cards" data-ar-data-label="بطاقات مطبوعة">
-          <span class="choice__box">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" ><path d="M6.5 9V3.5h11V9"/><rect x="3" y="9" width="18" height="7.5" rx="2"/><path d="M6.5 14h11v6.5h-11Z"/></svg>
-            <span class="choice__label" data-en="Printed Cards" data-ar="بطاقات مطبوعة">بطاقات مطبوعة</span>
-            <span class="choice__note" data-en="from 8 JOD · 5 – 7 days" data-ar="من 8 د.أ · ٥ – ٧ أيام">من 8 د.أ · ٥ – ٧ أيام</span>
-          </span>
-        </label>
-        <label class="choice">
-          <input type="radio" name="package" value="corporate" id="pkg-corporate" data-price="0"
-                 data-label="الجملة والشركات" data-en-data-label="Bulk &amp; Corporate" data-ar-data-label="الجملة والشركات">
+          <input type="radio" name="package" value="photo" id="pkg-photo" data-price="2"
+                 data-label="صورة" data-en-data-label="Photo" data-ar-data-label="صورة">
           <span class="choice__box">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" ><path d="M4 21V5.5A1.5 1.5 0 0 1 5.5 4h7A1.5 1.5 0 0 1 14 5.5V21"/><path d="M14 10h4.5A1.5 1.5 0 0 1 20 11.5V21"/><path d="M2.5 21h19"/><path d="M7 8h4M7 12h4M7 16h4M17 14h1M17 17.5h1"/></svg>
-            <span class="choice__label" data-en="Bulk &amp; Corporate" data-ar="الجملة والشركات">الجملة والشركات</span>
-            <span class="choice__note" data-en="custom quote · 7 – 14 days" data-ar="عرض سعر · ٧ – ١٤ يوم">عرض سعر · ٧ – ١٤ يوم</span>
+            <span class="choice__label" data-en="Photo" data-ar="صورة">صورة</span>
+            <span class="choice__note" data-en="from 2 JOD · Instant" data-ar="من 2 د.أ · فوري">من 2 د.أ · فوري</span>
+          </span>
+        </label>
+        <label class="choice">
+          <input type="radio" name="package" value="video" id="pkg-video" data-price="4"
+                 data-label="فيديو" data-en-data-label="Video" data-ar-data-label="فيديو">
+          <span class="choice__box">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" ><path d="M4 21V5.5A1.5 1.5 0 0 1 5.5 4h7A1.5 1.5 0 0 1 14 5.5V21"/><path d="M14 10h4.5A1.5 1.5 0 0 1 20 11.5V21"/><path d="M2.5 21h19"/><path d="M7 8h4M7 12h4M7 16h4M17 14h1M17 17.5h1"/></svg>
+            <span class="choice__label" data-en="Video" data-ar="فيديو">فيديو</span>
+            <span class="choice__note" data-en="from 4 JOD · Instant" data-ar="من 4 د.أ · فوري">من 4 د.أ · فوري</span>
+          </span>
+        </label>
+        <label class="choice">
+          <input type="radio" name="package" value="video-ai" id="pkg-video-ai" data-price="6"
+                 data-label="فيديو + ذكاء اصطناعي" data-en-data-label="Video + AI" data-ar-data-label="فيديو + ذكاء اصطناعي">
+          <span class="choice__box">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" ><path d="M4 21V5.5A1.5 1.5 0 0 1 5.5 4h7A1.5 1.5 0 0 1 14 5.5V21"/><path d="M14 10h4.5A1.5 1.5 0 0 1 20 11.5V21"/><path d="M2.5 21h19"/><path d="M7 8h4M7 12h4M7 16h4M17 14h1M17 17.5h1"/></svg>
+            <span class="choice__label" data-en="Video + AI" data-ar="فيديو + ذكاء اصطناعي">فيديو + ذكاء اصطناعي</span>
+            <span class="choice__note" data-en="from 6 JOD · Instant" data-ar="من 6 د.أ · فوري">من 6 د.أ · فوري</span>
           </span>
         </label>
             </div>
           </fieldset>
           <p class="error-text" id="err-package" data-en="Please choose an option to continue" data-ar="اختر خياراً للمتابعة">اختر خياراً للمتابعة</p>
-
-          <div class="card mt-md" id="corporateNote" hidden>
-            <h3 data-en="Bulk &amp; corporate orders" data-ar="طلبات الجملة والشركات">طلبات الجملة والشركات</h3>
-            <p data-en="For fifty cards and above I price the run individually — stock, finish, logo handling and delivery all affect it. Finish this form and you will receive a written quote within one working day, with no obligation." data-ar="للطلبات من خمسين بطاقة فأكثر أسعّر كل مشروع على حدة — نوع الورق واللمسة النهائية والتعامل مع الشعار والتوصيل كلها تؤثر. أكمل هذا النموذج وسيصلك عرض سعر مكتوب خلال يوم عمل واحد دون أي التزام.">للطلبات من خمسين بطاقة فأكثر أسعّر كل مشروع على حدة — نوع الورق واللمسة النهائية والتعامل مع الشعار والتوصيل كلها تؤثر. أكمل هذا النموذج وسيصلك عرض سعر مكتوب خلال يوم عمل واحد دون أي التزام.</p>
-          </div>
         </section>
 
         <!-- 3 · Style -->
@@ -591,66 +586,6 @@
             <span class="hint" id="qtyHint" data-en="Printed orders start at 25 cards; corporate pricing begins at 50." data-ar="الطلبات المطبوعة تبدأ من ٢٥ بطاقة؛ وأسعار الشركات تبدأ من ٥٠.">الطلبات المطبوعة تبدأ من ٢٥ بطاقة؛ وأسعار الشركات تبدأ من ٥٠.</span>
           </div>
 
-          <div class="field">
-            <label data-en="Finishing touches" data-ar="لمسات إضافية">لمسات إضافية</label>
-            <div id="addonList">
-              
-        <label class="check-row">
-          <input type="checkbox" name="addons" value="rush" data-price="12"
-                 data-label="تنفيذ سريع (٢٤ ساعة)" data-en-data-label="Rush turnaround (24 hours)" data-ar-data-label="تنفيذ سريع (٢٤ ساعة)">
-          <span class="check-row__text">
-            <strong data-en="Rush turnaround (24 hours)" data-ar="تنفيذ سريع (٢٤ ساعة)">تنفيذ سريع (٢٤ ساعة)</strong>
-            <span data-en="Draft within 24 hours instead of 48. Subject to availability." data-ar="المسودة خلال ٢٤ ساعة بدل ٤٨. حسب توفّر الموعد.">المسودة خلال ٢٤ ساعة بدل ٤٨. حسب توفّر الموعد.</span>
-          </span>
-          <span class="check-row__price"><span class="num">+12</span> <span data-en="JOD" data-ar="د.أ">د.أ</span></span>
-        </label>
-        <label class="check-row">
-          <input type="checkbox" name="addons" value="calligraphy" data-price="10"
-                 data-label="كتابة الاسم بالخط العربي يدوياً على كل بطاقة" data-en-data-label="Hand-lettered Arabic name on each card" data-ar-data-label="كتابة الاسم بالخط العربي يدوياً على كل بطاقة">
-          <span class="check-row__text">
-            <strong data-en="Hand-lettered Arabic name on each card" data-ar="كتابة الاسم بالخط العربي يدوياً على كل بطاقة">كتابة الاسم بالخط العربي يدوياً على كل بطاقة</strong>
-            <span data-en="Per order, for up to 25 names. Larger sets are quoted." data-ar="لكل طلبية حتى ٢٥ اسماً. الكميات الأكبر بعرض سعر.">لكل طلبية حتى ٢٥ اسماً. الكميات الأكبر بعرض سعر.</span>
-          </span>
-          <span class="check-row__price"><span class="num">+10</span> <span data-en="JOD" data-ar="د.أ">د.أ</span></span>
-        </label>
-        <label class="check-row">
-          <input type="checkbox" name="addons" value="envelope" data-price="8"
-                 data-label="مغلّفات مبطّنة بنفس الزخرفة" data-en-data-label="Lined envelopes in a matching pattern" data-ar-data-label="مغلّفات مبطّنة بنفس الزخرفة">
-          <span class="check-row__text">
-            <strong data-en="Lined envelopes in a matching pattern" data-ar="مغلّفات مبطّنة بنفس الزخرفة">مغلّفات مبطّنة بنفس الزخرفة</strong>
-            <span data-en="Envelopes lined with the same girih pattern as the card." data-ar="مغلّفات مبطّنة بنفس الزخرفة الهندسية للبطاقة.">مغلّفات مبطّنة بنفس الزخرفة الهندسية للبطاقة.</span>
-          </span>
-          <span class="check-row__price"><span class="num">+8</span> <span data-en="JOD" data-ar="د.أ">د.أ</span></span>
-        </label>
-        <label class="check-row">
-          <input type="checkbox" name="addons" value="wax" data-price="15"
-                 data-label="ختم شمعي بالأحرف الأولى من اسمك" data-en-data-label="Wax seal with your initials" data-ar-data-label="ختم شمعي بالأحرف الأولى من اسمك">
-          <span class="check-row__text">
-            <strong data-en="Wax seal with your initials" data-ar="ختم شمعي بالأحرف الأولى من اسمك">ختم شمعي بالأحرف الأولى من اسمك</strong>
-            <span data-en="A custom brass seal, yours to keep after the order." data-ar="ختم نحاسي مخصص يبقى لك بعد انتهاء الطلبية.">ختم نحاسي مخصص يبقى لك بعد انتهاء الطلبية.</span>
-          </span>
-          <span class="check-row__price"><span class="num">+15</span> <span data-en="JOD" data-ar="د.أ">د.أ</span></span>
-        </label>
-        <label class="check-row">
-          <input type="checkbox" name="addons" value="extra-revision" data-price="6"
-                 data-label="جولة تعديل إضافية" data-en-data-label="Additional revision round" data-ar-data-label="جولة تعديل إضافية">
-          <span class="check-row__text">
-            <strong data-en="Additional revision round" data-ar="جولة تعديل إضافية">جولة تعديل إضافية</strong>
-            <span data-en="Beyond the two rounds already included." data-ar="إضافة إلى الجولتين المشمولتين أصلاً.">إضافة إلى الجولتين المشمولتين أصلاً.</span>
-          </span>
-          <span class="check-row__price"><span class="num">+6</span> <span data-en="JOD" data-ar="د.أ">د.أ</span></span>
-        </label>
-        <label class="check-row">
-          <input type="checkbox" name="addons" value="delivery" data-price="3"
-                 data-label="توصيل داخل عمّان" data-en-data-label="Delivery inside Amman" data-ar-data-label="توصيل داخل عمّان">
-          <span class="check-row__text">
-            <strong data-en="Delivery inside Amman" data-ar="توصيل داخل عمّان">توصيل داخل عمّان</strong>
-            <span data-en="Usually same-day once the cards are ready." data-ar="عادةً في اليوم نفسه فور جهوزية البطاقات.">عادةً في اليوم نفسه فور جهوزية البطاقات.</span>
-          </span>
-          <span class="check-row__price"><span class="num">+3</span> <span data-en="JOD" data-ar="د.أ">د.أ</span></span>
-        </label>
-            </div>
-          </div>
         </section>
 
         <!-- 6 · Your details -->
@@ -694,58 +629,7 @@
             <ul class="file-list" id="fileList"></ul>
           </div>
 
-          <div class="field">
-            <label id="deliveryLabel" data-en="Delivery" data-ar="التسليم">التسليم</label>
-            <div class="choices" role="radiogroup" aria-labelledby="deliveryLabel">
-              
-        <label class="choice">
-          <input type="radio" name="delivery" value="whatsapp" id="dl-wa" checked
-                 data-label="الإرسال عبر واتساب" data-en-data-label="Send on WhatsApp" data-ar-data-label="الإرسال عبر واتساب">
-          <span class="choice__box">
-            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M17.5 14.4c-.3-.2-1.8-.9-2-1s-.5-.2-.7.1-.8 1-.9 1.2-.3.2-.6.1a8.2 8.2 0 0 1-2.4-1.5 9 9 0 0 1-1.7-2.1c-.2-.3 0-.5.1-.6l.5-.6a2 2 0 0 0 .3-.5.6.6 0 0 0 0-.5L9.2 6.6c-.2-.6-.5-.5-.7-.5h-.6a1.2 1.2 0 0 0-.8.4 3.4 3.4 0 0 0-1 2.5 5.9 5.9 0 0 0 1.2 3.1 13.4 13.4 0 0 0 5.2 4.6 16 16 0 0 0 1.7.6 4.2 4.2 0 0 0 1.9.1 3.1 3.1 0 0 0 2-1.4 2.5 2.5 0 0 0 .2-1.4c-.1-.1-.3-.2-.6-.3Z"/><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm0 18.3a8.3 8.3 0 0 1-4.2-1.2l-.3-.2-3.1.8.8-3-.2-.3A8.3 8.3 0 1 1 12 20.3Z"/></svg>
-            <span class="choice__label" data-en="Send on WhatsApp" data-ar="الإرسال عبر واتساب">الإرسال عبر واتساب</span>
-            <span class="choice__note" data-en="Digital files" data-ar="ملفات رقمية">ملفات رقمية</span>
-          </span>
-        </label>
-              
-        <label class="choice">
-          <input type="radio" name="delivery" value="amman" id="dl-amman"
-                 data-label="توصيل داخل عمّان" data-en-data-label="Delivery in Amman" data-ar-data-label="توصيل داخل عمّان">
-          <span class="choice__box">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" ><path d="M2.5 6.5h11v10h-11Z"/><path d="M13.5 10h4l3 3v3.5h-7Z"/><circle cx="7" cy="18.5" r="1.8"/><circle cx="17" cy="18.5" r="1.8"/></svg>
-            <span class="choice__label" data-en="Delivery in Amman" data-ar="توصيل داخل عمّان">توصيل داخل عمّان</span>
-            <span class="choice__note" data-en="3 JOD" data-ar="٣ د.أ">٣ د.أ</span>
-          </span>
-        </label>
-              
-        <label class="choice">
-          <input type="radio" name="delivery" value="shipping" id="dl-ship"
-                 data-label="شحن إلى محافظة" data-en-data-label="Ship to a governorate" data-ar-data-label="شحن إلى محافظة">
-          <span class="choice__box">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" ><path d="M20 10.4c0 5.3-8 12.1-8 12.1s-8-6.8-8-12.1a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10.2" r="2.8"/></svg>
-            <span class="choice__label" data-en="Ship to a governorate" data-ar="شحن إلى محافظة">شحن إلى محافظة</span>
-            <span class="choice__note" data-en="Quoted by courier" data-ar="حسب سعر الشحن">حسب سعر الشحن</span>
-          </span>
-        </label>
-              
-        <label class="choice">
-          <input type="radio" name="delivery" value="pickup" id="dl-pickup"
-                 data-label="الاستلام من الاستوديو" data-en-data-label="Collect from the studio" data-ar-data-label="الاستلام من الاستوديو">
-          <span class="choice__box">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" ><rect x="3" y="8.5" width="18" height="12.5" rx="2"/><path d="M3 13h18M12 8.5V21"/><path d="M12 8.5S10.5 3 8 3a2.5 2.5 0 0 0 0 5.5Z"/><path d="M12 8.5S13.5 3 16 3a2.5 2.5 0 0 1 0 5.5Z"/></svg>
-            <span class="choice__label" data-en="Collect from the studio" data-ar="الاستلام من الاستوديو">الاستلام من الاستوديو</span>
-            <span class="choice__note" data-en="Free" data-ar="مجاناً">مجاناً</span>
-          </span>
-        </label>
-            </div>
-          </div>
-
-          <div class="field" id="addressWrap" hidden>
-            <label for="address" data-en="Delivery address" data-ar="عنوان التسليم">عنوان التسليم</label>
-            <textarea id="address" name="address"
-                      placeholder="المنطقة، الشارع، المبنى، وأي معلَم يساعد" data-en-placeholder="Area, street, building, and any landmark that helps" data-ar-placeholder="المنطقة، الشارع، المبنى، وأي معلَم يساعد"></textarea>
-            <span class="error-text" id="err-address" data-en="This field is required" data-ar="هذا الحقل مطلوب">هذا الحقل مطلوب</span>
-          </div>
+          <input type="hidden" name="delivery" value="whatsapp">
         </section>
 
         <!-- 7 · Review -->

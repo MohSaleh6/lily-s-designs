@@ -1286,86 +1286,49 @@ window.LD = {
   ],
   "plans": [
     {
-      "id": "digital",
-      "price": 15,
+      "id": "photo",
+      "price": 2,
       "minQty": 1,
       "pricing": "flat",
       "name": {
-        "en": "Digital Card",
-        "ar": "بطاقة رقمية"
+        "en": "Photo",
+        "ar": "صورة"
       },
       "turnaround": {
-        "en": "48 hours",
-        "ar": "٤٨ ساعة"
+        "en": "Instant",
+        "ar": "فوري"
       }
     },
     {
-      "id": "printed",
-      "price": 8,
-      "minQty": 25,
-      "pricing": "per-card",
+      "id": "video",
+      "price": 4,
+      "minQty": 1,
+      "pricing": "flat",
       "name": {
-        "en": "Printed Cards",
-        "ar": "بطاقات مطبوعة"
+        "en": "Video",
+        "ar": "فيديو"
       },
       "turnaround": {
-        "en": "5 – 7 days",
-        "ar": "٥ – ٧ أيام"
+        "en": "Instant",
+        "ar": "فوري"
       }
     },
     {
-      "id": "corporate",
-      "price": 0,
-      "minQty": 50,
-      "pricing": "quote",
-      "name": {
-        "en": "Bulk & Corporate",
-        "ar": "الجملة والشركات"
-      },
-      "turnaround": {
-        "en": "7 – 14 days",
-        "ar": "٧ – ١٤ يوم"
-      }
-    }
-  ],
-  "addons": [
-    {
-      "id": "rush",
-      "price": 12,
-      "en": "Rush turnaround (24 hours)",
-      "ar": "تنفيذ سريع (٢٤ ساعة)"
-    },
-    {
-      "id": "calligraphy",
-      "price": 10,
-      "en": "Hand-lettered Arabic name on each card",
-      "ar": "كتابة الاسم بالخط العربي يدوياً على كل بطاقة"
-    },
-    {
-      "id": "envelope",
-      "price": 8,
-      "en": "Lined envelopes in a matching pattern",
-      "ar": "مغلّفات مبطّنة بنفس الزخرفة"
-    },
-    {
-      "id": "wax",
-      "price": 15,
-      "en": "Wax seal with your initials",
-      "ar": "ختم شمعي بالأحرف الأولى من اسمك"
-    },
-    {
-      "id": "extra-revision",
+      "id": "video-ai",
       "price": 6,
-      "en": "Additional revision round",
-      "ar": "جولة تعديل إضافية"
-    },
-    {
-      "id": "delivery",
-      "price": 3,
-      "en": "Delivery inside Amman",
-      "ar": "توصيل داخل عمّان"
+      "minQty": 1,
+      "pricing": "flat",
+      "name": {
+        "en": "Video + AI",
+        "ar": "فيديو + ذكاء اصطناعي"
+      },
+      "turnaround": {
+        "en": "Instant",
+        "ar": "فوري"
+      }
     }
   ],
+  "addons": [],
   "delivery": {
     "whatsapp": 0,
     "amman": 3,

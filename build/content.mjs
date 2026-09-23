@@ -312,61 +312,53 @@ export const cards = [
 
 export const plans = [
   {
-    id: 'digital',
+    id: 'photo',
     featured: false,
-    price: 15,
+    price: 2,
     minQty: 1,
     pricing: 'flat',
-    unit: { en: 'per design', ar: 'للتصميم الواحد' },
-    turnaround: { en: '48 hours', ar: '٤٨ ساعة' },
-    name: { en: 'Digital Card', ar: 'بطاقة رقمية' },
-    for: { en: 'For sending on WhatsApp & Instagram', ar: 'للإرسال عبر واتساب وإنستغرام' },
+    unit: { en: 'per photo', ar: 'للصورة الواحدة' },
+    turnaround: { en: 'Instant', ar: 'فوري' },
+    name: { en: 'Photo', ar: 'صورة' },
+    for: { en: 'Real design photograph', ar: 'صورة تصميم حقيقي' },
     includes: {
-      en: ['One custom design from your chosen template', 'Your names, date and message set in Arabic or English', 'High-resolution PNG + a square version for stories', 'Two rounds of revisions', 'Delivered by WhatsApp within 48 hours'],
-      ar: ['تصميم واحد مخصص من القالب الذي تختاره', 'أسماؤك والتاريخ والرسالة بالعربية أو الإنجليزية', 'ملف PNG عالي الدقة + نسخة مربعة للستوري', 'جولتا تعديل', 'يُسلَّم عبر واتساب خلال ٤٨ ساعة']
+      en: ['High-resolution photo of a completed design'],
+      ar: ['صورة عالية الدقة لتصميم منجز']
     }
   },
   {
-    id: 'printed',
+    id: 'video',
     featured: true,
-    price: 8,
-    minQty: 25,
-    pricing: 'per-card',
-    unit: { en: 'per card · min. 25', ar: 'للبطاقة · حد أدنى ٢٥' },
-    turnaround: { en: '5 – 7 days', ar: '٥ – ٧ أيام' },
-    name: { en: 'Printed Cards', ar: 'بطاقات مطبوعة' },
-    for: { en: 'For weddings, Eid and celebrations', ar: 'للأعراس والعيد والمناسبات' },
+    price: 4,
+    minQty: 1,
+    pricing: 'flat',
+    unit: { en: 'per video', ar: 'للفيديو الواحد' },
+    turnaround: { en: 'Instant', ar: 'فوري' },
+    name: { en: 'Video', ar: 'فيديو' },
+    for: { en: 'Animated design reel', ar: 'فيديو تصميم متحرّك' },
     includes: {
-      en: ['Everything in the digital package', 'Printed on 300gsm ivory or cotton stock', 'Gold-foil accent on the front panel', 'Matching envelopes included', 'Printed proof photographed before the full run', 'Delivery across Amman, shipping nationwide']
-      ,
-      ar: ['كل ما في الباقة الرقمية', 'طباعة على ورق عاجي أو قطني ٣٠٠ غرام', 'لمسة ذهبية على الواجهة الأمامية', 'مغلّفات متناسقة مشمولة', 'تصوير نموذج مطبوع قبل تنفيذ الكمية', 'توصيل داخل عمّان وشحن لكل المحافظات']
+      en: ['Full-resolution video reel of an animated design'],
+      ar: ['فيديو عالي الدقة لتصميم متحرّك']
     }
   },
   {
-    id: 'corporate',
+    id: 'video-ai',
     featured: false,
-    price: 0,
-    minQty: 50,
-    pricing: 'quote',
-    unit: { en: 'custom quote', ar: 'عرض سعر مخصص' },
-    turnaround: { en: '7 – 14 days', ar: '٧ – ١٤ يوم' },
-    name: { en: 'Bulk & Corporate', ar: 'الجملة والشركات' },
-    for: { en: 'For 50 cards and above', ar: 'للطلبات من ٥٠ بطاقة فأكثر' },
+    price: 6,
+    minQty: 1,
+    pricing: 'flat',
+    unit: { en: 'per video', ar: 'للفيديو الواحد' },
+    turnaround: { en: 'Instant', ar: 'فوري' },
+    name: { en: 'Video + AI', ar: 'فيديو + ذكاء اصطناعي' },
+    for: { en: 'AI-enhanced design video', ar: 'فيديو تصميم معزّز بالذكاء الاصطناعي' },
     includes: {
-      en: ['Your logo and brand colours matched to the design', 'Volume pricing from 6 JOD per card', 'Optional blind deboss or spot-foil finish', 'Individually addressed envelopes on request', 'Named contact for the whole run', 'Invoice and delivery note provided'],
-      ar: ['مطابقة شعارك وألوان علامتك مع التصميم', 'أسعار جملة تبدأ من ٦ دنانير للبطاقة', 'خيار الحفر البارز أو الطباعة الذهبية الموضعية', 'كتابة العناوين على المغلّفات عند الطلب', 'مسؤول تواصل واحد طوال المشروع', 'فاتورة وسند تسليم رسمي']
+      en: ['Full-resolution video with AI enhancement'],
+      ar: ['فيديو عالي الدقة معزّز بالذكاء الاصطناعي']
     }
   }
 ];
 
-export const addons = [
-  { id: 'rush',      price: 12, en: { name: 'Rush turnaround (24 hours)' }, ar: { name: 'تنفيذ سريع (٢٤ ساعة)' } },
-  { id: 'calligraphy', price: 10, en: { name: 'Hand-lettered Arabic name on each card' }, ar: { name: 'كتابة الاسم بالخط العربي يدوياً على كل بطاقة' } },
-  { id: 'envelope', price: 8,  en: { name: 'Lined envelopes in a matching pattern' }, ar: { name: 'مغلّفات مبطّنة بنفس الزخرفة' } },
-  { id: 'wax',      price: 15, en: { name: 'Wax seal with your initials' }, ar: { name: 'ختم شمعي بالأحرف الأولى من اسمك' } },
-  { id: 'extra-revision', price: 6, en: { name: 'Additional revision round' }, ar: { name: 'جولة تعديل إضافية' } },
-  { id: 'delivery', price: 3,  en: { name: 'Delivery inside Amman' }, ar: { name: 'توصيل داخل عمّان' } }
-];
+export const addons = [];
 
 /* ---------------------------------------------------------------- process */
 
